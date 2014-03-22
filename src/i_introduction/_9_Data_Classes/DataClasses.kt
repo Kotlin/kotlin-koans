@@ -33,7 +33,9 @@ data class Person3(val name: String, val age: Int)
 // This class is the same only 43 lines shorter than Java class Person4. =)
 
 fun todoTask9() = TODO(
-        task = "There is no task for you here. Just tell if you are delighted with Kotlin. =)",
+        task = """There is no task for you here.
+        Just confirm you're not forgetting to read carefully all code examples and comments and
+        ask questions if any. =) """,
         references = { JavaCode9.Person4("???", -1) }
 )
 
