@@ -7,11 +7,11 @@ import org.junit.Assert
 class _2_Default_And_Named_Params() {
 
     test fun testDefaultAndNamedParams() {
-        Assert.assertEquals("a42b1C42D2", testFoo())
+        Assert.assertEquals("a42b1C42D2", task2_1())
     }
 
     test fun testMakeString() {
-        Assert.assertEquals("{1, 2, 3, 42, 555}", task2(listOf(1, 2, 3, 42, 555)))
+        Assert.assertEquals("{1, 2, 3, 42, 555}", task2_2(listOf(1, 2, 3, 42, 555)))
     }
 
 }

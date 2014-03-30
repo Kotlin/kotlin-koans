@@ -2,16 +2,20 @@ package ii_properties
 
 import junit.framework.Assert
 import org.junit.Test as test
+import java.util.HashMap
 
 class _11_Delegates_Examples {
-    test fun testAlice() {
-        val data = hashMapOf("name" to "Alice", "age" to 7, "gender" to true)
-        val p = Person(data)
-        Assert.assertEquals("Alice", p.name)
-        Assert.assertEquals(7, p.age)
-        Assert.assertEquals(true, p.gender)
+    test fun testCommodity() {
+        val data = hashMapOf<String, Any?>("description" to "snowboard", "price" to 349, "isAvailable" to true)
+        val p = Commodity(data)
+        Assert.assertEquals("snowboard", p.description)
+        Assert.assertEquals(349, p.price)
+        Assert.assertEquals(true, p.isAvailable)
 
-        data["age"] = 8
-        Assert.assertEquals(8, p.age)
+        data["price"] = 421
+        Assert.assertEquals("Commodity class should reflect the data in map", 421, p.price)
+
+        p.isAvailable = false
+        Assert.assertEquals("The data in map should reflect the commodity class", false, data["isAvailable"])
     }
 }

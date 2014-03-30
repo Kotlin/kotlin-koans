@@ -2,6 +2,7 @@ package ii_properties
 
 import junit.framework.Assert
 import org.junit.Test as test
+import iii_conventions.Date
 
 class _12_Delegates_How_It_Works {
     test fun testDate() {

@@ -5,16 +5,16 @@ import org.junit.Test as test
 
 class _17_Invoke {
     test fun testTask17() {
-        Assert.assertEquals(4, task17(Foo()))
+        Assert.assertEquals(4, task17(Invokable()))
     }
 
     test fun testNumberOfInvocations() {
-        val foo = Foo()
-        Assert.assertEquals(1, foo().getNumberOfInvocations())
-        Assert.assertEquals(5, foo()()()()().getNumberOfInvocations())
-        Assert.assertEquals(0, foo.getNumberOfInvocations())
+        val message = "The number of invocations is incorrect"
+        Assert.assertEquals(message, 1, Invokable()().getNumberOfInvocations())
+        Assert.assertEquals(message, 5, Invokable()()()()()().getNumberOfInvocations())
+        Assert.assertEquals(message, 0, Invokable().getNumberOfInvocations())
     }
 
-    fun Foo.invoke() = todoTask17()
-    fun Foo.getNumberOfInvocations() = todoTask17()
+    fun Invokable.invoke() = todoTask17()
+    fun Invokable.getNumberOfInvocations() = todoTask17()
 }

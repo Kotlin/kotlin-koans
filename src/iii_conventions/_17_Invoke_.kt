@@ -30,15 +30,15 @@ fun testTypeWithInvokeExtension() {
     1() //wtf?..
 }
 
-class Foo
+class Invokable
 
 fun todoTask17() = TODO(
         task = """Task17.
         Change class Foo to count the number of invocations (round brackets).
         Uncomment the commented code, it should return 4.""",
-        references = {(foo: Foo) -> })
+        references = {(invokable: Invokable) -> })
 
-fun task17(foo: Foo): Int {
+fun task17(invokable: Invokable): Int {
     todoTask17()
-//    return foo()()()().getNumberOfInvocations()
+//    return invokable()()()().getNumberOfInvocations()
 }

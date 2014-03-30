@@ -33,10 +33,8 @@ public class JavaCode9 extends JavaCode {
             if (o == null || getClass() != o.getClass()) return false;
 
             Person4 person4 = (Person4) o;
-
             if (age != person4.age) return false;
             if (name != null ? !name.equals(person4.name) : person4.name != null) return false;
-
             return true;
         }
 

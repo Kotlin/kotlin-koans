@@ -3,26 +3,24 @@ package i_introduction._2_Default_And_Named_Params
 import util.TODO
 import i_introduction._1_Functions.task1
 
-fun bar(i: Int, s: String? = null, b: Boolean = true) {}
+fun bar(i: Int, s: String = "", b: Boolean = true) {}
 
 fun usage() {
     bar(1, b = false)
 }
 
-fun todoTask2(name: String) = TODO(
-        task = "Task2(1). Rewrite JavaCode2.foo to kotlin.",
-        references = { JavaCode2().foo(name) })
+fun todoTask2_1() = TODO(
+        task = """Task2(1).
+        Rewrite all overloaded functions 'JavaCode2.foo' to one function 'foo' in Kotlin using default parameters.
+        Uncomment the commented code and make it compile.""",
+        references = { (name: String) -> JavaCode2().foo(name); foo(name) })
 
-fun foo(name: String): String = todoTask2(name)
+fun foo(name: String): String = todoTask2_1()
 
-fun testFoo() = TODO("${foo("")}! Uncomment the following code.")
+fun task2_1() {
+    todoTask2_1()
 //    ( foo("a")
-//    + foo("b", 1)
+//    + foo("b", number = 1)
 //    + foo("c", toUpperCase = true)
 //    + foo(name = "d", number = 2, toUpperCase = true))
-
-fun task2(collection: Collection<Int>): String = TODO(
-        task = """Task2(2).
-        Implement the same logic as in task1 again through the library method "makeString".
-        Change values of some arguments of "makeString".""",
-        references = { task1(collection); collection.makeString() })
+}

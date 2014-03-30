@@ -30,23 +30,23 @@ fun struggleAgainstNPE() {
         files.size
     }
 
-    fun checkForNull3() {
+    fun checkForNull3(): Int {
         if (files == null) fail()
-        files.size
+        return files.size
     }
 
-    fun nullAsResultIfNullReference() {
-        files?.size
+    fun nullAsResultIfNullReference(): Int? {
+        return files?.size
     }
 
-    fun defaultValueForNull() {
+    fun defaultValueForNull(): Int {
         val size = files?.size
-        size ?: "no files"
+        return size ?: -1
     }
 
-    fun throwNPEIfNull() {
+    fun throwNPEIfNull(): Int {
         val f = files!!
-        f.size
+        return f.size
     }
 }
 
@@ -67,6 +67,7 @@ fun sendMessageToClient(
 
 class Client (val personalInfo: PersonalInfo?)
 class PersonalInfo (val email: String?)
+//you can so far think of a trait as an interface
 trait Mailer {
     fun sendMessage(email: String, message: String)
 }

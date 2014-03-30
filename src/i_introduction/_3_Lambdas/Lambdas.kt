@@ -11,6 +11,7 @@ fun examples() {
 
     fun apply(i: Int, f: (Int) -> Unit) = f(i)
 
+    apply(2, { x -> x + 25 })
     //you can omit round brackets if lambda is the last argument
     apply(2) { x -> x + 25 }
 

@@ -8,8 +8,4 @@ class _1_Functions() {
     test fun collection() {
         Assert.assertEquals("{1, 2, 3, 42, 555}", task1(listOf(1, 2, 3, 42, 555)))
     }
-
-    test fun emptyCollection() {
-        Assert.assertEquals("{}", task1(listOf()))
-    }
 }

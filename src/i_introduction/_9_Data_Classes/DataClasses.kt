@@ -4,17 +4,20 @@ import util.TODO
 
 class Person1(val name: String, val age: Int)
 
-fun create() = Person1("James Gosling", 58) //no 'new' keyword
+//no 'new' keyword
+fun create() = Person1("James Gosling", 58)
 
 fun useFromJava() {
-    // property 'val name' = backing field + accessors (getter & setter)
+    // property 'val name' = backing field + getter
     // => from Java you access it through 'getName()'
     JavaCode9().useKotlinClass(Person1("Martin Odersky", 55))
+
+    // property 'var mutable' = backing field + getter + setter
 }
 
-// It's the same as the following (excess code is generated):
+// It's the same as the following (redundant code is generated):
 class Person2(_name: String, _age: Int) { //_name, _age are constructor parameters
-    val name: String = _name
+    val name: String = _name //property initialization is the part of constructor
       get() {
           return $name // you can access the backing field of property with '$' + property name
       }
@@ -30,7 +33,7 @@ class Person2(_name: String, _age: Int) { //_name, _age are constructor paramete
 
 data class Person3(val name: String, val age: Int)
 
-// This class is the same only 43 lines shorter than Java class Person4. =)
+// This class is the same only 42 lines shorter than Java class Person4. =)
 
 fun todoTask9() = TODO(
         task = """There is no task for you here.

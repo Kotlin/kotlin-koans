@@ -2,8 +2,7 @@ package ii_properties
 
 import kotlin.properties.Delegates
 import util.TODO
-import kotlin.properties.ReadOnlyProperty
-import java.util.HashMap
+import kotlin.properties.ReadWriteProperty
 
 class A(initializer: () -> Int) {
 
@@ -18,16 +17,20 @@ class B() {
     fun foo() = notNull
 }
 
-class Person(data: Map<String, Any?>) {
+class Commodity(data: MutableMap<String, Any?>) {
 
-    val name: String by todoTask11()
-    val age: Int by todoTask11()
-    val gender: Boolean by todoTask11()
+    val description: String by todoTask11()
+    var price: Int by todoTask11()
+    var isAvailable: Boolean by todoTask11()
 }
 
-fun <T> todoTask11(): ReadOnlyProperty<Person, T> = TODO(
+fun <T> todoTask11(): ReadWriteProperty<Commodity, T> = TODO(
         task = """Task11.
-        Make the properties reflect the data storing in the map.
-        The value of property 'name' should be the value in 'data' by the key "name".
-        Use Delegates.""",
-        references = { Person(hashMapOf("name" to "Alice", "age" to 7, "gender" to true)); Delegates })
+        Make the properties in class Commodity reflect the data storing in the map.
+        The value of property 'price' should be the value in 'data' by the key "price".
+        Use Delegates.mapVar""",
+        references = {
+            val data = hashMapOf<String, Any?>("description" to "snowboard", "price" to 349, "isAvailable" to true)
+            Commodity(data)
+            Delegates.mapVar<Any>(data)
+        })

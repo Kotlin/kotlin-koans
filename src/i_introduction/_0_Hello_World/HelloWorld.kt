@@ -17,11 +17,13 @@ fun todoTask0() = TODO(
 
         Using references you can usually navigate and see the code mentioned in the task description.
 
-        For the start please replace the body of the 'task0' function with the String "OK" =).""",
+        For the start please make the function 'task0' return "OK" =).""",
 
         references = { task0(); "OK" }
 )
 
-fun task0(): String = todoTask0()
+fun task0(): String {
+    return todoTask0()
+}
 
 
