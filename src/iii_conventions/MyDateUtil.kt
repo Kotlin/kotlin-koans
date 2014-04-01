@@ -5,9 +5,9 @@ import iii_conventions.TimeInterval.YEAR
 import iii_conventions.TimeInterval.DAY
 import iii_conventions.TimeInterval.WEEK
 
-fun Date.nextDay() = addTimeIntervals(DAY, 1)
+fun MyDate.nextDay() = addTimeIntervals(DAY, 1)
 
-fun Date.addTimeIntervals(timeInterval: TimeInterval, number: Int): Date {
+fun MyDate.addTimeIntervals(timeInterval: TimeInterval, number: Int): MyDate {
     val c = Calendar.getInstance()
     c.set(year + if (timeInterval == YEAR) number else 0, month, dayOfMonth)
     var timeInMillis = c.getTimeInMillis()
@@ -19,5 +19,5 @@ fun Date.addTimeIntervals(timeInterval: TimeInterval, number: Int): Date {
     }
     val result = Calendar.getInstance()
     result.setTimeInMillis(timeInMillis)
-    return Date(result.get(Calendar.YEAR), result.get(Calendar.MONTH), result.get(Calendar.DATE))
+    return MyDate(result.get(Calendar.YEAR), result.get(Calendar.MONTH), result.get(Calendar.DATE))
 }

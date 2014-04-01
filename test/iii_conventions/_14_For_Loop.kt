@@ -7,19 +7,19 @@ import java.util.ArrayList
 
 class _14_For_Loop {
     test fun testIterateOverDateRange() {
-        val actualDateRange = ArrayList<Date>()
-        iterateOverDateRange(Date(2014, 5, 1), Date(2014, 5, 5), {
-            (date: Date) -> actualDateRange.add(date)
+        val actualDateRange = ArrayList<MyDate>()
+        iterateOverDateRange(MyDate(2014, 5, 1), MyDate(2014, 5, 5), {
+            (date: MyDate) -> actualDateRange.add(date)
         })
         val expectedDateRange = arrayListOf(
-                Date(2014, 5, 1), Date(2014, 5, 2), Date(2014, 5, 3), Date(2014, 5, 4), Date(2014, 5, 5))
+                MyDate(2014, 5, 1), MyDate(2014, 5, 2), MyDate(2014, 5, 3), MyDate(2014, 5, 4), MyDate(2014, 5, 5))
         Assert.assertEquals("Incorrect iteration over five nice spring dates",
                 expectedDateRange, actualDateRange)
     }
 
     test fun testIterateOverEmptyRange() {
         var invoked = false
-        iterateOverDateRange(Date(2014, 1, 1), Date(2013, 1, 1), { invoked = true })
+        iterateOverDateRange(MyDate(2014, 1, 1), MyDate(2013, 1, 1), { invoked = true })
         Assert.assertFalse("Handler was invoked on an empty range", invoked)
     }
 }

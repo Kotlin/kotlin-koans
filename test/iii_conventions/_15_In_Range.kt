@@ -7,20 +7,20 @@ import ii_properties.toMillis
 import iii_conventions.test.s
 
 class _15_In_Range {
-    fun doTest(date: Date, first: Date, last: Date, shouldBeInRange: Boolean) {
+    fun doTest(date: MyDate, first: MyDate, last: MyDate, shouldBeInRange: Boolean) {
         val message = "The date ${date.s} should${if (shouldBeInRange) "" else "n't"} be in range: ${first.s}..${last.s}"
         Assert.assertEquals(message, shouldBeInRange, checkInRange(date, first, last))
     }
 
     test fun testInRange() {
-        doTest(Date(2014, 3, 22), Date(2014, 1, 1), Date(2015, 1, 1), shouldBeInRange = true)
+        doTest(MyDate(2014, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = true)
     }
 
     test fun testBefore() {
-        doTest(Date(2013, 3, 22), Date(2014, 1, 1), Date(2015, 1, 1), shouldBeInRange = false)
+        doTest(MyDate(2013, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
     }
 
     test fun testAfter() {
-        doTest(Date(2015, 3, 22), Date(2014, 1, 1), Date(2015, 1, 1), shouldBeInRange = false)
+        doTest(MyDate(2015, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
     }
 }

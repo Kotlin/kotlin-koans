@@ -1,6 +1,6 @@
 package iii_conventions
 
-data class Date(
+data class MyDate(
         val year: Int,
         val month: Int,
         val dayOfMonth: Int

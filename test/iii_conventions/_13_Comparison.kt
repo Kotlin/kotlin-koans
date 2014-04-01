@@ -6,20 +6,20 @@ import iii_conventions.test.s
 
 class _13_Comparison {
     test fun testDateComparison() {
-        Assert.assertTrue(task13(Date(2014, 1, 1), Date(2014, 1, 2)))
+        Assert.assertTrue(task13(MyDate(2014, 1, 1), MyDate(2014, 1, 2)))
     }
 
     test fun testBefore() {
-        val first = Date(2014, 5, 10)
-        val second = Date(2014, 7, 11)
+        val first = MyDate(2014, 5, 10)
+        val second = MyDate(2014, 7, 11)
         Assert.assertTrue("The date ${first.s} should be before ${second.s}", first < second)
     }
 
     test fun testAfter() {
-        val first = Date(2014, 10, 20)
-        val second = Date(2014, 7, 11)
+        val first = MyDate(2014, 10, 20)
+        val second = MyDate(2014, 7, 11)
         Assert.assertTrue("The date ${first.s} should be after ${second.s}", first > second)
     }
 
-    fun Date.compareTo(other: Date): Int = todoTask13()
+    fun MyDate.compareTo(other: MyDate): Int = todoTask13()
 }

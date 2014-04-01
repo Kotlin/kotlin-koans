@@ -3,21 +3,21 @@ package ii_properties
 import kotlin.properties.ReadWriteProperty
 import util.TODO
 import java.util.Calendar
-import iii_conventions.Date
+import iii_conventions.MyDate
 
 fun todoTask12() = TODO(
         task = """Task12.
         Implement the members of the class 'EffectiveDate' so it could be delegated to.
         Store only time in milliseconds in 'timeInMillis' property.
         Use extension functions 'Date.ToMillis' and 'Long.ToDate'.""",
-        references = { (date: Date) -> date.toMillis().toDate()}
+        references = { (date: MyDate) -> date.toMillis().toDate()}
 )
 
-class EffectiveDate<R> : ReadWriteProperty<R, Date> {
+class EffectiveDate<R> : ReadWriteProperty<R, MyDate> {
     var timeInMillis: Long? = null
 
-    override fun get(thisRef: R, desc: PropertyMetadata): Date = todoTask12()
-    override fun set(thisRef: R, desc: PropertyMetadata, value: Date) = todoTask12()
+    override fun get(thisRef: R, desc: PropertyMetadata): MyDate = todoTask12()
+    override fun set(thisRef: R, desc: PropertyMetadata, value: MyDate) = todoTask12()
 }
 
 class D {
@@ -27,14 +27,14 @@ class D {
     //Browse Kotlin tool window for details.
 }
 
-fun Date.toMillis(): Long {
+fun MyDate.toMillis(): Long {
     val c = Calendar.getInstance()
     c.set(year, month, dayOfMonth)
     return c.getTimeInMillis()
 }
 
-fun Long.toDate(): Date {
+fun Long.toDate(): MyDate {
     val c = Calendar.getInstance()
     c.setTimeInMillis(this)
-    return Date(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DATE))
+    return MyDate(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DATE))
 }

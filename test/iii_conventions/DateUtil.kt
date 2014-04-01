@@ -1,5 +1,5 @@
 package iii_conventions.test
 
-import iii_conventions.Date
+import iii_conventions.MyDate
 
-val Date.s: String get() = "($year-$month-$dayOfMonth)"
+val MyDate.s: String get() = "($year-$month-$dayOfMonth)"

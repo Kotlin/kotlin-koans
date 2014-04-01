@@ -24,12 +24,12 @@ fun test(b1: B, b2: B) {
 
 fun todoTask13() = TODO(
         task = """Task13.
-        Uncomment the commented line to make it compile. Add all changes to the file Date.kt.
-        Make class Date implement Comparable.""",
-        references = { (date: Date) -> }
+        Uncomment the commented line to make it compile. Add all changes to the file MyDate.kt.
+        Make class MyDate implement Comparable.""",
+        references = { (date: MyDate) -> }
 )
 
-fun task13(date1: Date, date2: Date): Boolean {
+fun task13(date1: MyDate, date2: MyDate): Boolean {
     todoTask13()
 //    return date1 < date2
 }

@@ -41,7 +41,7 @@ fun howWorksMultiAssignmentInForCycle() {
 data class MyAnotherPair(val i: Int, val s: String)
 
 //that's why we can multi assign Date class:
-fun multiAssignDate(date: Date) {
+fun multiAssignDate(date: MyDate) {
     val (year, month, dayOfMonth) = date
 }
 

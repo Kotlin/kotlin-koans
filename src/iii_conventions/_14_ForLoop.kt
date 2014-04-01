@@ -25,13 +25,13 @@ fun iterateOverRange() {
 
 fun todoTask14() = TODO(
         task = """Task15.
-        Uncomment the commented code and make it compile. Add all changes to the file Date.kt.
-        Add a class DateRange and make it implement Iterable<Date>.
-        Use an util function Date.nextDay.""",
-        references = { (date: Date) -> date.nextDay() })
+        Uncomment the commented code and make it compile. Add all changes to the file MyDate.kt.
+        Add a class DateRange and make it implement Iterable<MyDate>.
+        Use an util function MyDate.nextDay.""",
+        references = { (date: MyDate) -> date.nextDay() })
 
 
-fun iterateOverDateRange(firstDate: Date, secondDate: Date, handler: (Date) -> Unit) {
+fun iterateOverDateRange(firstDate: MyDate, secondDate: MyDate, handler: (MyDate) -> Unit) {
     todoTask14()
 //    for (date in firstDate..secondDate) {
 //        handler(date)

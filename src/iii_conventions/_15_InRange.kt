@@ -24,11 +24,11 @@ fun stringRange(s: String) {
 }
 
 fun todoTask15() = TODO("""Task14.
-        Uncomment the commented line to make it compile. Add all changes to the file Date.kt.
-        Make class DateRange implement Range<Date>."""
+        Uncomment the commented line to make it compile. Add all changes to the file MyDate.kt.
+        Make class DateRange implement kotlin.Range."""
 )
 
-fun checkInRange(date: Date, first: Date, last: Date): Boolean {
+fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {
     todoTask15()
 //    return date in first..last
 }
