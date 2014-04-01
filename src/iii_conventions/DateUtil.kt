@@ -5,6 +5,8 @@ import iii_conventions.TimeInterval.YEAR
 import iii_conventions.TimeInterval.DAY
 import iii_conventions.TimeInterval.WEEK
 
+fun Date.nextDay() = addTimeIntervals(DAY, 1)
+
 fun Date.addTimeIntervals(timeInterval: TimeInterval, number: Int): Date {
     val c = Calendar.getInstance()
     c.set(year + if (timeInterval == YEAR) number else 0, month, dayOfMonth)

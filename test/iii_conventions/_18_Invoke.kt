@@ -3,9 +3,9 @@ package iii_conventions
 import junit.framework.Assert
 import org.junit.Test as test
 
-class _17_Invoke {
+class _18_Invoke {
     test fun testTask17() {
-        Assert.assertEquals(4, task17(Invokable()))
+        Assert.assertEquals(4, task18(Invokable()))
     }
 
     test fun testNumberOfInvocations() {
@@ -15,6 +15,6 @@ class _17_Invoke {
         Assert.assertEquals(message, 0, Invokable().getNumberOfInvocations())
     }
 
-    fun Invokable.invoke() = todoTask17()
-    fun Invokable.getNumberOfInvocations() = todoTask17()
+    fun Invokable.invoke() = todoTask18()
+    fun Invokable.getNumberOfInvocations() = todoTask18()
 }

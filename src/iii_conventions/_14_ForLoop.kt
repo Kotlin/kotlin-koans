@@ -17,17 +17,22 @@ fun iterateOverString() {
 
 fun iterateOverRange() {
     //'..' resolves to 'rangeTo' function
+    val intRange = 1..10
+    for (i in intRange) {}
     for (i in 1..10) {}
     for (c in 'a'..'z') {}
 }
 
-fun todoTask15() = TODO(
+fun todoTask14() = TODO(
         task = """Task15.
-        Uncomment the commented code to make it compile. Add changes to the class DateRange.""")
+        Uncomment the commented code and make it compile. Add all changes to the file Date.kt.
+        Add a class DateRange and make it implement Iterable<Date>.
+        Use an util function Date.nextDay.""",
+        references = { (date: Date) -> date.nextDay() })
 
 
 fun iterateOverDateRange(firstDate: Date, secondDate: Date, handler: (Date) -> Unit) {
-    todoTask15()
+    todoTask14()
 //    for (date in firstDate..secondDate) {
 //        handler(date)
 //    }

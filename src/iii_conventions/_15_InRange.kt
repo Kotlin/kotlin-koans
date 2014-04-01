@@ -12,24 +12,23 @@ fun inConvention(container: Container<String>) {
     container.contains("a")
 }
 
-fun numericalRange(i: Int) {
+fun numericalRange(i: Int, c: Char) {
     //'..' resolves to 'rangeTo' function
-    val intRange = 1..10
-    if (i in intRange) {}
-
     if (i in 1..10) {}
+
+    if (c in 'a'..'z') {}
 }
 
 fun stringRange(s: String) {
     if (s in "island".."isle") {}
 }
 
-fun todoTask14() = TODO("""Task14.
+fun todoTask15() = TODO("""Task14.
         Uncomment the commented line to make it compile. Add all changes to the file Date.kt.
-        Add a class DateRange and make it implement Range<Date>."""
+        Make class DateRange implement Range<Date>."""
 )
 
 fun checkInRange(date: Date, first: Date, last: Date): Boolean {
-    todoTask14()
+    todoTask15()
 //    return date in first..last
 }

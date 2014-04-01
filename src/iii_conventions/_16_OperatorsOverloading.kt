@@ -24,16 +24,17 @@ fun use(a1: A, a2: A) {
     !a1
 }
 
-fun todoTask13() = TODO(
+fun todoTask16() = TODO(
         task = """Task13.
         Implement a kind of date arithmetic, let to add years, weeks and days to a date.
         Use classes Date and TimeInterval. Add all the changes to the file Date.kt.
         Use an util function Date.addTimeIntervals.
-        Uncomment the commented line and make it compiled.""",
+        Uncomment the commented line and make it compiled.
+        You may need to add an extra class here.""",
         references = {(date: Date, timeInterval: TimeInterval) -> date.addTimeIntervals(timeInterval, 1) })
 
-fun task13(today: Date): Date {
-    todoTask13()
+fun task16(today: Date): Date {
+    todoTask16()
 //    return today + YEAR * 2 + WEEK * 3 + DAY * 5
 }
 

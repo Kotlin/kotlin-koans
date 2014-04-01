@@ -4,10 +4,9 @@ import junit.framework.Assert
 import org.junit.Test as test
 import iii_conventions.TimeInterval.*
 import ii_properties.toMillis
+import iii_conventions.test.s
 
-class _14_Ranges {
-    val Date.s: String get() = "($year-$month-$dayOfMonth)"
-
+class _15_In_Range {
     fun doTest(date: Date, first: Date, last: Date, shouldBeInRange: Boolean) {
         val message = "The date ${date.s} should${if (shouldBeInRange) "" else "n't"} be in range: ${first.s}..${last.s}"
         Assert.assertEquals(message, shouldBeInRange, checkInRange(date, first, last))
