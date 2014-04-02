@@ -1,0 +1,41 @@
+package syntax.qualifiedThis
+
+class Outer { // implicit label @Outer
+    inner class Inner { // implicit label @Inner
+        fun Int.foo() { // implicit label @foo
+            use (this@Outer, this@Inner, this@foo)
+            this == this@foo
+
+            val fl = @S{String.() ->
+                use(this, this@S)
+                this == this@S
+            }
+
+            val fl2 = { (s:String) ->
+                this == this@foo
+            }
+        }
+    }
+}
+
+trait A { fun a() {} }
+trait B { fun b() {} }
+trait C { fun c() {} }
+fun B.foo(f: C.()->Unit) = f
+
+fun labelsForExtensionFunctionLiterals(a: A, b: B) {
+    with (a) @A{
+        with (b) @B{
+            foo {
+                this == this@foo
+                c()
+
+                this@foo.c()
+                this@B.b()
+                this@A.a()
+            }
+        }
+    }
+}
+
+fun use(vararg a: Any?) = a
