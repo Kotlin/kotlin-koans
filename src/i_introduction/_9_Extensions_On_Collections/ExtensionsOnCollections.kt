@@ -29,10 +29,10 @@ fun operationsWithMaps() {
     for ((key, value) in map) {
     }
 
-    //convenient way to address elements:
+    //convenient way to access elements:
     map[43] = map[42] + " plus one"
 
-    //the details (how it works) you'll found in 'Conventions' later
+    //the details (how it works) you'll found in 'Conventions' task later
 
     println(map)
 }

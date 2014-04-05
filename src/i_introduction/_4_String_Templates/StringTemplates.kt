@@ -13,8 +13,8 @@ fun foo3(c: Boolean, x: Int, y: Int) = "Any expression can be used: ${if (c) x e
 
 fun foo4() =
 """
-Triple quotes are used
-to contain raw strings.
+Triple quotes denote
+"raw" strings.
 """
 
 fun getPatternInAUsualString() = "(\\w)* (\\w)* \\((\\d{2})\\.(\\d{2})\\.(\\d{4})\\)"
@@ -27,8 +27,8 @@ val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
 fun todoTask4() = TODO(
         task = """Task4.
-        Rewrite 'getPatternInARawString' the way it matches 'Douglas Adams (11 MAR 1952)'.
-        Use 'month' variable.""",
+        Rewrite 'getPatternInARawString' so that it matches 'Douglas Adams (11 MAR 1952)'.
+        Use the 'month' variable.""",
         references = { getPatternInARawString(); month })
 
 fun task4(): String = todoTask4()

@@ -55,7 +55,7 @@ fun fail() = throw Exception()
 fun todoTask5(client: Client?, message: String?, mailer: Mailer) = TODO(
         task = """Task5.
             Rewrite JavaCode5.sendMessageToClient to kotlin (using only one 'if').
-            Declarations of Client, PersonalInfo and Mailer are below.""",
+            Declarations of Client, PersonalInfo and Mailer are given below.""",
         references = { JavaCode5().sendMessageToClient(client, message, mailer) }
 )
 

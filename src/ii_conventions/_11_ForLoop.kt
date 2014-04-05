@@ -16,7 +16,7 @@ fun iterateOverString() {
 }
 
 fun iterateOverRange() {
-    //'..' resolves to 'rangeTo' function
+    //'..' resolves to the 'rangeTo' function
     val intRange = 1..10
     for (i in intRange) {}
     for (i in 1..10) {}
@@ -27,7 +27,7 @@ fun todoTask11() = TODO(
         task = """Task11.
         Uncomment the commented code and make it compile. Add all changes to the file MyDate.kt.
         Add a class DateRange and make it implement Iterable<MyDate>.
-        Use an util function MyDate.nextDay.""",
+        Use an utility function MyDate.nextDay.""",
         references = { (date: MyDate) -> date.nextDay() })
 
 

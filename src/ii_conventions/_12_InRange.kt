@@ -8,7 +8,7 @@ trait Container<E> {
 
 fun inConvention(container: Container<String>) {
     "a" in container
-    //translated to
+    // compiles to
     container.contains("a")
 }
 
@@ -24,7 +24,7 @@ fun stringRange(s: String) {
 }
 
 fun todoTask12() = TODO("""Task12.
-        Uncomment the commented line to make it compile. Add all changes to the file MyDate.kt.
+        Uncomment the commented line and make it compile. Add all changes to the file MyDate.kt.
         Make class DateRange implement kotlin.Range."""
 )
 

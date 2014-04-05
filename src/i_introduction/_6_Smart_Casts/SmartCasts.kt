@@ -12,7 +12,7 @@ fun eval(e: Expr): Int {
         return n.value
     }
     if (e is Sum) {
-        // actually, there is no need to create a separate variable:
+        // actually, there is no need in a separate variable:
         return eval(e.left) + eval(e.right)
     }
     throw IllegalArgumentException("Unknown expression")
