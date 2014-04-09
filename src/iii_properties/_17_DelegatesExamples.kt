@@ -26,8 +26,8 @@ class Commodity(data: MutableMap<String, Any?>) {
 
 fun <T> todoTask17(): ReadWriteProperty<Commodity, T> = TODO(
         task = """Task17.
-        Make the properties in class Commodity reflect the data storing in the map.
-        The value of property 'price' should be the value in 'data' by the key "price".
+        Make the properties in class Commodity reflect the data stored in the map.
+        E.g., the value of property 'price' should be the value in 'data' by the key "price".
         Use Delegates.mapVar""",
         references = {
             val data = hashMapOf<String, Any?>("description" to "snowboard", "price" to 349, "isAvailable" to true)

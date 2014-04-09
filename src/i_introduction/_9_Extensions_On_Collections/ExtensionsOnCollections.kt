@@ -29,10 +29,10 @@ fun operationsWithMaps() {
     for ((key, value) in map) {
     }
 
-    //convenient way to address elements:
+    //convenient way to access elements:
     map[43] = map[42] + " plus one"
 
-    //the details (how it works) you'll found in 'Conventions' later
+    //the details (how it works) you'll found in 'Conventions' task later
 
     println(map)
 }
@@ -45,7 +45,7 @@ fun main(args: Array<String>) {
 fun todoTask9() = TODO(
         task = """Task9.
         The function should do the same as JavaCode9.doSomethingStrangeWithCollection
-        Replace all invocations of 'todoTask8' with the appropriate code.""",
+        Replace all invocations of 'todoTask9' with the appropriate code.""",
         references = { (c: Collection<String>) -> JavaCode9().doSomethingStrangeWithCollection(c) }
 )
 

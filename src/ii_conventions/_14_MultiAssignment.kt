@@ -37,14 +37,15 @@ fun howWorksMultiAssignmentInForCycle() {
     }
 }
 
-//with 'data' annotation 'component1', 'component2', etc. are generated for constructor parameters
+// with 'data' annotation 'component1', 'component2', etc. are generated automatically
+// for constructor parameters
 data class MyAnotherPair(val i: Int, val s: String)
 
-//that's why we can multi assign Date class:
+//that's why we can multi-assign Date class:
 fun multiAssignDate(date: MyDate) {
     val (year, month, dayOfMonth) = date
 }
 
-fun todoTask14() = TODO("Again no special task. Just tell if you are interested in Kotlin. =)")
+fun todoTask14() = TODO("Again no special task. Just tell us if you are interested in Kotlin. =)")
 
 fun task14(): Boolean = todoTask14()

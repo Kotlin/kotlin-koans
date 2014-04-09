@@ -9,7 +9,7 @@ fun String.lastChar() = this.charAt(this.length - 1)
 fun String.lastChar1() = charAt(length - 1)
 
 fun use() {
-    // it's visible in completion and can be easily found
+    // Try Ctrl+Space after the dot: lastChar() visible in completion and can be easily found
     "abc".lastChar()
 }
 
@@ -18,8 +18,8 @@ fun use() {
 
 fun todoTask8() = TODO(
         """Task8.
-        Implement extension functions Int.r, Pair<Int, Int>.r
-        to support the following way to create rational numbers:
+        Implement extension functions Int.r(), Pair<Int, Int>.r()
+        to support the following way of creating rational numbers:
         1.r(), Pair(1, 2).r()""",
         references = { 1.r(); Pair(1, 2).r(); RationalNumber(1, 9) })
 

@@ -4,12 +4,12 @@ import java.util.Random
 import util.TODO
 
 fun localVariables() {
-    // immutable reference
+    // immutable variable
     val i = 1
     // doesn't compile:
     // i = 2
 
-    // mutable reference
+    // mutable variable
     var j = 3
     j = 1765
 }
@@ -20,7 +20,7 @@ class SimpleProperty {
 }
 
 fun usage(sp: SimpleProperty) {
-    //All usages are compiled to getter and setter invocations.
+    //Usages are compiled to getter and setter invocations.
     //You can open "View -> Tool windows -> Kotlin" and see the bytecode.
     val x = sp.property
     sp.property = x + 1

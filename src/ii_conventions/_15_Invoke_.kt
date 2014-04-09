@@ -20,14 +20,14 @@ fun testFunctionType(f: (Int) -> Int) {
     f(1)
 }
 
-// click 'Ctrl + B' on round bracket to navigate to 'invoke'
+// Press 'Ctrl + B' on round bracket to navigate to 'invoke'
 
 // you can add invoke extension for any class,
-// but it's better not to be mad about it
+// but it's better not to overdo it
 fun Int.invoke() { println(this) }
 
 fun testTypeWithInvokeExtension() {
-    1() //wtf?..
+    1() //huh?..
 }
 
 class Invokable
