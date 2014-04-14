@@ -2,10 +2,9 @@ package ii_conventions
 
 import junit.framework.Assert
 import org.junit.Test as test
-import ii_conventions.TimeInterval.*
 import java.util.ArrayList
 
-class _11_For_Loop {
+class _11_1_For_Loop {
     test fun testIterateOverDateRange() {
         val actualDateRange = ArrayList<MyDate>()
         iterateOverDateRange(MyDate(2014, 5, 1), MyDate(2014, 5, 5), {
