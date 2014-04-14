@@ -3,7 +3,7 @@ package iii_properties
 import junit.framework.Assert
 import org.junit.Test as test
 
-class _16_Properties {
+class _16_2_Properties {
     test fun testLazy() {
         var initialized = false
         val lazyProperty = LazyProperty({ initialized = true; 42 })

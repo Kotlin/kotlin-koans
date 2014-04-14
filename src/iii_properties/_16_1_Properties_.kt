@@ -27,13 +27,9 @@ fun usage(sp: SimpleProperty) {
 }
 
 class PropertiesWithCustomAccessors {
-    private var counter = 0
-    var propertyWithCounter: String = ""
-        //default getter is generated
-        set(v: String) {
-            $propertyWithCounter = v
-            counter++
-        }
+    var generatedByDefault: Int = 0
+        set(value: Int) { $generatedByDefault = value }
+        get() = $generatedByDefault
 
     val propertyWithoutBackingField: Int
         get() = 42
@@ -42,16 +38,14 @@ class PropertiesWithCustomAccessors {
         get() = if ($infiniteRecursion!! < 42) null else infiniteRecursion
 }
 
-class LazyProperty(initializer: () -> Int) {
-    val lazy: Int = todoTask16()
-
+class PropertyExample() {
+    var counter = 0
+    var propertyWithCounter: Int? = todoTask16_1()
 }
 
-fun todoTask16() = TODO(
-        task = """Task16.
-        Make the 'lazy' val really lazy. It should be initialized by 'initializer()' invocation
-        at the moment of the first access. You can add as many additional properties as you need.
-        Do not use Delegates ;).
-        """,
-        references = { LazyProperty({ 42 }).lazy }
-)
+fun todoTask16_1() = TODO(
+        """Task16(1).
+        Add custom setter to PropertyExample.propertyWithCounter so that
+        it increments the 'counter' property every time 'propertyWithCounter' is assigned to.
+        Initialize 'propertyWithCounter' with 'null' ('setter' is NOT invoked on initialization).""",
+        references = { PropertyExample() })
