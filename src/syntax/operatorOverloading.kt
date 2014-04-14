@@ -2,7 +2,7 @@ package syntax.operatorOverloading
 
 fun compareStrings(s1: String?, s2: String?) {
     s1 == s2
-    // translated to
+    // is compiled to
     s1?.equals(s2) ?: s2.identityEquals(null)
 }
 
@@ -12,11 +12,11 @@ trait C {
 
 fun test(c1: C, c2: C) {
     c1 < c2
-    // translated to
+    // is compiled to
     c1.compareTo(c2) < 0
 
     c1 >= c2
-    // translated to
+    // is compiled to
     c1.compareTo(c2) >= 0
 }
 
@@ -55,7 +55,7 @@ fun binaryAndUnaryOperations(a: A, b: B) {
     b1--
 
     b1 += a
-    // translated to
+    // is compiled to
     b1 = b1 + a
 }
 
@@ -69,7 +69,7 @@ trait D {
 
 fun assignmentOperations(d: D, a: A) {
     d += a
-    // translated to
+    // is compiled to
     d.plusAssign(a)
 }
 
@@ -79,11 +79,11 @@ trait MyCollection<E> {
 
 fun conventionForIn(c: MyCollection<A>, a: A) {
     a in c
-    //translated to
+    // is compiled to
     c.contains(a)
 
     a !in c
-    //translated to
+    // is compiled to
     !c.contains(a)
 }
 
@@ -94,10 +94,10 @@ trait MyMap<K, V> {
 
 fun conventionForGet(map: MyMap<A, B>, a: A, b: B) {
     map[a]
-    //translated to
+    // is compiled to
     map.get(a)
 
     map[a] = b
-    //translated to
+    // is compiled to
     map.set(a, b)
 }

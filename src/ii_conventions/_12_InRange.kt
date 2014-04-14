@@ -23,9 +23,11 @@ fun stringRange(s: String) {
     if (s in "island".."isle") {}
 }
 
-fun todoTask12() = TODO("""Task12.
+fun todoTask12() = TODO(
+        task = """Task12.
         Uncomment the commented line and make it compile. Add all changes to the file MyDate.kt.
-        Make class DateRange implement kotlin.Range."""
+        Make class DateRange implement kotlin.Range<MyDate>.""",
+        references = { (range: Range<Int>) -> }
 )
 
 fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {

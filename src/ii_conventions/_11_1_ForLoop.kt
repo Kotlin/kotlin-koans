@@ -4,13 +4,10 @@ import util.TODO
 
 fun iterateOverCollection(collection: Collection<Int>) {
     for (element in collection) {}
-
-    //with index
-    for ((index, element) in collection.withIndices()) {}
 }
 
-//You can iterate over anything that has a method 'iterator', member or extension.
 fun iterateOverString() {
+    //You can iterate over anything that has a method 'iterator', member or extension.
     for (c in "abcd") {}
     "abcd".iterator() //library extension method
 }

@@ -17,10 +17,10 @@ fun todoTask2_1() = TODO(
 
 fun foo(name: String): String = todoTask2_1()
 
-fun task2_1() {
+fun task2_1(): String {
     todoTask2_1()
-//    ( foo("a")
-//    + foo("b", number = 1)
-//    + foo("c", toUpperCase = true)
-//    + foo(name = "d", number = 2, toUpperCase = true))
+//    return (foo("a") +
+//            foo("b", number = 1) +
+//            foo("c", toUpperCase = true) +
+//            foo(name = "d", number = 2, toUpperCase = true))
 }

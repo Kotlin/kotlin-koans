@@ -10,6 +10,8 @@ trait SimpleTrait {
 open class SimpleClass {
     open fun bar() = "other implementation"
 }
+
+// ':' means both 'overrides' and 'implements'
 class Successor : SimpleTrait, SimpleClass() {
     override fun foo() = 1
 

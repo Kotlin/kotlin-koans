@@ -23,6 +23,12 @@ fun howItWorks() {
     }
 }
 
+fun iterateOverCollectionWithIndex(collection: Collection<Int>) {
+    for ((index, element) in collection.withIndices()) {
+        println("$index: $element")
+    }
+}
+
 fun howWorksMultiAssignmentInForCycle() {
     fun invocation(it: Iterator<MyPair>) {
         for ((i, s) in it) {
