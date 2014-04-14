@@ -1,11 +1,12 @@
 package ii_conventions
 
 import util.TODO
+import kotlin.jvm.internal.Intrinsics
 
 fun compareStrings(s1: String?, s2: String?) {
     s1 == s2
     // is compiled to
-    s1?.equals(s2) ?: s2.identityEquals(null)
+    Intrinsics.areEqual(s1, s2)
 }
 
 trait B {
