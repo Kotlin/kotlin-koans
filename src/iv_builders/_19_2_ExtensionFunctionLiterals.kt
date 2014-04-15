@@ -33,12 +33,14 @@ fun testWith() {
 }
 
 fun todoTask19_2() = TODO(
-        task = """Task19.2.
+    """
+        Task19.2.
         Uncomment the commented code and make it compile.
         Add and implement function buildMap with one parameter (of type extension function) creating a new HashMap,
         building it and returning it as a result.
-        Look through syntax/javaCollections to choose the right trait.""",
-        references = { syntax.javaCollections.useMutableSet(HashSet())}
+        Look through syntax/javaCollections to choose the right trait.
+    """,
+    references = { syntax.javaCollections.useMutableSet(HashSet())}
 )
 
 fun task19_2(): Map<Int, String> {

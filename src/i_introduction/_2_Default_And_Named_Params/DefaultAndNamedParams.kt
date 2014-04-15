@@ -10,10 +10,12 @@ fun usage() {
 }
 
 fun todoTask2_1() = TODO(
-        task = """Task2(1).
-        Rewrite all overloaded functions 'JavaCode2.foo' to one function 'foo' in Kotlin using default parameters.
-        Uncomment the commented code and make it compile.""",
-        references = { (name: String) -> JavaCode2().foo(name); foo(name) })
+    """
+        Task2(1).
+        Rewrite all overloaded functions 'JavaCode2.foo()' to one function 'foo()' in Kotlin using default parameters.
+        Uncomment the commented code and make it compile.
+    """,
+    references = { (name: String) -> JavaCode2().foo(name); foo(name) })
 
 fun foo(name: String): String = todoTask2_1()
 

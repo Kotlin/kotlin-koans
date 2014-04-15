@@ -26,10 +26,12 @@ fun evalWhen(e: Expr): Int =
         }
 
 fun todoTask6(expr: Expr) = TODO(
-        task = """Task6.
-        Rewrite JavaCode6.print to Kotlin using 'when'.
-        The other examples of 'when' syntax can be found in syntax/ifWhenExpressions.kt""",
-        references = { JavaCode6().print(expr); syntax.ifWhenExpressions.whenWithoutArgument(42) })
+    """
+        Task6.
+        Rewrite 'JavaCode6.print()' to Kotlin using 'when'.
+        The other examples of 'when' syntax can be found in syntax/ifWhenExpressions.kt
+    """,
+    references = { JavaCode6().print(expr); syntax.ifWhenExpressions.whenWithoutArgument(42) })
 
 fun print(expr: Expr): String = todoTask6(expr)
 

@@ -33,10 +33,12 @@ fun testTypeWithInvokeExtension() {
 class Invokable
 
 fun todoTask15() = TODO(
-        task = """Task15.
+    """
+        Task15.
         Change class Invokable to count the number of invocations (round brackets).
-        Uncomment the commented code, it should return 4.""",
-        references = {(invokable: Invokable) -> })
+        Uncomment the commented code, it should return 4.
+    """,
+    references = {(invokable: Invokable) -> })
 
 fun task15(invokable: Invokable): Int {
     todoTask15()

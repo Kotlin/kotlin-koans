@@ -8,11 +8,13 @@ import com.google.common.collect.HashMultimap
 import java.util.ArrayList
 
 fun todoTask20_1() = TODO(
-        task = """Task20.1.
+    """
+        Task20.1.
         Uncomment commented code and make it compile.
         Implement method 'newMap', add an extension function MapBuilder.entry.
-        The previous html example may help you. (At first try not to look at it).""",
-        references = { MapBuilder(); newMap {  }; html { } }
+        The previous html example may help you. (At first try not to look at it).
+    """,
+    references = { MapBuilder(); newMap {  }; html { } }
 )
 
 class MapBuilder {

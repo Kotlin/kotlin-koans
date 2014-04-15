@@ -11,10 +11,12 @@ fun iterateOverRange() {
 }
 
 fun todoTask11_2() = TODO(
-        task = """Task11(2).
+    """
+        Task11(2).
         Uncomment the commented code and make it compile.
-        To make '..' work add 'MyDate.rangeTo' extension function returning DateRange.""",
-        references = { (date: MyDate) -> date.nextDay() })
+        To make '..' work add 'MyDate.rangeTo()' extension function returning DateRange.
+    """,
+    references = { (date: MyDate) -> date.nextDay() })
 
 
 fun iterateOverDateRange2(firstDate: MyDate, secondDate: MyDate, handler: (MyDate) -> Unit) {

@@ -19,10 +19,12 @@ public fun pbar(): Int = 45
 internal fun ibar() = 57
 
 fun todoTask1(collection: Collection<Int>) = TODO(
-        task = """Task1.
+    """
+        Task1.
         Rewrite JavaCode1.task1 to Kotlin.
-        You can just copy-paste it and agree to automatically convert it to Kotlin - but only in this task :).""",
-        references = { JavaCode1().task1(collection) })
+        You can just copy-paste it and agree to automatically convert it to Kotlin - but only in this task :).
+    """,
+    references = { JavaCode1().task1(collection) })
 
 
 fun task1(collection: Collection<Int>): String {

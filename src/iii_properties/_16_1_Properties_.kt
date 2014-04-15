@@ -44,8 +44,11 @@ class PropertyExample() {
 }
 
 fun todoTask16_1() = TODO(
-        """Task16(1).
+    """
+        Task16(1).
         Add custom setter to PropertyExample.propertyWithCounter so that
         it increments the 'counter' property every time 'propertyWithCounter' is assigned to.
-        Initialize 'propertyWithCounter' with 'null' ('setter' is NOT invoked on initialization).""",
-        references = { PropertyExample() })
+        Initialize 'propertyWithCounter' with 'null' ('setter' is NOT invoked on initialization).
+    """,
+    references = { PropertyExample() }
+)

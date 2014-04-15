@@ -26,10 +26,12 @@ fun example() = Pattern.compile(getPatternInARawString()).matcher("Douglas Adams
 val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
 fun todoTask4() = TODO(
-        task = """Task4.
+    """
+        Task4.
         Copy the body of 'getPatternInARawString()' to 'task4()' function
         and rewrite it in such a way that it matches 'Douglas Adams (11 MAR 1952)'.
-        Use the 'month' variable.""",
-        references = { getPatternInARawString(); month })
+        Use the 'month' variable.
+    """,
+    references = { getPatternInARawString(); month })
 
 fun task4(): String = todoTask4()

@@ -27,11 +27,13 @@ fun examples() {
 }
 
 fun todoTask3(collection: Collection<Int>) = TODO(
-        task = """Task3.
-        Rewrite JavaCode3.task3 to Kotlin using lambdas.
+    """
+        Task3.
+        Rewrite 'JavaCode3.task3()' to Kotlin using lambdas.
         Please find the appropriate function on collection through completion.
-        (Don't use the class 'Iterables'). """,
-        references = { JavaCode3().task3(collection) })
+        (Don't use the class 'Iterables').
+    """,
+    references = { JavaCode3().task3(collection) })
 
 fun task3(collection: Collection<Int>): Boolean = todoTask3(collection)
 

@@ -8,11 +8,13 @@ import com.google.common.collect.HashMultimap
 import java.util.ArrayList
 
 fun todoTask20_2() = TODO(
-        task = """Task20.2.
+    """
+        Task20.2.
         Uncomment commented code and make it compile.
         Implement method 'newMultiMap', add an extension function MultiMapBuilder.entry.
-        You may need to add an extra class (ValuesBuilder).""",
-        references = { MultiMapBuilder(); newMultiMap {  } }
+        You may need to add an extra class (ValuesBuilder).
+    """,
+    references = { MultiMapBuilder(); newMultiMap {  } }
 )
 
 class MultiMapBuilder {

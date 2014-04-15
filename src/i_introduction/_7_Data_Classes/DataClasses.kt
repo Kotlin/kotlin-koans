@@ -36,11 +36,13 @@ data class Person3(val name: String, val age: Int)
 // This class is as good as Person4 (written in Java), 42 lines shorter. =)
 
 fun todoTask7() = TODO(
-        task = """There is no task for you here.
+    """
+        There is no task for you here.
         Just make sure you're not forgetting to read carefully all code examples and comments and
-        ask questions if you have any. =)
-        More information about classes in kotlin can be found in syntax/classesObjectsTraits.kt""",
-        references = { JavaCode7.Person4("???", -1) }
+        ask questions if you have any. =) Then return 'true' from 'task7'.
+        More information about classes in kotlin can be found in syntax/classesObjectsTraits.kt
+    """,
+    references = { JavaCode7.Person4("???", -1) }
 )
 
 fun task7(): Boolean = todoTask7()

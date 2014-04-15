@@ -6,11 +6,13 @@ import java.util.Calendar
 import ii_conventions.MyDate
 
 fun todoTask18() = TODO(
-        task = """Task18.
+    """
+        Task18.
         Implement the members of the class 'EffectiveDate' so it could be delegated to.
         Store only time in milliseconds in 'timeInMillis' property.
-        Use extension functions 'Date.ToMillis' and 'Long.ToDate'.""",
-        references = { (date: MyDate) -> date.toMillis().toDate()}
+        Use extension functions 'Date.ToMillis' and 'Long.ToDate'.
+    """,
+    references = { (date: MyDate) -> date.toMillis().toDate()}
 )
 
 class EffectiveDate<R> : ReadWriteProperty<R, MyDate> {
