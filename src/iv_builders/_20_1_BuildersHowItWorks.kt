@@ -3,27 +3,12 @@ package iv_builders
 import java.util.HashMap
 import util.TODO
 import iv_builders.htmlLibrary.html
+import com.google.common.collect.Multimap
+import com.google.common.collect.HashMultimap
+import java.util.ArrayList
 
-// Extension function as a value
-
-fun <T> with(t: T, body: T.() -> Unit) {
-    t.body()
-}
-
-fun testWith() {
-    val stringBuilder = StringBuilder()
-    with(stringBuilder, { this.append("1") })
-
-    with (stringBuilder) {
-        append("Numbers: ")
-        for (i in 1..10) {
-            append(i)
-        }
-    }
-}
-
-fun todoTask20() = TODO(
-        task = """Task20.
+fun todoTask20_1() = TODO(
+        task = """Task20.1.
         Uncomment commented code and make it compile.
         Implement method 'newMap', add an extension function MapBuilder.entry.
         The previous html example may help you. (At first try not to look at it).""",
@@ -36,7 +21,7 @@ class MapBuilder {
 }
 
 fun newMap(init: MapBuilder.() -> Unit): MapBuilder {
-    todoTask20()
+    todoTask20_1()
 }
 
 fun createMapWithMapBuilder(): Map<Int, String> {
