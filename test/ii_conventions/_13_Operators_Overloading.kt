@@ -11,11 +11,15 @@ class _13_Operators_Overloading {
         Assert.assertEquals(MyDate(1983, 5, 29), MyDate(1983, 5, 22).addTimeIntervals(WEEK, 1))
     }
 
+    test fun testAddOneTimeInterval() {
+        Assert.assertEquals(MyDate(2015, 5, 8), task13_1(MyDate(2014, 5, 1)))
+    }
+
     test fun testOneMonth() {
-        Assert.assertEquals(MyDate(2016, 0, 27), task13(MyDate(2014, 0, 1)))
+        Assert.assertEquals(MyDate(2016, 0, 27), task13_2(MyDate(2014, 0, 1)))
     }
 
     test fun testMonthChange() {
-        Assert.assertEquals(MyDate(2016, 1, 20), task13(MyDate(2014, 0, 25)))
+        Assert.assertEquals(MyDate(2016, 1, 20), task13_2(MyDate(2014, 0, 25)))
     }
 }
