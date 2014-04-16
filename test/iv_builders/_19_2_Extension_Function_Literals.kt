@@ -12,6 +12,5 @@ class _19_2_Extension_Function_Literals {
             expected[i] = "$i"
         }
         Assert.assertEquals("Map should be filled with the right values", expected, map)
-
     }
 }

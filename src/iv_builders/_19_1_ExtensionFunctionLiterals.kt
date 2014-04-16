@@ -3,27 +3,37 @@ package iv_builders
 import java.util.HashMap
 import util.TODO
 
-// function
-fun getLastChar(s: String) = s.charAt(s.length - 1)
+fun functions() {
+    // function
+    fun getLastChar(s: String) = s.charAt(s.length - 1)
+    getLastChar("abc")
 
-// extension function
-// 'this' can be omitted
-fun String.lastChar() = charAt(length - 1)
+    // extension function
+    fun String.lastChar() = this.charAt(this.length - 1)
+    // 'this' can be omitted
+    fun String.lastChar2() = charAt(length - 1)
+    "abc".lastChar()
+}
 
 
 fun functionLiterals() {
     // function literal
-    val f = { (s: String) -> s.lastChar() }
-    f("abc")
+    val getLastChar = { (s: String) -> s.charAt(s.length - 1) }
+    getLastChar("abc")
 
     // extension function literal
+    val lastChar = { String.() -> this.charAt(this.length - 1) }
     // 'this' can be omitted
-    val g = { String.() -> lastChar() }
-    "abc".g()
+    val lastChar2 = { String.() -> charAt(length - 1) }
+    "abc".lastChar()
 }
 
 fun todoTask19_1() = TODO(
-        task = "Task19.1. Impelement extension function literals that are stored in 'isEven' and 'isOdd' variables."
+    """
+        Task19.1.
+        Replace 'todoTask19_1()' so that 'x.isEven()' checks that x is even
+        and 'x.isOdd()' checks that x is odd.
+    """
 )
 
 fun task19_1(): List<Boolean> {
