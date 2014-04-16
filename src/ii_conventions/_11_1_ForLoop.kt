@@ -18,7 +18,7 @@ fun todoTask11() = TODO(
         Uncomment the commented code and make it compile.
         Add all changes to the file MyDate.kt.
         Make class DateRange implement Iterable<MyDate>.
-        Add a new class DateIterator (implementing Iterator<MyDate>).
+        Use object expression to implement Iterator<MyDate>.
         Use an utility function 'MyDate.nextDay()'.
     """,
     references = { (date: MyDate) -> DateRange(date, date.nextDay()) })
