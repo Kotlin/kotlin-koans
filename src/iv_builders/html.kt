@@ -5,12 +5,13 @@ import java.util.ArrayList
 open class Tag(val name: String) {
     val children: MutableList<Tag> = ArrayList()
     val attributes: MutableList<Attribute> = ArrayList()
-    override fun toString() =
-            "<$name${attributes.makeStringIfNotEmpty(prefix = " ")}>${children.makeStringIfNotEmpty()}</$name>"
-}
 
-private fun <T> List<T>.makeStringIfNotEmpty(prefix: String = "") : String {
-    return if (isEmpty()) "" else makeString(separator = "", prefix = prefix)
+    override fun toString(): String {
+        return "<$name" +
+            (if (attributes.isEmpty()) "" else attributes.makeString(separator = "", prefix = " ")) + ">" +
+            (if (children.isEmpty()) "" else children.makeString(separator = "")) +
+            "</$name>"
+    }
 }
 
 class Attribute(val name : String, val value : String) {
