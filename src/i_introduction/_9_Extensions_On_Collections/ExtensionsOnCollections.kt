@@ -44,7 +44,7 @@ fun main(args: Array<String>) {
 
 fun todoTask9() = TODO(
     """
-        Task9.
+        Task 9.
         The function should do the same as 'JavaCode9.doSomethingStrangeWithCollection'
         Replace all invocations of 'todoTask9()' with the appropriate code.
     """,

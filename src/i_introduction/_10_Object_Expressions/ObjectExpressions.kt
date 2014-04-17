@@ -32,7 +32,7 @@ fun runInANewThread(runnable: Runnable) = Thread(runnable).start()
 
 fun todoTask10() = TODO(
     """
-        Task10.
+        Task 10.
         Add an object expression that extends MouseAdapter and counts the number of mouse clicks
         as an argument to the function 'handleMouse()'.
     """

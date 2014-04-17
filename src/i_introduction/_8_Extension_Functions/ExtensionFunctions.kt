@@ -18,7 +18,7 @@ fun use() {
 
 fun todoTask8() = TODO(
     """
-        Task8.
+        Task 8.
         Implement extension functions Int.r(), Pair<Int, Int>.r()
         to support the following way of creating rational numbers:
         1.r(), Pair(1, 2).r()

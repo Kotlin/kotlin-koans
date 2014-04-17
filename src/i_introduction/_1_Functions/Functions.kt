@@ -20,7 +20,7 @@ internal fun ibar() = 57
 
 fun todoTask1(collection: Collection<Int>) = TODO(
     """
-        Task1.
+        Task 1.
         Rewrite JavaCode1.task1 to Kotlin.
         You can just copy-paste it and agree to automatically convert it to Kotlin - but only in this task :).
     """,

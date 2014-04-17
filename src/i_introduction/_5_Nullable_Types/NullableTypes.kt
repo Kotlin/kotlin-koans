@@ -54,7 +54,7 @@ fun fail() = throw Exception()
 
 fun todoTask5(client: Client?, message: String?, mailer: Mailer) = TODO(
     """
-        Task5.
+        Task 5.
         Rewrite JavaCode5.sendMessageToClient to kotlin (using only one 'if').
         Declarations of Client, PersonalInfo and Mailer are given below.
     """,

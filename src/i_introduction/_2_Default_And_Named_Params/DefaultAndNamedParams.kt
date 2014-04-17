@@ -11,7 +11,7 @@ fun usage() {
 
 fun todoTask2_1() = TODO(
     """
-        Task2(1).
+        Task 2(1).
         Rewrite all overloaded functions 'JavaCode2.foo()' to one function 'foo()' in Kotlin using default parameters.
         Uncomment the commented code and make it compile.
     """,

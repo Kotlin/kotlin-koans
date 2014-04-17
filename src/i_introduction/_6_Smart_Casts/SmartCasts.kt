@@ -27,7 +27,7 @@ fun evalWhen(e: Expr): Int =
 
 fun todoTask6(expr: Expr) = TODO(
     """
-        Task6.
+        Task 6.
         Rewrite 'JavaCode6.print()' to Kotlin using 'when'.
         The other examples of 'when' syntax can be found in syntax/ifWhenExpressions.kt
     """,

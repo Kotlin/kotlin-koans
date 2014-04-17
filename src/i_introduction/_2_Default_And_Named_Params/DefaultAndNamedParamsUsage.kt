@@ -5,7 +5,7 @@ import i_introduction._1_Functions.task1
 
 fun todoTask2_2() = TODO(
     """
-        Task2(2).
+        Task 2(2).
         Implement the same logic as in 'task1' again through the library method 'makeString()'.
         Change values of some arguments of 'makeString'.
     """,
