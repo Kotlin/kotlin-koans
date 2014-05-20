@@ -26,7 +26,7 @@ class _5_Nullable_Types {
 
     test fun everythingIsOk() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")),
-                "Hi Bob! We have an awesome proposition to you...",
+                "Hi Bob! We have an awesome proposition for you...",
                 "bob@gmail.com",
                 true)
     }
@@ -36,14 +36,14 @@ class _5_Nullable_Types {
     }
 
     test fun noEmail() {
-        testSendMessageToClient(Client(PersonalInfo(null)), "Hi Bob! We have an awesome proposition to you...")
+        testSendMessageToClient(Client(PersonalInfo(null)), "Hi Bob! We have an awesome proposition for you...")
     }
 
     test fun noPersonalInfo() {
-        testSendMessageToClient(Client(null), "Hi Bob! We have an awesome proposition to you...")
+        testSendMessageToClient(Client(null), "Hi Bob! We have an awesome proposition for you...")
     }
 
     test fun noClient() {
-        testSendMessageToClient(null, "Hi Bob! We have an awesome proposition to you...")
+        testSendMessageToClient(null, "Hi Bob! We have an awesome proposition for you...")
     }
 }
