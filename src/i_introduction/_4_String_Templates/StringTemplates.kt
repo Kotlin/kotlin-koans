@@ -3,25 +3,26 @@ package i_introduction._4_String_Templates
 import java.util.regex.Pattern
 import util.TODO
 
-fun foo1(a: Any, b: Any) =
+fun example1(a: Any, b: Any) =
         "There is a text in which some variables ($a, $b) appear."
 
-fun foo2(a: Any, b: Any) =
+fun example2(a: Any, b: Any) =
         "You can write it in a Java way as well. Like this: " + a + ", " + b + "!"
 
-fun foo3(c: Boolean, x: Int, y: Int) = "Any expression can be used: ${if (c) x else y}"
+fun example3(c: Boolean, x: Int, y: Int) = "Any expression can be used: ${if (c) x else y}"
 
-fun foo4() =
+fun example4() =
 """
-Triple quotes denote
-"raw" strings.
+You can use triple-quoted strings to write multiline text.
+There is no escaping here, so it can be useful for writing patterns as well.
+String template entries (${42}) are allowed here.
 """
 
 fun getPatternInAUsualString() = "(\\w)* (\\w)* \\((\\d{2})\\.(\\d{2})\\.(\\d{4})\\)"
 
-fun getPatternInARawString() = """(\w*) (\w*) \((\d{2})\.(\d{2})\.(\d{4})\)"""
+fun getPatternInTQString() = """(\w*) (\w*) \((\d{2})\.(\d{2})\.(\d{4})\)"""
 
-fun example() = Pattern.compile(getPatternInARawString()).matcher("Douglas Adams (11.03.1952)").find()
+fun example() = Pattern.compile(getPatternInTQString()).matcher("Douglas Adams (11.03.1952)").find()
 
 val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
@@ -32,6 +33,6 @@ fun todoTask4() = TODO(
         and rewrite it in such a way that it matches 'Douglas Adams (11 MAR 1952)'.
         Use the 'month' variable.
     """,
-    references = { getPatternInARawString(); month })
+    references = { getPatternInTQString(); month })
 
 fun task4(): String = todoTask4()

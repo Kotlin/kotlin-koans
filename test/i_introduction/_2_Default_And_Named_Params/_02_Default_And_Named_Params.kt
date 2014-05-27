@@ -4,7 +4,7 @@ import kotlin.test.*
 import org.junit.Test as test
 import org.junit.Assert
 
-class _2_Default_And_Named_Params() {
+class _02_Default_And_Named_Params() {
 
     test fun testDefaultAndNamedParams() {
         Assert.assertEquals("a42b1C42D2", task2_1())

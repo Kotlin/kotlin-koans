@@ -3,7 +3,7 @@ package i_introduction._5_Nullable_Types
 import org.junit.Test as test
 import junit.framework.Assert
 
-class _5_Nullable_Types {
+class _05_Nullable_Types {
     fun testSendMessageToClient(
             client: Client?,
             message: String?,

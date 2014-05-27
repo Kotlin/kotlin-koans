@@ -12,6 +12,7 @@ fun todoTask25() = TODO(
         Task 25.
         1) Fill the table with proper values from products.
         2) Color the table in a chess order (using getTitleColor() and getCellColor() functions above).
+        Pass a color as an argument to functions 'tr', 'td'.
         You can run 'Html Demo' configuration to see the rendered table
     """
 )

@@ -56,6 +56,6 @@ fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection
 
     val maximumSizeOfGroup = groupsByLength. values(). map { group -> todoTask9() }. max()
 
-    return groupsByLength. values(). find { group -> todoTask9() }
+    return groupsByLength. values(). firstOrNull { group -> todoTask9() }
 }
 

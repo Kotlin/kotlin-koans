@@ -4,7 +4,7 @@ import kotlin.test.*
 import org.junit.Test as test
 import org.junit.Assert
 
-class _8_Extension_Functions() {
+class _08_Extension_Functions() {
     test fun testIntExtension() {
         Assert.assertEquals("Rational number creation error: ", RationalNumber(4, 1), 4.r())
     }

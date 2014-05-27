@@ -4,7 +4,7 @@ import junit.framework.Assert
 import org.junit.Test as test
 import java.util.HashMap
 
-class _19_3_Extension_Function_Literals {
+class _24_The_Function_With {
     test fun testBuildString() {
         val s = buildString()
         val sb = StringBuilder()

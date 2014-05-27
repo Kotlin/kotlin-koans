@@ -10,9 +10,14 @@ class _17_Invoke {
 
     test fun testNumberOfInvocations() {
         val message = "The number of invocations is incorrect"
-        Assert.assertEquals(message, 1, Invokable()().getNumberOfInvocations())
-        Assert.assertEquals(message, 5, Invokable()()()()()().getNumberOfInvocations())
-        Assert.assertEquals(message, 0, Invokable().getNumberOfInvocations())
+        fun testInvokable(numberOfInvocations: Int, invokeSeveralTimes: (Invokable) -> Invokable) {
+            val invokable = Invokable()
+            Assert.assertEquals(message, numberOfInvocations, invokeSeveralTimes(invokable).getNumberOfInvocations())
+        }
+
+        testInvokable(1) { it() }
+        testInvokable(5) { it()()()()() }
+        testInvokable(0) { it }
     }
 
     fun Invokable.invoke() = todoTask17()

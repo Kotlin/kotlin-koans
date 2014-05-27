@@ -4,7 +4,7 @@ import kotlin.test.*
 import org.junit.Test as test
 import org.junit.Assert
 
-class _6_Smart_Casts {
+class _06_Smart_Casts {
     test fun testNum() {
         Assert.assertEquals("'print' on Num should work:", "2", print(Num(2)))
     }

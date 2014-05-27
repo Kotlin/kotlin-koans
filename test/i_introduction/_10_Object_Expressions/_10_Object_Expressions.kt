@@ -7,7 +7,7 @@ import java.awt.Component
 
 class _10_Object_Expressions {
     test fun testStringComparator() {
-        val mouseEvent = MouseEvent(object : Component() {}, 0, 0L, 0, 0, 0, 0, false)
+        val mouseEvent = MouseEvent(object : Component() {}, 0, 0L, 0, 0, 0, 1, false)
         val result = task10 { mouseListener ->
             mouseListener.mouseClicked(mouseEvent)
             mouseListener.mouseClicked(mouseEvent)

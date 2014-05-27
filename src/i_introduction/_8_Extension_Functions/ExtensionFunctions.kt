@@ -25,7 +25,7 @@ fun todoTask8() = TODO(
     """,
     references = { 1.r(); Pair(1, 2).r(); RationalNumber(1, 9) })
 
-data class RationalNumber(val n: Int, val m: Int)
+data class RationalNumber(val numerator: Int, val denominator: Int)
 
 fun Int.r(): RationalNumber = todoTask8()
 fun Pair<Int, Int>.r(): RationalNumber = todoTask8()

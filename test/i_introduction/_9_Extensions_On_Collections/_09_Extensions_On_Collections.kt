@@ -4,7 +4,7 @@ import kotlin.test.*
 import org.junit.Test as test
 import org.junit.Assert
 
-class _9_Extensions_On_Collections {
+class _09_Extensions_On_Collections {
     test fun testCollectionOfOneElement() {
         doTest(listOf("a"), listOf("a"))
     }
