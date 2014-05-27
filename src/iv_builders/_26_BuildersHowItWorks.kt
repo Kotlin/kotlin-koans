@@ -1,98 +1,103 @@
-package iv_builders
+package iv_builders.builders
 
-import java.util.HashMap
 import util.TODO
-import iv_builders.htmlLibrary.html
-import com.google.common.collect.Multimap
-import com.google.common.collect.HashMultimap
-import java.util.ArrayList
-import iv_builders.htmlLibrary.*
-import iv_builders.data.getProducts
-import iv_builders.Answer.*
+import util.questions.Answer.*
+import util.questions.doQuestionnaire
+import util.questions.Question
+import util.questions.removeIndents
 
 fun todoTask26() = TODO(
     """
         Task 26.
-        Look at the questions below and give your answers:
-        change 'insertAnswerHere()' in task26's map to your choice (a, b or c).
+        Run 'Builders Questions' configuration (or 'main' function declared below) and answer the questions.
     """
 )
 
-fun insertAnswerHere() = todoTask26()
+fun main(args: Array<String>) {
+    doQuestionnaire(
+            "Builders",
+            Question(
+                    """
+                        In the Kotlin code
+                            tr {
+                                td {
+                                    text("Product")
+                                }
+                                td {
+                                    text("Popularity")
+                                }
+                            }
+                        'td' is:
+                    """,
+                    a to "special built-in syntactic construct",
+                    b to "function declaration",
+                    c to "function invocation"
+            ),
 
-enum class Answer {
-    // all the constants are imported by 'import iv_builders.Answer.*'
-    // so they can be accessed by name
-    a b c
+            Question(
+                    """
+                        In the Kotlin code
+                                tr (color = "yellow") {
+                                    td {
+                                        text("Product")
+                                    }
+                                    td {
+                                        text("Popularity")
+                                    }
+                                }
+                        'color' is:
+                    """,
+                    a to "new variable declaration",
+                    b to "argument name",
+                    c to "argument value"
+            ),
+
+
+            Question(
+                    """
+                        In the Kotlin code
+                                tr (color = "yellow") {
+                                    td {
+                                        text("Product")
+                                    }
+                                    td {
+                                        text("Popularity")
+                                    }
+                                }
+                        the block
+                                     {
+                                         text("Product")
+                                     }
+                        is:
+                    """,
+                    a to "block inside built-in syntax construction 'td'",
+                    b to "function literal (or \"lambda\")",
+                    c to "something mysterious"
+            ),
+
+            Question(
+                    """
+                        For the code
+                                tr (color = "yellow") {
+                                    this.td {
+                                        text("Product")
+                                    }
+                                    td {
+                                        text("Popularity")
+                                    }
+                                }
+                        which of the following is true:
+                    """,
+                    a to "this code doesn't compile",
+                    b to "'this' refers to an instance of an outer class",
+                    c to
+                            """
+                                'this' refers to a receiver parameter TR of the function literal:
+                                tr (color = "yellow") { TR.(): Unit ->
+                                    this.td {
+                                        text("Product")
+                                    }
+                                }
+                            """.removeIndents())
+    )
 }
-
-fun task26() = linkedMapOf<Int, Answer>(
-/*
-1. In the Kotlin code
-        tr {
-            td {
-                text("Product")
-            }
-            td {
-                text("Popularity")
-            }
-        }
-'td' is:
-    a. special built-in syntactic construct
-    b. function declaration
-    c. function invocation
- */
-        1 to insertAnswerHere(),
-
-/*
-2. In the Kotlin code
-            tr (color = "yellow") {
-                td {
-                    text("Product")
-                }
-                td {
-                    text("Popularity")
-                }
-            }
-'color' is:
-  a. new variable declaration
-  b. argument name
-  c. argument value
- */
-        2 to insertAnswerHere(),
-
-/*
-3. The block
-                 {
-                     text("Product")
-                 }
-from the previous question is:
-  a. block inside built-in syntax construction 'td'
-  b. function literal (or "lambda")
-  c. something mysterious
-
- */
-        3 to insertAnswerHere(),
-
-/*
-4. For the code
-            tr (color = "yellow") {
-                this.td {
-                    text("Product")
-                }
-                td {
-                    text("Popularity")
-                }
-            }
-which of the following is true:
-  a. this code doesn't compile
-  b. 'this' refers to an instance of an outer class
-  c. 'this' refers to a receiver parameter TR of the function literal:
-            tr (color = "yellow") { TR.(): Unit ->
-                  this.td {
-                      text("Product")
-                  }
-            }
- */
-        4 to insertAnswerHere()
-)
