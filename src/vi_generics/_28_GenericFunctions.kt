@@ -20,6 +20,17 @@ fun task28() = TODO(
         }
 )
 
+fun <T, C: MutableCollection<T>> Collection<T>.partitionTo(first: C, second: C, predicate: (T) -> Boolean): Pair<C, C> {
+    for (element in this) {
+        if (predicate(element)) {
+            first.add(element)
+        } else {
+            second.add(element)
+        }
+    }
+    return Pair(first, second)
+}
+
 fun List<String>.partitionWordsAndLines(): Pair<List<String>, List<String>> {
     task28()
 //    return partitionTo(ArrayList<String>(), ArrayList()) { s -> !s.contains(" ") }

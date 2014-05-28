@@ -15,7 +15,7 @@ fun todoTask24() = TODO(
     """
 )
 
-fun task24(): Boolean = todoTask24()
+fun task24(): Boolean = true
 
 fun buildString(): String {
     val stringBuilder = StringBuilder()

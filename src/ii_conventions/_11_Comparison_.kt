@@ -35,7 +35,7 @@ fun todoTask11() = TODO(
 )
 
 fun task11(date1: MyDate, date2: MyDate): Boolean {
-    todoTask11()
-//    return date1 < date2
+//    todoTask11()
+    return date1 < date2
 }
 
