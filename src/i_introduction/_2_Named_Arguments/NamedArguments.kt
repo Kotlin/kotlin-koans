@@ -21,6 +21,6 @@ fun todoTask2(): Nothing = TODO(
     references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
 fun task2(collection: Collection<Int>): String {
-    todoTask2()
-    return collection.joinToString()
+    //    todoTask2_2()
+    return collection.joinToString(prefix = "{", postfix = "}")
 }
