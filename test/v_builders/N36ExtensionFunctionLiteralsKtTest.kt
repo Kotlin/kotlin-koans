@@ -8,6 +8,5 @@ class N36ExtensionFunctionLiteralsKtTest {
         val result = task36()
         assertEquals("The functions 'isOdd' and 'isEven' should be implemented correctly",
                 listOf(false, true, true), result)
-
     }
 }
