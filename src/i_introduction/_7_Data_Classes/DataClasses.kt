@@ -45,4 +45,4 @@ fun todoTask7() = TODO(
     references = { JavaCode7.Person4("???", -1) }
 )
 
-fun task7(): Boolean = todoTask7()
+fun task7(): Boolean = true

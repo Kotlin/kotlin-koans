@@ -19,9 +19,9 @@ class B() {
 
 class Commodity(data: MutableMap<String, Any?>) {
 
-    val description: String by todoTask20()
-    var price: Int by todoTask20()
-    var isAvailable: Boolean by todoTask20()
+    val description: String by Delegates.mapVal(data)
+    var price: Int by Delegates.mapVar(data)
+    var isAvailable: Boolean by Delegates.mapVar(data)
 }
 
 fun <T> todoTask20(): ReadWriteProperty<Commodity, T> = TODO(
