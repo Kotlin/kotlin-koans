@@ -42,12 +42,12 @@ fun todoTask15() = TODO(
     })
 
 fun task15_1(today: MyDate): MyDate {
-    todoTask15()
-//    return today + YEAR + WEEK
+//    todoTask15()
+    return today + YEAR + WEEK
 }
 
 fun task15_2(today: MyDate): MyDate {
-    todoTask15()
-//    return today + YEAR * 2 + WEEK * 3 + DAY * 5
+//    todoTask15()
+    return today + YEAR * 2 + WEEK * 3 + DAY * 5
 }
 

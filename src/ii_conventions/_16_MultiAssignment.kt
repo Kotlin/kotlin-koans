@@ -54,4 +54,4 @@ fun multiAssignDate(date: MyDate) {
 
 fun todoTask16() = TODO("Again no special task. Just return 'true' if you are interested in Kotlin. =)")
 
-fun task16(): Boolean = todoTask16()
+fun task16(): Boolean = true

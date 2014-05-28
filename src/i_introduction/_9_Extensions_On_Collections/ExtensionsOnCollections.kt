@@ -52,10 +52,10 @@ fun todoTask9() = TODO(
 )
 
 fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection<String>? {
-    val groupsByLength = collection. groupBy { s -> todoTask9() }
+    val groupsByLength = collection. groupBy { s -> s.length }
 
-    val maximumSizeOfGroup = groupsByLength. values(). map { group -> todoTask9() }. max()
+    val maximumSizeOfGroup = groupsByLength.values().map { group -> group.size() }. max()
 
-    return groupsByLength. values(). firstOrNull { group -> todoTask9() }
+    return groupsByLength.values().find { group -> group.size == maximumSizeOfGroup }
 }
 

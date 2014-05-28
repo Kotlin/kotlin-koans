@@ -33,5 +33,11 @@ fun todoTask6(expr: Expr) = TODO(
     """,
     references = { JavaCode6().print(expr); syntax.ifWhenExpressions.whenWithoutArgument(42) })
 
-fun print(expr: Expr): String = todoTask6(expr)
+fun print(e: Expr): String =
+        when (e) {
+            is Num -> "${e.value}"
+            is Sum -> "${print(e.left)} + ${print(e.right)}"
+            else -> throw IllegalArgumentException("Unknown expression")
+        }
+
 
