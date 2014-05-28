@@ -11,14 +11,14 @@ fun todoTask30(): Nothing = TODO(
     documentation = doc30()
 )
 
-class MyDate(val year: Int, val month: Int, val dayOfMonth: Int)
+data class MyDate(val year: Int, val month: Int, val dayOfMonth: Int)
 
 fun isLeapDay(date: MyDate): Boolean {
-    todoTask30()
-//    val (year, month, dayOfMonth) = date
-//
-//    // 29 February of a leap year
-//    return isLeapYear(year) && month == 1 && dayOfMonth == 29
+//    todoTask30()
+    val (year, month, dayOfMonth) = date
+
+    // 29 February of a leap year
+    return isLeapYear(year) && month == 1 && dayOfMonth == 29
 }
 
 // Years which are multiples of four (with the exception of years divisible by 100 but not by 400)
