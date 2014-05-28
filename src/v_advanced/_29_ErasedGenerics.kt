@@ -9,7 +9,7 @@ import util.TODO
 // Generics are NOT reified (they're erased as in Java).
 
 fun <T> bar(c: Collection<T>) {
-// That means you can't check 'is' for generic type:
+// That means you can't make is-check for generic type:
 //    if (c is List<Int>) { }
 
 // However, if the compiler can guarantee the parameter type, the check is allowed:
@@ -53,7 +53,7 @@ fun main(args: Array<String>) {
                     """,
                     a to "Generic types are reified",
                     b to "Generic types are erased",
-                    c to "List<*> can neber be a list of ints"
+                    c to "List<*> can never be a list of Ints"
             ),
 
             Question(

@@ -11,7 +11,7 @@ fun task29() = TODO(
         Uncomment the commented invocations of 'partitionTo' below and make them compile.
 
         There is the function 'partition()' in the standard library that always returns two lists (newly created).
-        You shall write a function that split the collection in two given collections as arguments.
+        You shall write a function that splits the collection in two given collections as arguments.
         The signature of the function 'toCollection()' from standard library may help you.
     """,
         references = { (l: List<Int>) ->
