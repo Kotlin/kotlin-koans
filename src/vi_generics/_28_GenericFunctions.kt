@@ -1,12 +1,12 @@
-package v_advanced.generics
+package vi_generics.generics
 
 import java.util.ArrayList
 import java.util.HashSet
 import util.TODO
 
-fun task29() = TODO(
+fun task28() = TODO(
     """
-        Task29.
+        Task28.
         Add function 'partitionTo' that splits collection in two collections according to a predicate.
         Uncomment the commented invocations of 'partitionTo' below and make them compile.
 
@@ -21,11 +21,11 @@ fun task29() = TODO(
 )
 
 fun List<String>.partitionWordsAndLines(): Pair<List<String>, List<String>> {
-    task29()
+    task28()
 //    return partitionTo(ArrayList<String>(), ArrayList()) { s -> !s.contains(" ") }
 }
 
 fun Set<Char>.partitionLettersAndOtherSymbols(): Pair<Set<Char>, Set<Char>> {
-    task29()
+    task28()
 //    return partitionTo(HashSet<Char>(), HashSet()) { c -> c in 'a'..'z' || c in 'A'..'Z'}
 }

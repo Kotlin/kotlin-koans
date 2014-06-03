@@ -1,11 +1,11 @@
-package v_advanced
+package vi_generics
 
 import junit.framework.Assert
 import org.junit.Test as test
-import v_advanced.generics.partitionWordsAndLines
-import v_advanced.generics.partitionLettersAndOtherSymbols
+import vi_generics.generics.partitionWordsAndLines
+import vi_generics.generics.partitionLettersAndOtherSymbols
 
-public class _30_Generic_Functions {
+public class _28_Generic_Functions {
     test fun testPartitionWordsAndLines() {
         val (words, lines) = listOf("a", "a b", "c", "d e").partitionWordsAndLines()
         Assert.assertEquals(listOf("a", "c"), words)
