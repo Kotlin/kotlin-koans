@@ -1,16 +1,29 @@
 package util
 
-import java.nio.file.Files
-import java.nio.file.Paths
-import java.nio.file.NoSuchFileException
+import java.io.File
+import java.io.FileReader
+import java.io.BufferedReader
+import java.io.IOException
+import java.util.ArrayList
 
-test fun testQuestionnaire(name: String, todo: () -> Nothing) {
+fun testQuestionnaire(name: String, todo: () -> Nothing) {
     try {
-        val results = String(Files.readAllBytes(Paths.get("results.txt")!!))
+        val results = readFileToString(File("results.txt"))
         if (!results.contains(name)) {
             todo()
         }
-    } catch (e: NoSuchFileException) {
+    } catch (e: IOException) {
         todo()
     }
+}
+
+fun readFileToString(file: File): String {
+    val reader = BufferedReader(FileReader(file))
+    val list = ArrayList<String>();
+    var line = reader.readLine();
+    while (line != null) {
+        list.add(line!!);
+        line = reader.readLine();
+    }
+    return list.makeString("\n");
 }
