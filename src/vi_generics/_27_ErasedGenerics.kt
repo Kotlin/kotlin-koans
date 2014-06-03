@@ -1,4 +1,4 @@
-package v_advanced.generics
+package vi_generics.generics
 
 import util.questions.doQuestionnaire
 import util.questions.Question
@@ -35,9 +35,9 @@ fun encloseV2(list: MutableList<*>) {
     }
 }
 
-fun todoTask29() = TODO(
+fun todoTask27() = TODO(
         """
-        Task 29.
+        Task 27.
         Run 'Generics Questions' configuration (or 'main' function declared below) and answer the questions.
     """
 )
