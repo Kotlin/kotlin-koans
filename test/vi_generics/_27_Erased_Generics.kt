@@ -1,11 +1,13 @@
 package vi_generics
 
 import org.junit.Test as test
-import util.testQuestionnaire
-import vi_generics.generics.todoTask27
+import util.questions.Answer.*
+import junit.framework.Assert
+import vi_generics.generics.task27
 
-public class _27_Erased_Generics {
-    test fun testGenericsQuestionnaire() {
-        testQuestionnaire("Generics") { todoTask27() }
+class _27_Erased_Generics {
+    test fun testGenericsQuiz() {
+        val answers = linkedMapOf(1 to b, 2 to a, 3 to c)
+        Assert.assertEquals("Your answers are incorrect: ", answers, task27())
     }
 }
