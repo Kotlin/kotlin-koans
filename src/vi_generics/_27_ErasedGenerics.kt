@@ -54,7 +54,7 @@ fun task27() = linkedMapOf<Int, Answer>(
     c. List<*> can never be a list of Ints
 */
 
-        1 to insertAnswerHere(),
+        1 to b,
 
 
 /*
@@ -71,7 +71,7 @@ fun task27() = linkedMapOf<Int, Answer>(
     b. '*'
     c. unknown
 */
-      2 to insertAnswerHere(),
+      2 to a,
 /*
 The code
     fun encloseV2(list: MutableList<*>) {
@@ -86,5 +86,5 @@ doesn't compile because
     c. Type of element of MutableList<*> is unknown
     so the compiler can't allow to add an element of 'Any' type to the list
 */
-        3 to insertAnswerHere()
+        3 to c
 )
