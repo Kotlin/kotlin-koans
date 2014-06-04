@@ -26,8 +26,11 @@ fun stringRange(s: String) {
 fun todoTask14() = TODO(
     """
         Task 14.
-        Uncomment the commented line and make it compile. Add all changes to the file MyDate.kt.
+        Uncomment the commented line.
+        For now being in interval is checked with the function 'fun <T> Iterable<T>.contains(T): Boolean'
+        which is not optimal (you can check the boundaries instead of iterating over the whole range).
         Make class DateRange implement kotlin.Range<MyDate>.
+        Add all changes to the file MyDate.kt.
     """,
     references = { (range: Range<Int>) -> }
 )
