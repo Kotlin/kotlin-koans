@@ -3,6 +3,10 @@ package v_collections
 import java.util.HashSet
 import util.TODO
 
+/*
+ * This part of workshop was inspired by:
+ * https://github.com/goldmansachs/gs-collections-kata
+ */
 
 /*
  *  For easy java compatibility we don't introduce our own collections, but use standard Java ones.
