@@ -7,5 +7,5 @@ fun example6() {
 fun Customer.getTotalOrderPrice(): Double {
     // Returns the sum of prices of all products ordered by customer.
     // Note: a customer may order the same product for several times.
-    todoCollectionTask()
+    return orders.flatMap { it.products }.map { it.price }.sum()
 }
