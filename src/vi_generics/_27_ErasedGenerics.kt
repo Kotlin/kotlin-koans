@@ -29,7 +29,7 @@ fun encloseV2(list: MutableList<*>) {
     if (head != null) {
         // doesn't compile
         // for now 'add' is unresolved, but diagnostic has to be improved
-//        c.add(head)
+//        list.add(head)
     }
 }
 
@@ -77,7 +77,7 @@ The code
     fun encloseV2(list: MutableList<*>) {
         val head = list.head
         if (head != null) {
-            c.add(head)
+            list.add(head)
         }
     }
 doesn't compile because

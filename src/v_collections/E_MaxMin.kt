@@ -6,7 +6,7 @@ fun example4() {
 }
 
 fun Shop.getCustomerWithMaximumNumberOfOrders(): Customer? {
-    // Return customers who ordered maximum number of orders
+    // Return a customer who ordered maximum number of orders
     todoCollectionTask()
 }
 
