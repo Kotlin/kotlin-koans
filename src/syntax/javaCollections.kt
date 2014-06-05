@@ -1,7 +1,7 @@
 package syntax.javaCollections
 
 // In Kotlin Java standard collections are used, but there are two views on them:
-// mutable and readonly
+// mutable and read-only
 
 fun useReadonlySet(set: Set<Int>) {
     // doesn't compile:
@@ -12,5 +12,5 @@ fun useMutableSet(set: MutableSet<Int>) {
     set.add(1)
 }
 
-// Readonly collections are covariant
+// Read-only collections are covariant
 
