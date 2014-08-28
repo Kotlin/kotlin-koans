@@ -10,7 +10,7 @@ class _02_Default_And_Named_Params() {
         Assert.assertEquals("a42b1C42D2", task2_1())
     }
 
-    test fun testMakeString() {
+    test fun testJoinToString() {
         Assert.assertEquals("{1, 2, 3, 42, 555}", task2_2(listOf(1, 2, 3, 42, 555)))
     }
 
