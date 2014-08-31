@@ -21,11 +21,3 @@ fun Shop.getProductsOrderedByAllCustomers(): Set<Product> {
         todoCollectionTask()
     })
 }
-
-// Not all the methods are added to standard library by now ;).
-fun <T> Set<T>.intersect(other: Collection<T>): Set<T> {
-    val intersection = HashSet(this)
-    intersection.retainAll(other)
-    return intersection
-}
-
