@@ -23,7 +23,7 @@ fun useMutableSet(set: MutableSet<Int>) {
 }
 
 /*
- *  There is a bunch of operations that help to transform a collection to another one, starting with 'to'
+ *  There are a bunch of operations that help to transform a collection to another one, starting with 'to'
  */
 fun example0(list: List<Int>) {
     list.toSet()
