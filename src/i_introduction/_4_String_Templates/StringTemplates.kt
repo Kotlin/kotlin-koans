@@ -18,7 +18,7 @@ There is no escaping here, so it can be useful for writing patterns as well.
 String template entries (${42}) are allowed here.
 """
 
-fun getPatternInAUsualString() = "(\\w)* (\\w)* \\((\\d{2})\\.(\\d{2})\\.(\\d{4})\\)"
+fun getPatternInAnUsualString() = "(\\w)* (\\w)* \\((\\d{2})\\.(\\d{2})\\.(\\d{4})\\)"
 
 fun getPatternInTQString() = """(\w*) (\w*) \((\d{2})\.(\d{2})\.(\d{4})\)"""
 
