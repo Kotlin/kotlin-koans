@@ -15,9 +15,7 @@ class DateRange(
         public override val end: MyDate //TODO: public
 ) : Range<MyDate>, Iterable<MyDate> {
     override fun iterator(): Iterator<MyDate> = DateIterator(this)
-    override fun contains(item: MyDate): Boolean {
-        return start <= item && item <= end
-    }
+    override fun contains(item: MyDate): Boolean = start <= item && item <= end
 }
 
 class DateIterator(val dateRange: DateRange) : Iterator<MyDate> {
