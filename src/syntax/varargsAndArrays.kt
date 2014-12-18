@@ -1,6 +1,6 @@
 package syntax.varargs
 
-fun use(vararg a: Any): Array<Any> = a
+fun use(vararg a: Any): Array<out Any> = a
 
 fun test() {
     use(1, 2.1, "a")
