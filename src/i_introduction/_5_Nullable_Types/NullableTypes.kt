@@ -21,32 +21,32 @@ fun struggleAgainstNPE() {
 
     fun checkForNull1() {
         if (files != null) {
-            files.size
+            files.size()
         }
     }
 
     fun checkForNull2() {
         if (files == null) return
-        files.size
+        files.size()
     }
 
     fun checkForNull3(): Int {
         if (files == null) fail()
-        return files.size
+        return files.size()
     }
 
     fun nullAsResultIfNullReference(): Int? {
-        return files?.size
+        return files?.size()
     }
 
     fun defaultValueForNull(): Int {
-        val size = files?.size
+        val size = files?.size()
         return size ?: -1
     }
 
     fun throwNPEIfNull(): Int {
         val f = files!!
-        return f.size
+        return f.size()
     }
 }
 

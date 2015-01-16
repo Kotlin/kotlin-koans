@@ -3,10 +3,10 @@ package i_introduction._8_Extension_Functions.StringExtensions
 import util.TODO
 
 
-fun String.lastChar() = this.charAt(this.length - 1)
+fun String.lastChar() = this.charAt(this.length() - 1)
 
 //'this' can be omitted
-fun String.lastChar1() = charAt(length - 1)
+fun String.lastChar1() = charAt(length() - 1)
 
 fun use() {
     // Try Ctrl+Space after the dot: lastChar() visible in completion and can be easily found

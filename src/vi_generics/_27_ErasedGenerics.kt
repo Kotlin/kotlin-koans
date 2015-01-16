@@ -18,14 +18,14 @@ fun <T> bar(c: Collection<T>) {
 }
 
 fun <E> enclose(list: MutableList<E>) {
-    val head = list.head
+    val head = list.firstOrNull()
     if (head != null) {
         list.add(head)
     }
 }
 
 fun encloseV2(list: MutableList<*>) {
-    val head = list.head
+    val head = list.firstOrNull()
     if (head != null) {
         // doesn't compile
         // for now 'add' is unresolved, but diagnostic has to be improved

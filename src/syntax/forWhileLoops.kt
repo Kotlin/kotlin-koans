@@ -5,7 +5,7 @@ fun forLoop(collection: Collection<String>) {
 
     for (s in collection) {}
 
-    for ((index, s) in collection.withIndices()) {}
+    for ((index, s) in collection.withIndex()) {}
 }
 
 fun iteratingOverMap(map: Map<Int, String>) {

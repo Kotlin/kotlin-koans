@@ -24,7 +24,7 @@ fun howItWorks() {
 }
 
 fun iterateOverCollectionWithIndex(collection: Collection<Int>) {
-    for ((index, element) in collection.withIndices()) {
+    for ((index, element) in collection.withIndex()) {
         println("$index: $element")
     }
 }
