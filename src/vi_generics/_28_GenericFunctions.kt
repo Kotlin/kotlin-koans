@@ -14,7 +14,7 @@ fun task28() = TODO(
         You shall write a function that splits the collection in two given collections as arguments.
         The signature of the function 'toCollection()' from standard library may help you.
     """,
-        references = { (l: List<Int>) ->
+        references = { l: List<Int> ->
             l.partition { it > 0 }
             l.toCollection(HashSet<Int>())
         }

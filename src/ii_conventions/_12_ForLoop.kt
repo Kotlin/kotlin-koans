@@ -21,7 +21,7 @@ fun todoTask12() = TODO(
         Use object expression to implement Iterator<MyDate>.
         Use an utility function 'MyDate.nextDay()'.
     """,
-    references = { (date: MyDate) -> DateRange(date, date.nextDay()) })
+    references = { date: MyDate -> DateRange(date, date.nextDay()) })
 
 
 fun iterateOverDateRange(firstDate: MyDate, secondDate: MyDate, handler: (MyDate) -> Unit) {

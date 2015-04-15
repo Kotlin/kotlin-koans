@@ -7,5 +7,5 @@ fun todoCollectionTask() = util.TODO(
            Return what is described in the name and the comment.
 
         """,
-        references = {(shop: Shop) -> shop.customers }
+        references = { shop: Shop -> shop.customers }
 )

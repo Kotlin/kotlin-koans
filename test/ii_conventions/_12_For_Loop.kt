@@ -8,7 +8,7 @@ class _12_For_Loop {
     test fun testIterateOverDateRange() {
         val actualDateRange = ArrayList<MyDate>()
         iterateOverDateRange(MyDate(2014, 5, 1), MyDate(2014, 5, 5), {
-            (date: MyDate) -> actualDateRange.add(date)
+            date: MyDate -> actualDateRange.add(date)
         })
         val expectedDateRange = arrayListOf(
                 MyDate(2014, 5, 1), MyDate(2014, 5, 2), MyDate(2014, 5, 3), MyDate(2014, 5, 4), MyDate(2014, 5, 5))

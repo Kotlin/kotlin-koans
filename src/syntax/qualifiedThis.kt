@@ -3,15 +3,15 @@ package syntax.qualifiedThis
 class Outer { // implicit label @Outer
     inner class Inner { // implicit label @Inner
         fun Int.foo() { // implicit label @foo
-            use (this@Outer, this@Inner, this@foo)
+            use(this@Outer, this@Inner, this@foo)
             this == this@foo
 
-            val fl = @S{String.() ->
+            val fl: String.() -> Boolean = @S{
                 use(this, this@S)
                 this == this@S
             }
 
-            val fl2 = { (s:String) ->
+            val fl2 = { s: String ->
                 this == this@foo
             }
         }

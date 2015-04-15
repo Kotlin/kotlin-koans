@@ -17,7 +17,7 @@ fun todoTask13() = TODO(
         To make '..' work add 'MyDate.rangeTo()' extension function returning DateRange.
         Add all changes to the file MyDate.kt.
     """,
-    references = { (date: MyDate) -> date.nextDay() })
+    references = { date: MyDate -> date.nextDay() })
 
 
 fun iterateOverDateRange2(firstDate: MyDate, secondDate: MyDate, handler: (MyDate) -> Unit) {

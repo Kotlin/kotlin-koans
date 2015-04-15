@@ -32,7 +32,7 @@ fun todoTask14() = TODO(
         Make class DateRange implement kotlin.Range<MyDate>.
         Add all changes to the file MyDate.kt.
     """,
-    references = { (range: Range<Int>) -> }
+    references = { range: Range<Int> -> }
 )
 
 fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {

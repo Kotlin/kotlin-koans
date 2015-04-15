@@ -18,13 +18,13 @@ fun functions() {
 
 fun functionLiterals() {
     // function literal
-    val getLastChar = { (s: String) -> s.charAt(s.length() - 1) }
+    val getLastChar: (String) -> Char = { s -> s.charAt(s.length() - 1) }
     getLastChar("abc")
 
     // extension function literal
-    val lastChar = { String.() -> this.charAt(this.length() - 1) }
+    val lastChar: String.() -> Char = { this.charAt(this.length() - 1) }
     // 'this' can be omitted
-    val lastChar2 = { String.() -> charAt(length() - 1) }
+    val lastChar2: String.() -> Char = { charAt(length() - 1) }
     "abc".lastChar()
 }
 

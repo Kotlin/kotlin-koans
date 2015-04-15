@@ -9,7 +9,7 @@ fun todoTask2_2() = TODO(
         Implement the same logic as in 'task1' again through the library method 'joinToString()'.
         Change values of some arguments of 'joinToString'.
     """,
-    references = { (collection: Collection<Int>) -> task1(collection); collection.joinToString() })
+    references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
 fun task2_2(collection: Collection<Int>): String {
     todoTask2_2()

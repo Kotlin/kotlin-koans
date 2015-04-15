@@ -5,7 +5,7 @@ import com.google.common.collect.Iterables
 
 fun examples() {
 
-    val sum = { (x: Int, y: Int) -> x + y }
+    val sum = { x: Int, y: Int -> x + y }
 
     val three = sum(1, 2)
 

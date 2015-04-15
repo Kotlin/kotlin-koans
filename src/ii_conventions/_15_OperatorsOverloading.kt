@@ -37,7 +37,7 @@ fun todoTask15() = TODO(
         (2). Support adding several time intervals to a date. Add an extra class.
         If any problems, see ii_conventions/_15_Tips.kt.
     """,
-    references = { (date: MyDate, timeInterval: TimeInterval) ->
+    references = { date: MyDate, timeInterval: TimeInterval ->
         date.addTimeIntervals(timeInterval, 1)
     })
 

@@ -15,7 +15,7 @@ fun todoTask21() = TODO(
         Store only time in milliseconds in 'timeInMillis' property.
         Use extension functions 'MyDate.toMillis' and 'Long.ToDate'.
     """,
-    references = { (date: MyDate) -> date.toMillis().toDate()}
+    references = { date: MyDate -> date.toMillis().toDate()}
 )
 
 class D {

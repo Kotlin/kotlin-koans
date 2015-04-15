@@ -48,7 +48,7 @@ fun todoTask9() = TODO(
         The function should do the same as 'JavaCode9.doSomethingStrangeWithCollection'
         Replace all invocations of 'todoTask9()' with the appropriate code.
     """,
-    references = { (c: Collection<String>) -> JavaCode9().doSomethingStrangeWithCollection(c) }
+    references = { c: Collection<String> -> JavaCode9().doSomethingStrangeWithCollection(c) }
 )
 
 fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection<String>? {

@@ -1,15 +1,26 @@
 package syntax.lambdas
 
+fun apply(f: (Int, Int) -> Int) = f(1, 2)
+
 fun fullSyntacticFormOfFunctionLiterals() {
-    val sum1 = { (x: Int, y: Int): Int -> x + y }
+
+    apply({ x, y -> x + y })
 
     // function type
-    val sum2: (Int, Int) -> Int = { x, y -> x + y }
+    val sum: (Int, Int) -> Int = { x, y -> x + y }
+    apply(sum)
+
+    // If you need to specify the return type (and the receiver type for extension lambda), you can use the function expression
+    apply(fun (x: Int, y: Int): Int = x + y)
+
+    val sum1 = fun (x: Int, y: Int): Int { return x + y }
+    apply(sum1)
 
     // one parameter is by default named 'it'
     val oneParameter: (Int) -> Int = { it }
+    oneParameter(1)
 
-    val extensionLambda = { Int.(x: Int) -> this + x }
+    val extensionLambda: Int.(Int) -> Int = { x -> this + x }
     1.extensionLambda(2) // == 3
 }
 

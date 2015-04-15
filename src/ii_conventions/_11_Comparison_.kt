@@ -31,7 +31,7 @@ fun todoTask11() = TODO(
         Make class MyDate implement Comparable.
         For syntax details see syntax/classesObjectsTraits.kt.
     """,
-    references = { (date: MyDate, comparable: Comparable<MyDate>, syntax: syntax.classesObjectsTraits.Successor) -> }
+    references = { date: MyDate, comparable: Comparable<MyDate>, syntax: syntax.classesObjectsTraits.Successor -> }
 )
 
 fun task11(date1: MyDate, date2: MyDate): Boolean {
