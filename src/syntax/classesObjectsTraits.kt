@@ -51,7 +51,7 @@ class ClassWithPrivateConstructor private(val bar: Int) {
     // Classes do not have static methods.
     // In most cases, namespace-level functions form a good substitute for them,
     // except the cases with access to class' private members.
-    class object {
+    companion object {
         fun newInstance() = ClassWithPrivateConstructor(9)
     }
 }
