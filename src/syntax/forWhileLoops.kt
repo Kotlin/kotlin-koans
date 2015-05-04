@@ -24,8 +24,8 @@ fun doWhileLoop() {
 }
 
 fun labels() {
-    outerLoop@ while (true) {
-        innerLoop@ for (i in 1..10) {
+    @outerLoop while (true) {
+        @innerLoop for (i in 1..10) {
             if (i < 10) {
                 continue@innerLoop
             }
