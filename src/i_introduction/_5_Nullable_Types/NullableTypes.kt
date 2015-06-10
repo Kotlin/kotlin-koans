@@ -69,7 +69,7 @@ fun sendMessageToClient(
 
 class Client (val personalInfo: PersonalInfo?)
 class PersonalInfo (val email: String?)
-//you can so far think of a trait as an interface
+
 interface Mailer {
     fun sendMessage(email: String, message: String)
 }

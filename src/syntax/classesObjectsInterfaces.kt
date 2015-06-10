@@ -1,7 +1,7 @@
-package syntax.classesObjectsTraits
+package syntax.classesObjectsInterfaces
 
-// traits are like Java8 interfaces (stateless but with implementations)
-interface SimpleTrait {
+// interfaces in Kotlin are like Java8 interfaces (stateless but with implementations)
+interface SimpleInterface {
     fun foo(): Int
     fun bar() = "default implementation ${foo()}"
 }
@@ -12,11 +12,11 @@ open class SimpleClass {
 }
 
 // ':' means both 'overrides' and 'implements'
-class Successor : SimpleTrait, SimpleClass() {
+class Successor : SimpleInterface, SimpleClass() {
     override fun foo() = 1
 
     // if you inherit two implementations, you must override it
-    override fun bar(): String = super<SimpleTrait>.bar() + super<SimpleClass>.bar()
+    override fun bar(): String = super<SimpleInterface>.bar() + super<SimpleClass>.bar()
 }
 
 // object is a singleton

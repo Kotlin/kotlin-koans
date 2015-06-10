@@ -40,7 +40,7 @@ fun todoTask7() = TODO(
         There is no task for you here.
         Just make sure you're not forgetting to read carefully all code examples and comments and
         ask questions if you have any. =) Then return 'true' from 'task7'.
-        More information about classes in kotlin can be found in syntax/classesObjectsTraits.kt
+        More information about classes in kotlin can be found in syntax/classesObjectsInterfaces.kt
     """,
     references = { JavaCode7.Person4("???", -1) }
 )

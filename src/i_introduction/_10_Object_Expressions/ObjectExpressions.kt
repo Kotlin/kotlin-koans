@@ -20,7 +20,7 @@ fun objectLiteral() {
         }
     }
 
-    // Anonymous object extending a trait (interface)
+    // Anonymous object extending an interface
     runInANewThread(object : Runnable {
         override fun run() {
             // ...
