@@ -9,7 +9,7 @@ fun test() {
 fun useArray() {
     val asc = Array<Int>(5, { i -> i * i }) // Creates an array [0, 1, 4, 9, 16]
 
-    val array = array(1, 2, 3, 4)
+    val array = arrayOf(1, 2, 3, 4)
     array[1] = array[1] * 2 // no actual calls to get() and set() generated
     for (x in array) {
         // no iterator created
@@ -30,5 +30,5 @@ fun useArray() {
 
 fun arraysOfPrimitives() {
     // for the best performance on the JVM use specialized array classes
-    val intArray: IntArray = intArray(1, 2, 3)
+    val intArray: IntArray = intArrayOf(1, 2, 3)
 }

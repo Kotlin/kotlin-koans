@@ -9,7 +9,7 @@ fun compareStrings(s1: String?, s2: String?) {
     Intrinsics.areEqual(s1, s2)
 }
 
-trait B {
+interface B {
     fun compareTo(other: B): Int
 }
 

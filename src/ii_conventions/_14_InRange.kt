@@ -2,7 +2,7 @@ package ii_conventions
 
 import util.TODO
 
-trait Container<E> {
+interface Container<E> {
     fun contains(element: E): Boolean
 }
 

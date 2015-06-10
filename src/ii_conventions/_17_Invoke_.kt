@@ -2,7 +2,7 @@ package ii_conventions
 
 import util.TODO
 
-trait My {
+interface My {
     fun invoke(i: Int)
 }
 

@@ -6,7 +6,7 @@ fun compareStrings(s1: String?, s2: String?) {
     s1?.equals(s2) ?: s2.identityEquals(null)
 }
 
-trait C {
+interface C {
     fun compareTo(other: C): Int
 }
 
@@ -20,8 +20,8 @@ fun test(c1: C, c2: C) {
     c1.compareTo(c2) >= 0
 }
 
-trait A
-trait B {
+interface A
+interface B {
     //unary operations
     fun plus()
     fun minus()
@@ -38,7 +38,7 @@ trait B {
     fun rangeTo(a: A): B
 }
 
-[suppress("UNUSED_CHANGED_VALUE", "UNUSED_VALUE")]
+@suppress("UNUSED_CHANGED_VALUE", "UNUSED_VALUE")
 fun binaryAndUnaryOperations(a: A, b: B) {
     +b
     -b
@@ -59,7 +59,7 @@ fun binaryAndUnaryOperations(a: A, b: B) {
     b1 = b1 + a
 }
 
-trait D {
+interface D {
     fun plusAssign(a: A)
     fun minusAssign(a: A)
     fun timesAssign(a: A)
@@ -73,7 +73,7 @@ fun assignmentOperations(d: D, a: A) {
     d.plusAssign(a)
 }
 
-trait MyCollection<E> {
+interface MyCollection<E> {
     fun contains(e: E): Boolean
 }
 
@@ -87,7 +87,7 @@ fun conventionForIn(c: MyCollection<A>, a: A) {
     !c.contains(a)
 }
 
-trait MyMap<K, V> {
+interface MyMap<K, V> {
     fun get(k: K): V
     fun set(k: K, v: V)
 }

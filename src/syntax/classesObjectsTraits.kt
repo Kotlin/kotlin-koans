@@ -1,7 +1,7 @@
 package syntax.classesObjectsTraits
 
 // traits are like Java8 interfaces (stateless but with implementations)
-trait SimpleTrait {
+interface SimpleTrait {
     fun foo(): Int
     fun bar() = "default implementation ${foo()}"
 }
@@ -46,7 +46,7 @@ fun demo() {
     Outer.Nested().foo() // == 2
 }
 
-class ClassWithPrivateConstructor private(val bar: Int) {
+class ClassWithPrivateConstructor private constructor(val bar: Int) {
 
     // Classes do not have static methods.
     // In most cases, namespace-level functions form a good substitute for them,
@@ -62,5 +62,5 @@ fun useClassObject() {
 
 fun localClass() {
     // class or object can be declared locally in a function
-    [data] class Local(val i: Int, val s: String) {}
+    @data class Local(val i: Int, val s: String) {}
 }

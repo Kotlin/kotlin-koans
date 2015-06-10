@@ -13,7 +13,7 @@ fun infixNotation() {
 
 //Only predefined operators can be overloaded by the corresponding names
 //A complete list of operators can be found in syntax/OperatorOverloading.kt
-trait A {
+interface A {
     fun plus(a: A): A
     fun times(a: A): A
     fun not(): A

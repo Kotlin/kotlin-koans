@@ -18,9 +18,9 @@ class Outer { // implicit label @Outer
     }
 }
 
-trait A { fun a() {} }
-trait B { fun b() {} }
-trait C { fun c() {} }
+interface A { fun a() {} }
+interface B { fun b() {} }
+interface C { fun c() {} }
 fun B.foo(f: C.()->Unit) = f
 
 fun labelsForExtensionFunctionLiterals(a: A, b: B) {
