@@ -5,12 +5,12 @@ import util.TODO
 class Person1(val name: String, val age: Int)
 
 //no 'new' keyword
-fun create() = Person1("James Gosling", 58)
+fun create() = Person1("Alice", 29)
 
 fun useFromJava() {
     // property 'val name' = backing field + getter
     // => from Java you access it through 'getName()'
-    JavaCode7().useKotlinClass(Person1("Martin Odersky", 55))
+    JavaCode7().useKotlinClass(Person1("Bob", 31))
 
     // property 'var mutable' = backing field + getter + setter
 }
