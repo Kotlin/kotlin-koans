@@ -62,5 +62,5 @@ fun useClassObject() {
 
 fun localClass() {
     // class or object can be declared locally in a function
-    @data class Local(val i: Int, val s: String) {}
+    data class Local(val i: Int, val s: String) {}
 }

@@ -5,7 +5,7 @@ import org.junit.Test as test
 import v_collections.data.*
 
 class H_Group_By {
-    test fun testGroupCustomersByCity() {
+    @test fun testGroupCustomersByCity() {
         Assert.assertEquals(groupedByCities, shop.groupCustomersByCity())
     }
 }

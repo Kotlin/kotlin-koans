@@ -5,7 +5,7 @@ import org.junit.Test as test
 import v_collections.data.*
 
 class F_Sort {
-    test fun testGetCustomersSortedByNumberOfOrders() {
+    @test fun testGetCustomersSortedByNumberOfOrders() {
         Assert.assertEquals(sortedCustomers, shop.getCustomersSortedByNumberOfOrders())
     }
 }

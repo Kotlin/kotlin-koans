@@ -7,11 +7,11 @@ import v_collections.shopBuilders.customer
 import v_collections.shopBuilders.order
 
 class K_Compound_Tasks {
-    test fun testGetCustomersWhoOrderedProduct() {
+    @test fun testGetCustomersWhoOrderedProduct() {
         Assert.assertEquals(setOf(customers[reka], customers[asuka]), shop.getCustomersWhoOrderedProduct(idea))
     }
 
-    test fun testMostExpensiveDeliveredProduct() {
+    @test fun testMostExpensiveDeliveredProduct() {
         val testShop = v_collections.shopBuilders.shop("test shop for 'most expensive delivered product'") {
             customer(lucas, Canberra) {
                 order(isDelivered = false, products = idea)
@@ -21,7 +21,7 @@ class K_Compound_Tasks {
         Assert.assertEquals(reSharper, testShop.customers[0].getMostExpensiveDeliveredProduct())
     }
 
-    test fun testNumberOfTimesEachProductWasOrdered() {
+    @test fun testNumberOfTimesEachProductWasOrdered() {
         Assert.assertEquals(3, shop.getNumberOfTimesProductWasOrdered(reSharper))
     }
 }

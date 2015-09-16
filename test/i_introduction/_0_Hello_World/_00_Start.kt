@@ -4,7 +4,7 @@ import junit.framework.Assert
 import org.junit.Test as test
 
 class _00_Start {
-    test fun testOk() {
+    @test fun testOk() {
         Assert.assertEquals("OK", task0())
     }
 }

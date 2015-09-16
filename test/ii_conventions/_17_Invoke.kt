@@ -4,11 +4,11 @@ import junit.framework.Assert
 import org.junit.Test as test
 
 class _17_Invoke {
-    test fun testTask17() {
+    @test fun testTask17() {
         Assert.assertEquals(4, task17(Invokable()))
     }
 
-    test fun testNumberOfInvocations() {
+    @test fun testNumberOfInvocations() {
         val message = "The number of invocations is incorrect"
         fun testInvokable(numberOfInvocations: Int, invokeSeveralTimes: (Invokable) -> Invokable) {
             val invokable = Invokable()

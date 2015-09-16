@@ -6,7 +6,7 @@ import org.junit.Assert
 
 
 public class _07_Data_Classes {
-    test fun testDelight() {
+    @test fun testDelight() {
         Assert.assertTrue(task7())
     }
 }

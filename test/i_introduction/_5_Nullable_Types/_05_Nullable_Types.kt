@@ -24,26 +24,26 @@ class _05_Nullable_Types {
                 shouldBeInvoked, invoked)
     }
 
-    test fun everythingIsOk() {
+    @test fun everythingIsOk() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")),
                 "Hi Bob! We have an awesome proposition for you...",
                 "bob@gmail.com",
                 true)
     }
 
-    test fun noMessage() {
+    @test fun noMessage() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")), null)
     }
 
-    test fun noEmail() {
+    @test fun noEmail() {
         testSendMessageToClient(Client(PersonalInfo(null)), "Hi Bob! We have an awesome proposition for you...")
     }
 
-    test fun noPersonalInfo() {
+    @test fun noPersonalInfo() {
         testSendMessageToClient(Client(null), "Hi Bob! We have an awesome proposition for you...")
     }
 
-    test fun noClient() {
+    @test fun noClient() {
         testSendMessageToClient(null, "Hi Bob! We have an awesome proposition for you...")
     }
 }

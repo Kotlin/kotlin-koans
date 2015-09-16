@@ -38,7 +38,7 @@ interface B {
     fun rangeTo(a: A): B
 }
 
-@suppress("UNUSED_CHANGED_VALUE", "UNUSED_VALUE")
+@Suppress("UNUSED_CHANGED_VALUE", "UNUSED_VALUE")
 fun binaryAndUnaryOperations(a: A, b: B) {
     +b
     -b

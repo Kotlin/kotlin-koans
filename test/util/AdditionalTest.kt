@@ -10,7 +10,7 @@ import i_introduction._6_Smart_Casts._06_Smart_Casts
 import i_introduction._9_Extensions_On_Collections._09_Extensions_On_Collections
 
 class AdditionalTest {
-    test fun test() {
+    @test fun test() {
         invokeTests(
                 { _01_Functions().collection() },
                 { _02_Default_And_Named_Params().testDefaultAndNamedParams() },

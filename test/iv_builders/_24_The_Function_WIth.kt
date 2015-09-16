@@ -5,7 +5,7 @@ import org.junit.Test as test
 import java.util.HashMap
 
 class _24_The_Function_With {
-    test fun testBuildString() {
+    @test fun testBuildString() {
         val s = buildString()
         val sb = StringBuilder()
         sb.append("Numbers: ")
@@ -15,7 +15,7 @@ class _24_The_Function_With {
         Assert.assertEquals("String should be built:", sb.toString(), s)
     }
 
-    test fun testBuildMap() {
+    @test fun testBuildMap() {
         val map = buildMap()
         val expected = HashMap<Int, String>()
         for (i in 0..10) {
@@ -24,7 +24,7 @@ class _24_The_Function_With {
         Assert.assertEquals("Map should be filled with the right values", expected, map)
     }
 
-    test fun testWith() {
+    @test fun testWith() {
         Assert.assertTrue(task24())
     }
 }

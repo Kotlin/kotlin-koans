@@ -7,7 +7,7 @@ import v_collections.shopBuilders.*
 
 
 class J_Fold {
-    test fun testGetProductsOrderedByAllCustomers() {
+    @test fun testGetProductsOrderedByAllCustomers() {
         val testShop = shop("test shop for 'fold'") {
             customer(lucas, Canberra) {
                 order(idea)

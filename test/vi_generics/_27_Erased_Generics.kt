@@ -6,7 +6,7 @@ import junit.framework.Assert
 import vi_generics.generics.task27
 
 class _27_Erased_Generics {
-    test fun testGenericsQuiz() {
+    @test fun testGenericsQuiz() {
         val answers = linkedMapOf(1 to b, 2 to a, 3 to c)
         Assert.assertEquals("Your answers are incorrect: ", answers, task27())
     }

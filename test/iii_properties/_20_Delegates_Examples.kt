@@ -5,7 +5,7 @@ import org.junit.Test as test
 import java.util.HashMap
 
 class _20_Delegates_Examples {
-    test fun testCommodity() {
+    @test fun testCommodity() {
         val data = hashMapOf<String, Any?>("description" to "snowboard", "price" to 349, "isAvailable" to true)
         val p = Commodity(data)
         Assert.assertEquals("snowboard", p.description)

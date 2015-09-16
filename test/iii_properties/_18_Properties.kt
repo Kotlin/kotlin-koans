@@ -4,7 +4,7 @@ import junit.framework.Assert
 import org.junit.Test as test
 
 class _18_Properties {
-    test fun testPropertyWithCounter() {
+    @test fun testPropertyWithCounter() {
         val q = PropertyExample()
         q.propertyWithCounter = 14
         q.propertyWithCounter = 21

@@ -6,7 +6,7 @@ import kotlin.properties.ReadWriteProperty
 
 class A(initializer: () -> Int) {
 
-    val lazy: Int by Delegates.lazy(initializer)
+    val lazy: Int by lazy(LazyThreadSafetyMode.NONE, initializer)
 }
 
 class B() {
@@ -34,6 +34,6 @@ fun <T> todoTask20(): ReadWriteProperty<Commodity, T> = TODO(
     references = {
         val data = hashMapOf<String, Any?>("description" to "snowboard", "price" to 349, "isAvailable" to true)
         Commodity(data)
-        Delegates.mapVar<Any>(data)
+        data
     }
 )

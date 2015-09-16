@@ -12,9 +12,9 @@ import iv_builders.renderProductTable
 fun main(args: Array<String>) {
     with (JFrame("Product popularity")) {
         setSize(600, 600)
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        defaultCloseOperation = JFrame.EXIT_ON_CLOSE
         add(JScrollPane(JLabel(renderProductTable(), CENTER)))
-        setVisible(true)
+        isVisible = true
     }
 }
 

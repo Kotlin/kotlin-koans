@@ -5,7 +5,7 @@ import org.junit.Test as test
 import v_collections.data.*
 
 class A_Introduction {
-    test fun testSetOfCustomers() {
+    @test fun testSetOfCustomers() {
         Assert.assertEquals(shop.getSetOfCustomers(), customers.values().toSet())
     }
 }

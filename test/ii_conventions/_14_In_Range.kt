@@ -12,15 +12,15 @@ class _14_In_Range {
         Assert.assertEquals(message, shouldBeInRange, checkInRange(date, first, last))
     }
 
-    test fun testInRange() {
+    @test fun testInRange() {
         doTest(MyDate(2014, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = true)
     }
 
-    test fun testBefore() {
+    @test fun testBefore() {
         doTest(MyDate(2013, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
     }
 
-    test fun testAfter() {
+    @test fun testAfter() {
         doTest(MyDate(2015, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
     }
 }
