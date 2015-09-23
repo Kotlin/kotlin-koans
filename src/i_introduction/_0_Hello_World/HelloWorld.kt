@@ -9,17 +9,19 @@ fun main(args: Array<String>) {
 
 fun todoTask0() = TODO(
     """
-        Introduction.
-        The task in the workshop is usually to change the function 'taskN' by replacing its body,
-        the function invocation 'todoTaskN()', with the corresponding code according to the problem.
-        The function 'todoTaskN()' throws an exception, so you usually have to replace its invocation with meaningful code.
+        Introduction:
+
+        Workshop tasks are usually to change the function 'taskN' by replacing its body
+        (which starts out as the function invocation 'todoTaskN()'), with the correct code according to the problem.
+        The function 'todoTaskN()' throws an exception, so you usually have to replace that invocation with
+        meaningful code.
 
         There are usually explanations of the Kotlin features to use in the same file as the task.
-        Please read them, we prepared them carefully for you =).
+        Please read them; we prepared them carefully for you =).
 
         Using references you can usually navigate and see the code mentioned in the task description.
 
-        To start please make the function 'task0' returns "OK" =).
+        To start please make the function 'task0' return "OK" =).
     """,
     references = { task0(); "OK" }
 )

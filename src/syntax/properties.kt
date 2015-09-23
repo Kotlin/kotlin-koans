@@ -19,7 +19,7 @@ class A {
        get() = 42
 }
 
-// extension property cannot have a backing field
+// Extension properties cannot have a backing field
 val String.size: Int
     get() = length()
 

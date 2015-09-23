@@ -13,6 +13,6 @@ val Customer.orderedProducts: Set<Product> get() {
 }
 
 val Shop.allOrderedProducts: Set<Product> get() {
-    // Return all products ordered by all customers
+    // Return all products ordered by any customer
     todoCollectionTask()
 }

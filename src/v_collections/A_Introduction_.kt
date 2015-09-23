@@ -10,7 +10,7 @@ import util.TODO
 
 /*
  *  For easy java compatibility we don't introduce our own collections, but use standard Java ones.
- *  However there are two views on them: mutable and read-only.
+ *  However there are two different means of use: mutable and read-only.
  */
 
 fun useReadonlySet(set: Set<Int>) {
@@ -23,7 +23,7 @@ fun useMutableSet(set: MutableSet<Int>) {
 }
 
 /*
- *  There are a bunch of operations that help to transform a collection to another one, starting with 'to'
+ *  There are many operations that help to transform one collection into another, starting with 'to'
  */
 fun example0(list: List<Int>) {
     list.toSet()

@@ -4,7 +4,7 @@ import java.util.regex.Pattern
 import util.TODO
 
 fun example1(a: Any, b: Any) =
-        "There is a text in which some variables ($a, $b) appear."
+        "This is some text in which variables ($a, $b) appear."
 
 fun example2(a: Any, b: Any) =
         "You can write it in a Java way as well. Like this: " + a + ", " + b + "!"
@@ -14,7 +14,7 @@ fun example3(c: Boolean, x: Int, y: Int) = "Any expression can be used: ${if (c)
 fun example4() =
 """
 You can use triple-quoted strings to write multiline text.
-There is no escaping here, so it can be useful for writing patterns as well.
+There is no escaping here, so this technique can be useful for writing patterns as well.
 String template entries (${42}) are allowed here.
 """
 
@@ -29,7 +29,7 @@ val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 fun todoTask4() = TODO(
     """
         Task 4.
-        Copy the body of 'getPatternInTQString()' to 'task4()' function
+        Copy the body of 'getPatternInTQString()' to the 'task4()' function
         and rewrite it in such a way that it matches 'Douglas Adams (11 MAR 1952)'.
         Use the 'month' variable.
     """,

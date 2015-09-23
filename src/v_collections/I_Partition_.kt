@@ -3,7 +3,7 @@ package v_collections
 fun example8() {
     val numbers = listOf(1, 3, -4, 2, -11)
 
-    //the details (how multi-assignment works) were explained in 'Conventions' task earlier
+    // The details (how multi-assignment works) were explained in the earlier 'Conventions' task
     val (positive, negative) = numbers.partition { it > 0 }
 
     positive == listOf(1, 3, 2)

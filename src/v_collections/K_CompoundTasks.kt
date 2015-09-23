@@ -6,13 +6,13 @@ fun Shop.getCustomersWhoOrderedProduct(product: Product): Set<Customer> {
 }
 
 fun Customer.getMostExpensiveDeliveredProduct(): Product? {
-    // Return the most expensive among delivered products
-    // (use Order.isDelivered flag)
+    // Return the most expensive product among all delivered products
+    // (use the Order.isDelivered flag)
     todoCollectionTask()
 }
 
 fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int {
-    // Returns number of times the given product was ordered.
+    // Return the number of times the given product was ordered.
     // Note: a customer may order the same product for several times.
     todoCollectionTask()
 }

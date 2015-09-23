@@ -17,7 +17,7 @@ fun todoTask26() = TODO(
         Look at the questions below and give your answers:
         change 'insertAnswerHere()' in task26's map to your choice (a, b or c).
 
-        All the constants are imported by 'util.questions.Answer.*', so they can be accessed by name.
+        All the constants are imported via 'util.questions.Answer.*', so they can be accessed by name.
 
     """
 )

@@ -25,7 +25,7 @@ fun todoTask23() = TODO(
         Uncomment the commented code and make it compile.
         Add and implement function 'buildMap' with one parameter (of type extension function) creating a new HashMap,
         building it and returning it as a result.
-        Use MutableMap, look through syntax/javaCollections for details.
+        Use MutableMap; look through the syntax/javaCollections.kt file for details.
     """,
     references = { syntax.javaCollections.useMutableSet(HashSet())}
 )

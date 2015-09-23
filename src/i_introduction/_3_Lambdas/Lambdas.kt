@@ -12,7 +12,7 @@ fun examples() {
     fun apply(i: Int, f: (Int) -> Unit) = f(i)
 
     apply(2, { x -> x + 25 })
-    //you can omit round brackets if lambda is the last argument
+    // You can omit wrapping parentheses if a lambda is the last argument to a function call
     apply(2) { x -> x + 25 }
 
     fun applyToStrangeArguments(f: (Int, Int) -> Int) = f(938, 241)
@@ -29,8 +29,8 @@ fun examples() {
 fun todoTask3(collection: Collection<Int>) = TODO(
     """
         Task 3.
-        Rewrite 'JavaCode3.task3()' to Kotlin using lambdas.
-        Please find the appropriate function on collection through completion.
+        Rewrite 'JavaCode3.task3()' in Kotlin using lambdas.
+        You can find the appropriate function to call on 'collection' through IntelliJ's code completion feature.
         (Don't use the class 'Iterables').
     """,
     references = { JavaCode3().task3(collection) })

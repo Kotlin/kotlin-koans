@@ -2,7 +2,7 @@ package v_collections
 
 fun example1(list: List<Int>) {
 
-    // If lambda has one parameter, the corresponding argument can be accessed as 'it'
+    // If a lambda has exactly one argument, that agument can be accessed as 'it'
     val positiveNumbers = list.filter { it > 0 }
 
     val squares = list.map { it * it }
@@ -14,7 +14,7 @@ fun Shop.getCitiesCustomersAreFrom(): Set<City> {
 }
 
 fun Shop.getCustomersFrom(city: City): List<Customer> {
-    // Return the list of the customers who live in the given city
+    // Return a list of the customers who live in the given city
     todoCollectionTask()
 }
 
@@ -26,7 +26,7 @@ fun whyMapOperationOnSetReturnsListNotSet() {
 
     val cities = clients.map { it.city }
 
-    // If map returned set of cities (instead of list):
+    // If map returned a set of cities (instead of a list):
     clients.size() != cities.size() // could be surprising!
 }
 

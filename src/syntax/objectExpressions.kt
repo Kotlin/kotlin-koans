@@ -13,14 +13,14 @@ fun objectLiteral() {
 
 fun functionLiteral() {
     // If you invoke a Java method that requires Java interface as a parameter
-    // that has only one single abstract method (that means SAM conversion is possible),
-    // you can use lambda instead
+    // that has only one single abstract method (this means SAM conversion is possible),
+    // you can use a lambda instead
     YourOldJavaCodeUsingRunnable.run {
         // ...
     }
 
     // For every SAM interface defined in Java, Kotlin has a constructor function
-    // that you can use to create instances of that SAM-interface, passing a lambda in
+    // that you can use to create instances of that SAM-interface, passing in a lambda
     val runnable = Runnable {
         // ...
     }

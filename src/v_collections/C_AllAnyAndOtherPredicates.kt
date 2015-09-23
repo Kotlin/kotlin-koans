@@ -24,16 +24,16 @@ fun Shop.checkAllCustomersAreFrom(city: City): Boolean {
 }
 
 fun Shop.hasCustomerFrom(city: City): Boolean {
-    // Check there is at least one customer from the given city
+    // Return true if there is at least one customer from the given city
     todoCollectionTask()
 }
 
 fun Shop.countCustomersFrom(city: City): Int {
-    // Returns the number of customers from the given city
+    // Return the number of customers from the given city
     todoCollectionTask()
 }
 
 fun Shop.findAnyCustomerFrom(city: City): Customer? {
-    // Return a customer who lives in the given city or null if there is none
+    // Return a customer who lives in the given city, or null if there is none
     todoCollectionTask()
 }
