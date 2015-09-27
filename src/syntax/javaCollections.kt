@@ -1,6 +1,6 @@
 package syntax.javaCollections
 
-// In Kotlin, Java standard collections are used, but there are two different manners of use:
+// In Kotlin, Java standard collections are used, but there are two representations of them:
 // mutable and read-only
 
 fun useReadonlySet(set: Set<Int>) {

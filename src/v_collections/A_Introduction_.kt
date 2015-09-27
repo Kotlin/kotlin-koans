@@ -10,7 +10,7 @@ import util.TODO
 
 /*
  *  For easy java compatibility we don't introduce our own collections, but use standard Java ones.
- *  However there are two different means of use: mutable and read-only.
+ *  However there are two representations of them: mutable and read-only.
  */
 
 fun useReadonlySet(set: Set<Int>) {
