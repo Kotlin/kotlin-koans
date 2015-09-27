@@ -7,12 +7,12 @@ import util.TODO
 fun task28() = TODO(
     """
         Task28.
-        Add function 'partitionTo' that splits collection in two collections according to a predicate.
+        Add a 'partitionTo' function that splits a collection into two collections according to a predicate.
         Uncomment the commented invocations of 'partitionTo' below and make them compile.
 
-        There is the function 'partition()' in the standard library that always returns two lists (newly created).
-        You shall write a function that splits the collection in two given collections as arguments.
-        The signature of the function 'toCollection()' from standard library may help you.
+        There is a 'partition()' function in the standard library that always returns two newly created lists.
+        You should write a function that splits the collection into two collections given as arguments.
+        The signature of the 'toCollection()' function from the standard library may help you.
     """,
         references = { l: List<Int> ->
             l.partition { it > 0 }

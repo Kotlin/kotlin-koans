@@ -20,8 +20,8 @@ class SimpleProperty {
 }
 
 fun usage(sp: SimpleProperty) {
-    //Usages are compiled to getter and setter invocations.
-    //You can open "View -> Tool windows -> Kotlin" and see the bytecode.
+    // Usages are compiled to getter and setter invocations.
+    // You can open "View -> Tool windows -> Kotlin" in IntelliJ to see the bytecode.
     val x = sp.property
     sp.property = x + 1
 }
@@ -46,9 +46,9 @@ class PropertyExample() {
 fun todoTask18() = TODO(
     """
         Task 18.
-        Add custom setter to PropertyExample.propertyWithCounter so that
-        it increments the 'counter' property every time 'propertyWithCounter' is assigned to.
-        Initialize 'propertyWithCounter' with 'null' ('setter' is NOT invoked on initialization).
+        Add a custom setter to PropertyExample.propertyWithCounter so that
+        the 'counter' property is incremented every time 'propertyWithCounter' is assigned to.
+        Initialize 'propertyWithCounter' with null (the setter should NOT be invoked on initialization).
     """,
     references = { PropertyExample() }
 )

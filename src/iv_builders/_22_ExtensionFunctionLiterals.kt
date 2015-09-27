@@ -31,7 +31,7 @@ fun functionLiterals() {
 fun todoTask22() = TODO(
     """
         Task 22.
-        Replace 'todoTask22()' so that 'x.isEven()' checks that x is even
+        Rewrite 'todoTask22()' so that 'x.isEven()' checks that x is even
         and 'x.isOdd()' checks that x is odd.
     """
 )

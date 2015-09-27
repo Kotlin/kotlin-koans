@@ -12,8 +12,8 @@ fun usage() {
 fun todoTask2_1() = TODO(
     """
         Task 2(1).
-        Rewrite all overloaded functions 'JavaCode2.foo()' to one function 'foo()' in Kotlin using default parameters.
-        The function 'foo()' is declared below, you have to add parameters and replace 'todoTask2_1()' with a body.
+        Rewrite all overloaded functions 'JavaCode2.foo()' as one function 'foo()' in Kotlin using default parameters.
+        The function 'foo()' is declared below; you have to add parameters and replace 'todoTask2_1()' with a real body.
         Uncomment the commented code and make it compile.
     """,
     references = { name: String -> JavaCode2().foo(name); foo(name) })

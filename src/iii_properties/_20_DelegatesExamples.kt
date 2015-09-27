@@ -13,7 +13,7 @@ class B() {
 
     var notNull: Int by Delegates.notNull()
 
-    //If the property is accessed without initialization, an exception is thrown.
+    // If the property is accessed without initialization, an exception is thrown.
     fun foo() = notNull
 }
 

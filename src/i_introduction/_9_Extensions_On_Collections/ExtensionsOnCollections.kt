@@ -10,7 +10,7 @@ fun operationsWithCollections() {
             User("Jane", "Doe", 22)
     )
 
-    //iterate over collection:
+    // Iterate over collection:
     for (user in users) {
     }
 
@@ -25,14 +25,14 @@ fun operationsWithMaps() {
 
     val map = hashMapOf(1 to "one", 3 to "three", 42 to "forty two")
 
-    //iterate over map:
+    // Iterate over map:
     for ((key, value) in map) {
     }
 
-    //convenient way to access elements:
+    // Convenient way to access elements:
     map[43] = map[42] + " plus one"
 
-    //the details (how it works) you'll found in 'Conventions' task later
+    // The details on how this code works may be found in the 'Conventions' task, later in this tutorial.
 
     println(map)
 }
@@ -45,7 +45,7 @@ fun main(args: Array<String>) {
 fun todoTask9() = TODO(
     """
         Task 9.
-        The function should do the same as 'JavaCode9.doSomethingStrangeWithCollection'
+        The function should behave the same as 'JavaCode9.doSomethingStrangeWithCollection'
         Replace all invocations of 'todoTask9()' with the appropriate code.
     """,
     references = { c: Collection<String> -> JavaCode9().doSomethingStrangeWithCollection(c) }

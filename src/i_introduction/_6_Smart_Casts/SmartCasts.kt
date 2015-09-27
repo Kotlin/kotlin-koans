@@ -12,7 +12,7 @@ fun eval(e: Expr): Int {
         return n.value
     }
     if (e is Sum) {
-        // actually, there is no need in a separate variable:
+        // Actually, there is no need for a separate variable:
         return eval(e.left) + eval(e.right)
     }
     throw IllegalArgumentException("Unknown expression")
@@ -28,8 +28,8 @@ fun evalWhen(e: Expr): Int =
 fun todoTask6(expr: Expr) = TODO(
     """
         Task 6.
-        Rewrite 'JavaCode6.print()' to Kotlin using 'when'.
-        The other examples of 'when' syntax can be found in syntax/ifWhenExpressions.kt
+        Rewrite 'JavaCode6.print()' in Kotlin using a 'when' statement.
+        Other examples of 'when' syntax can be found in the syntax/ifWhenExpressions.kt file.
     """,
     references = { JavaCode6().print(expr); syntax.ifWhenExpressions.whenWithoutArgument(42) })
 
