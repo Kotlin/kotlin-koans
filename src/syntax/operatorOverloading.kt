@@ -3,11 +3,11 @@ package syntax.operatorOverloading
 fun compareStrings(s1: String?, s2: String?) {
     s1 == s2
     // is compiled to
-    s1?.equals(s2) ?: s2.identityEquals(null)
+    s1?.equals(s2) ?: s2 === null
 }
 
 interface C {
-    fun compareTo(other: C): Int
+    operator fun compareTo(other: C): Int
 }
 
 fun test(c1: C, c2: C) {
@@ -23,19 +23,19 @@ fun test(c1: C, c2: C) {
 interface A
 interface B {
     //unary operations
-    fun plus()
-    fun minus()
+    operator fun plus()
+    operator fun minus()
 
-    fun inc(): B
-    fun dec(): B
+    operator fun inc(): B
+    operator fun dec(): B
 
     //binary operations
-    fun plus(a: A): B
-    fun minus(a: A): B
-    fun times(a: A): B
-    fun div(a: A): B
-    fun mod(a: A): B
-    fun rangeTo(a: A): B
+    operator fun plus(a: A): B
+    operator fun minus(a: A): B
+    operator fun times(a: A): B
+    operator fun div(a: A): B
+    operator fun mod(a: A): B
+    operator fun rangeTo(a: A): B
 }
 
 @Suppress("UNUSED_CHANGED_VALUE", "UNUSED_VALUE")
@@ -60,11 +60,11 @@ fun binaryAndUnaryOperations(a: A, b: B) {
 }
 
 interface D {
-    fun plusAssign(a: A)
-    fun minusAssign(a: A)
-    fun timesAssign(a: A)
-    fun divAssign(a: A)
-    fun modAssign(a: A)
+    operator fun plusAssign(a: A)
+    operator fun minusAssign(a: A)
+    operator fun timesAssign(a: A)
+    operator fun divAssign(a: A)
+    operator fun modAssign(a: A)
 }
 
 fun assignmentOperations(d: D, a: A) {
@@ -74,7 +74,7 @@ fun assignmentOperations(d: D, a: A) {
 }
 
 interface MyCollection<E> {
-    fun contains(e: E): Boolean
+    operator fun contains(e: E): Boolean
 }
 
 fun conventionForIn(c: MyCollection<A>, a: A) {
@@ -88,8 +88,8 @@ fun conventionForIn(c: MyCollection<A>, a: A) {
 }
 
 interface MyMap<K, V> {
-    fun get(k: K): V
-    fun set(k: K, v: V)
+    operator fun get(k: K): V
+    operator fun set(k: K, v: V)
 }
 
 fun conventionForGet(map: MyMap<A, B>, a: A, b: B) {

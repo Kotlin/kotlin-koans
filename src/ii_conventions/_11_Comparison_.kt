@@ -10,7 +10,7 @@ fun compareStrings(s1: String?, s2: String?) {
 }
 
 interface B {
-    fun compareTo(other: B): Int
+    operator fun compareTo(other: B): Int
 }
 
 fun test(b1: B, b2: B) {

@@ -28,14 +28,14 @@ fun usage(sp: SimpleProperty) {
 
 class PropertiesWithCustomAccessors {
     var generatedByDefault: Int = 0
-        set(value: Int) { $generatedByDefault = value }
-        get() = $generatedByDefault
+        set(value: Int) { field = value }
+        get() = field
 
     val propertyWithoutBackingField: Int
         get() = 42
 
     val infiniteRecursion: Int? = Random().nextInt()
-        get() = if ($infiniteRecursion!! < 42) null else infiniteRecursion
+        get() = if (field!! < 42) null else infiniteRecursion
 }
 
 class PropertyExample() {

@@ -3,10 +3,10 @@ package ii_conventions
 import util.TODO
 
 interface My {
-    fun invoke(i: Int)
+    operator fun invoke(i: Int)
 }
 
-// Objects with 'invoke' function can by invokable as a function
+// Objects with 'invoke' function marked as 'operator' can by invokable as a function
 fun testTypeWithInvokeMember(my: My) {
     my(1)
 
@@ -24,7 +24,7 @@ fun testFunctionType(f: (Int) -> Int) {
 
 // You can add an 'invoke' extension for any class,
 // but it's better not to overdo it
-fun Int.invoke() { println(this) }
+operator fun Int.invoke() { println(this) }
 
 fun testTypeWithInvokeExtension() {
     1() //huh?..

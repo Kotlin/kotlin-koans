@@ -8,11 +8,11 @@ class A {
     var propertyWithCustomAccessors: Int = 1
         set(v: Int) {
             println("setter")
-            $propertyWithCustomAccessors = v
+            field = v
         }
         get() {
             println("getter")
-            return $propertyWithCustomAccessors
+            return field
         }
 
     val propertyWithoutBackingField: Int

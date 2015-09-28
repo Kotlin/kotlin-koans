@@ -3,7 +3,7 @@ package ii_conventions
 import util.TODO
 
 interface Container<E> {
-    fun contains(element: E): Boolean
+    operator fun contains(element: E): Boolean
 }
 
 fun inConvention(container: Container<String>) {

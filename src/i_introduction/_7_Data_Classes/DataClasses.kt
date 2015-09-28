@@ -19,12 +19,12 @@ fun useFromJava() {
 class Person2(_name: String, _age: Int) { //_name, _age are constructor parameters
     val name: String = _name //property initialization is part of the constructor
       get(): String {
-          return $name // You can access the backing field of property with '$' + property name
+          return field // You can access the backing field of property using 'field'
       }
 
     val age: Int = _age
       get(): Int {
-          return $age
+           return field
       }
 }
 
