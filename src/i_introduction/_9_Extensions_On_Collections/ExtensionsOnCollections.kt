@@ -17,7 +17,7 @@ fun operationsWithCollections() {
     val minors = users.filter { u -> u.age < 21 }
     println("${minors.size()} user(s) under 21 years old")
 
-    val youngestOver20 = users filter { u -> u.age > 20 } minBy { u -> u.age }
+    val youngestOver20 = users.filter { u -> u.age > 20 }.minBy { u -> u.age }
     println("Youngest over 20: $youngestOver20")
 }
 

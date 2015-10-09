@@ -4,7 +4,7 @@ import util.TODO
 import ii_conventions.TimeInterval.*
 
 fun infixNotation() {
-    fun Int.foo(s: String) = "$s$this"
+    infix fun Int.foo(s: String) = "$s$this"
 
     1 foo "abc"
     // the same as:
