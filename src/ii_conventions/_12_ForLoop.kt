@@ -1,16 +1,6 @@
 package ii_conventions
 
-import util.TODO
-
-fun iterateOverCollection(collection: Collection<Int>) {
-    for (element in collection) {}
-}
-
-fun iterateOverString() {
-    // You can iterate over anything that has an 'iterator' method, member or extension.
-    for (c in "abcd") {}
-    "abcd".iterator() //library extension method
-}
+import util.*
 
 fun todoTask12(): Nothing = TODO(
     """
@@ -21,6 +11,7 @@ fun todoTask12(): Nothing = TODO(
         Use object expression to implement Iterator<MyDate>.
         Use the utility function 'MyDate.nextDay()'.
     """,
+    documentation = doc12(),
     references = { date: MyDate -> DateRange(date, date.nextDay()) })
 
 

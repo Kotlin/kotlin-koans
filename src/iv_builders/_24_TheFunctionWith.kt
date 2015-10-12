@@ -8,14 +8,11 @@ fun todoTask24(): Nothing = TODO(
     """
         Task 24.
         The previous examples can be rewritten with the library function 'with' (see examples below).
-        Write your own implementation of the function 'with' named 'with2', or just think what it should be.
-        (To check your work you can rename the usages of 'with' in this file to 'with2' and launch the tests for this task.)
-        Then look at the implementation in the library.
-        Return 'true' from 'task24()' if you have successfully familiarized yourself with 'with' =).
+        Write your own implementation of the function 'with' named 'myWith'.
     """
 )
 
-fun task24(): Boolean = todoTask24()
+fun <T, R> myWith(receiver: T, f: T.() -> R): R = todoTask24()
 
 fun buildString(): String {
     val stringBuilder = StringBuilder()

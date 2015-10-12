@@ -1,21 +1,7 @@
 package iii_properties
 
-import kotlin.properties.Delegates
-import util.TODO
+import util.*
 import kotlin.properties.ReadWriteProperty
-
-class A(initializer: () -> Int) {
-
-    val lazy: Int by lazy(LazyThreadSafetyMode.NONE, initializer)
-}
-
-class B() {
-
-    var notNull: Int by Delegates.notNull()
-
-    // If the property is accessed without initialization, an exception is thrown.
-    fun foo() = notNull
-}
 
 class Commodity(data: MutableMap<String, Any?>) {
 

@@ -3,13 +3,13 @@ package i_introduction._6_Smart_Casts;
 import util.JavaCode;
 
 public class JavaCode6 extends JavaCode {
-    public String print(Expr expr) {
+    public int eval(Expr expr) {
         if (expr instanceof Num) {
-            return "" + ((Num) expr).getValue();
+            return ((Num) expr).getValue();
         }
         if (expr instanceof Sum) {
             Sum sum = (Sum) expr;
-            return print(sum.getLeft()) + " + " + print(sum.getRight());
+            return eval(sum.getLeft()) + eval(sum.getRight());
         }
         throw new IllegalArgumentException("Unknown expression");
     }

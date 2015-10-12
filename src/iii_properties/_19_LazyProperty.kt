@@ -1,6 +1,6 @@
 package iii_properties
 
-import util.TODO
+import util.*
 
 class LazyProperty(val initializer: () -> Int) {
     val lazy: Int = todoTask19()
@@ -13,7 +13,7 @@ fun todoTask19(): Nothing = TODO(
         It should be initialized by the invocation of 'initializer()'
         at the moment of the first access.
         You can add as many additional properties as you need.
-        Do not use delegates ;).
+        Do not use delegated properties!
     """,
     references = { LazyProperty({ 42 }).lazy }
 )

@@ -1,13 +1,6 @@
 package i_introduction._2_Default_And_Named_Params
 
-import util.TODO
-import i_introduction._1_Functions.task1
-
-fun bar(i: Int, s: String = "", b: Boolean = true) {}
-
-fun usage() {
-    bar(1, b = false)
-}
+import util.*
 
 fun todoTask2_1(): Nothing = TODO(
     """
@@ -16,6 +9,7 @@ fun todoTask2_1(): Nothing = TODO(
         The function 'foo()' is declared below; you have to add parameters and replace 'todoTask2_1()' with a real body.
         Uncomment the commented code and make it compile.
     """,
+    documentation = doc2(),
     references = { name: String -> JavaCode2().foo(name); foo(name) })
 
 fun foo(name: String): String = todoTask2_1()

@@ -6,7 +6,7 @@ import org.junit.Assert
 
 
 public class _07_Data_Classes {
-    @test fun testDelight() {
-        Assert.assertTrue(task7())
+    @test fun testListOfPeople() {
+        Assert.assertEquals("[Person(name=Alice, age=29), Person(name=Bob, age=31)]", task7().toString())
     }
 }

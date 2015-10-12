@@ -1,14 +1,6 @@
 package ii_conventions
 
-import util.TODO
-
-fun iterateOverRange() {
-    //'..' resolves to 'rangeTo' function
-    val intRange = 1..10
-    for (i in intRange) {}
-    for (i in 1..10) {}
-    for (c in 'a'..'z') {}
-}
+import util.*
 
 fun todoTask13(): Nothing = TODO(
     """

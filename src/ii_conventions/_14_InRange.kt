@@ -1,6 +1,6 @@
 package ii_conventions
 
-import util.TODO
+import util.*
 
 interface Container<E> {
     operator fun contains(element: E): Boolean
@@ -32,6 +32,7 @@ fun todoTask14(): Nothing = TODO(
         Make class DateRange implement kotlin.Range<MyDate>.
         Add all changes to the file MyDate.kt.
     """,
+    documentation = doc14(),
     references = { range: Range<Int> -> }
 )
 

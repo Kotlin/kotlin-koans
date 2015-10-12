@@ -1,57 +1,21 @@
-package ii_conventions
+package ii_conventions.multiAssignemnt
 
-import util.TODO
+import util.*
 
-fun multiAssignPair(pair: Pair<Int, String>) {
-    val (first, second) = pair
+fun todoTask16() = TODO(
+    """
+        Task 16.
+        Read about multi-declarations and make the following code compile by adding one word (after uncommenting it).
+    """,
+    documentation = doc16()
+)
+
+class MyDate(val year: Int, val month: Int, val dayOfMonth: Int)
+
+fun isLeapDay(date: MyDate): Boolean {
+    todoTask16()
+//    val (year, month, dayOfMonth) = date
+//
+//    // 29 February of a leap year
+//    return year % 4 == 0 && month == 2 && dayOfMonth == 29
 }
-
-class MyPair {
-    operator fun component1(): Int = 1
-    operator fun component2(): String = "a"
-}
-
-fun howItWorks() {
-    fun invocation() {
-        val (i, s) = MyPair()
-    }
-    //invocations of functions 'component1' and 'component2' are generated
-    fun generatedCode() {
-        val tmp = MyPair()
-        val i = tmp.component1()
-        val s = tmp.component2()
-    }
-}
-
-fun iterateOverCollectionWithIndex(collection: Collection<Int>) {
-    for ((index, element) in collection.withIndex()) {
-        println("$index: $element")
-    }
-}
-
-fun howWorksMultiAssignmentInForCycle() {
-    fun invocation(it: Iterator<MyPair>) {
-        for ((i, s) in it) {
-        }
-    }
-
-    fun generatedCode(it: Iterator<MyPair>) {
-        for (tmp in it) {
-            val i = tmp.component1()
-            val s = tmp.component2()
-        }
-    }
-}
-
-// with 'data' annotation 'component1', 'component2', etc. are generated automatically
-// for constructor parameters
-data class MyAnotherPair(val i: Int, val s: String)
-
-//that's why we can multi-assign Date class:
-fun multiAssignDate(date: MyDate) {
-    val (year, month, dayOfMonth) = date
-}
-
-fun todoTask16(): Nothing = TODO("Again no special task. Just return 'true' if you are interested in Kotlin. =)")
-
-fun task16(): Boolean = todoTask16()

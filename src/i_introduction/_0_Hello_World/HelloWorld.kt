@@ -1,11 +1,6 @@
 package i_introduction._0_Hello_World.Hello
 
-import util.TODO
-
-//compiles to a static function in a class HelloPackage
-fun main(args: Array<String>) {
-    println("Hello, world!")
-}
+import util.*
 
 fun todoTask0(): Nothing = TODO(
     """
@@ -16,13 +11,14 @@ fun todoTask0(): Nothing = TODO(
         The function 'todoTaskN()' throws an exception, so you usually have to replace that invocation with
         meaningful code.
 
-        There are usually explanations of the Kotlin features to use in the same file as the task.
-        Please read them; we prepared them carefully for you =).
+        Using 'documentation' argument you can open the related part of Kotlin online documentation.
+        Press 'F1' (Quick Documentation) on 'doc0()', "See also" section gives you a link.
 
-        Using references you can usually navigate and see the code mentioned in the task description.
+        Using 'references' you can usually navigate and see the code mentioned in the task description.
 
-        To start please make the function 'task0' return "OK" =).
+        To start please make the function 'task0' return "OK".
     """,
+    documentation = doc0(),
     references = { task0(); "OK" }
 )
 
