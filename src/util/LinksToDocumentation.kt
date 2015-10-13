@@ -70,6 +70,11 @@ fun doc16() {}
 fun doc18() {}
 
 /**
+ * @see <a href="http://kotlinlang.org/docs/reference/delegated-properties.html">Delegated Properties</a>
+ */
+fun doc20() {}
+
+/**
  * @see <a href="https://kotlinlang.org/docs/reference/lambdas.html#extension-function-expressions">Extension function literals</a>
  */
 fun doc22() {}
