@@ -44,6 +44,24 @@ fun doc7() {}
  */
 fun doc8() {}
 
+//https://kotlinlang.org/docs/reference/object-declarations.html
+
+/**
+ * @see <a href="https://kotlinlang.org/docs/reference/object-declarations.html">Object expressions</a>
+ */
+fun doc10() {}
+
+/**
+ * @see <a href="http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/#SAM-constructors">SAM-constructors</a>,
+ *      <a href="http://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delegated-properties-and-more/#SAM-conversions">SAM-conversions</a>
+ */
+fun doc11_1() {}
+
+/**
+ * @see <a href="http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/#Collections">Read-only and mutable views on Java collections</a>
+ */
+fun doc12_1() {}
+
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/operator-overloading.html">Operator overloading</a>
  */

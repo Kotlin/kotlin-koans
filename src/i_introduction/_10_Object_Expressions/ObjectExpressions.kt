@@ -1,45 +1,22 @@
 package i_introduction._10_Object_Expressions
 
-import java.util.Comparator
-import util.TODO
-import java.io.File
-import java.awt.event.MouseListener
-import java.awt.event.MouseAdapter
-import java.awt.event.MouseEvent
-
-fun objectLiteral() {
-
-    abstract class Foo {
-        abstract fun foo()
-    }
-
-    // Anonymous object extending a class
-    val foo: Foo = object : Foo() {
-        override fun foo() {
-            // ...
-        }
-    }
-
-    // Anonymous object extending an interface
-    runInANewThread(object : Runnable {
-        override fun run() {
-            // ...
-        }
-    })
-}
-
-fun runInANewThread(runnable: Runnable) = Thread(runnable).start()
+import java.util.*
+import util.*
 
 fun todoTask10(): Nothing = TODO(
     """
         Task 10.
-        Add an object expression that extends MouseAdapter and counts the number of mouse clicks
-        as an argument to the function 'handleMouse()'.
-    """
+        Read about object expressions that play the same role in Kotlin as anonymous classes do in Java.
+
+        Add an object expression that provides a comparator to sort a list in a descending order using java.util.Collections class.
+        In Kotlin you use Kotlin library extensions instead of java.util.Collections,
+        but this example is still a good demonstration of mixing Kotlin and Java code.
+    """,
+    documentation = doc10()
 )
 
-fun task10(handleMouse: (MouseListener) -> Unit): Int {
-    var mouseClicks = 0
-    handleMouse(todoTask10())
-    return mouseClicks
+fun task10(): List<Int> {
+    val arrayList = arrayListOf(1, 5, 2)
+    Collections.sort(arrayList, todoTask10())
+    return arrayList
 }
