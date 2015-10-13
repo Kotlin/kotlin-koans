@@ -1,7 +1,5 @@
 package ii_collections
 
-import java.util.HashSet
-
 fun example9() {
     val product = listOf(1, 2, 3, 4).fold(1, { partProduct, element -> element * partProduct })
     product == 24

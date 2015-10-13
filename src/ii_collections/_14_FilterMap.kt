@@ -18,16 +18,4 @@ fun Shop.getCustomersFrom(city: City): List<Customer> {
     todoCollectionTask()
 }
 
-//Note
-fun whyMapOperationOnSetReturnsListNotSet() {
-    class Client(val name: String, val city: String)
-
-    val clients = setOf(Client("Noah", "Ottawa"), Client("Xavier", "Ottawa"))
-
-    val cities = clients.map { it.city }
-
-    // If map returned a set of cities (instead of a list):
-    clients.size != cities.size // could be surprising!
-}
-
 

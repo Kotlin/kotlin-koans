@@ -9,20 +9,6 @@ import util.TODO
  */
 
 /*
- *  For easy java compatibility we don't introduce our own collections, but use standard Java ones.
- *  However there are two representations of them: mutable and read-only.
- */
-
-fun useReadonlySet(set: Set<Int>) {
-    // doesn't compile:
-    //    set.add(1)
-}
-
-fun useMutableSet(set: MutableSet<Int>) {
-    set.add(1)
-}
-
-/*
  *  There are many operations that help to transform one collection into another, starting with 'to'
  */
 fun example0(list: List<Int>) {

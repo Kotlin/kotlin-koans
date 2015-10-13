@@ -1,4 +1,4 @@
-package vi_generics.generics
+package vi_generics
 
 import java.util.ArrayList
 import java.util.HashSet

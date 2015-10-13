@@ -8,7 +8,7 @@ class _34_Delegates_Examples {
         var initialized = false
         val lazyProperty = LazyPropertyUsingDelegates({ initialized = true; 42 })
         Assert.assertFalse("Property shouldn't be initialized before access", initialized)
-        val result: Int = lazyProperty.lazy
+        val result: Int = lazyProperty.lazyValue
         Assert.assertTrue("Property should be initialized after access", initialized)
         Assert.assertEquals(42, result)
     }
@@ -16,8 +16,8 @@ class _34_Delegates_Examples {
     @Test fun initializedOnce() {
         var initialized = 0
         val lazyProperty = LazyPropertyUsingDelegates( { initialized++; 42 })
-        lazyProperty.lazy
-        lazyProperty.lazy
+        lazyProperty.lazyValue
+        lazyProperty.lazyValue
         Assert.assertEquals("Lazy property should be initialized once", 1, initialized)
 
     }

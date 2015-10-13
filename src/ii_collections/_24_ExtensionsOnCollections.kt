@@ -2,9 +2,9 @@ package ii_collections
 
 import util.TODO
 
-fun todoTask9() = TODO(
+fun todoTask24() = TODO(
     """
-        Task 9.
+        Task 24.
         The function should behave the same as '_24_JavaCode.doSomethingStrangeWithCollection'
         Replace all invocations of 'todoTask9()' with the appropriate code.
     """,
@@ -12,10 +12,10 @@ fun todoTask9() = TODO(
 )
 
 fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection<String>? {
-    val groupsByLength = collection. groupBy { s -> todoTask9() }
+    val groupsByLength = collection. groupBy { s -> todoTask24() }
 
-    val maximumSizeOfGroup = groupsByLength. values(). map { group -> todoTask9() }. max()
+    val maximumSizeOfGroup = groupsByLength. values(). map { group -> todoTask24() }. max()
 
-    return groupsByLength. values(). firstOrNull { group -> todoTask9() }
+    return groupsByLength. values(). firstOrNull { group -> todoTask24() }
 }
 
