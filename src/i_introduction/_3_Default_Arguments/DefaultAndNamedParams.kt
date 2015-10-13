@@ -2,7 +2,7 @@ package i_introduction._3_Default_Arguments
 
 import util.*
 
-fun todoTask3_() = TODO(
+fun todoTask3() = TODO(
     """
         Task 3.
         Several overloads of 'JavaCode2.foo()' can be replaced with one function in Kotlin.
@@ -13,10 +13,10 @@ fun todoTask3_() = TODO(
     documentation = doc2(),
     references = { name: String -> JavaCode2().foo(name); foo(name) })
 
-fun foo(name: String): String = todoTask3_()
+fun foo(name: String): String = todoTask3()
 
-fun task3_(): String {
-    todoTask3_()
+fun task3(): String {
+    todoTask3()
 //    return (foo("a") +
 //            foo("b", number = 1) +
 //            foo("c", toUpperCase = true) +

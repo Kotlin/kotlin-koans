@@ -55,44 +55,49 @@ fun doc10() {}
  * @see <a href="http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/#SAM-constructors">SAM-constructors</a>,
  *      <a href="http://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delegated-properties-and-more/#SAM-conversions">SAM-conversions</a>
  */
-fun doc11_1() {}
+fun doc11() {}
 
 /**
  * @see <a href="http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/#Collections">Read-only and mutable views on Java collections</a>
  */
-fun doc12_1() {}
+fun doc12() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/operator-overloading.html">Operator overloading</a>
  */
-fun doc11() {}
+fun doc25() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/control-flow.html#for-loops">For-loop</a>
  */
-fun doc12() {}
+fun doc26() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/ranges.html">Ranges</a>
  */
-fun doc14() {}
+fun doc28() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/multi-declarations.html#multi-declarations">Multi declarations</a>
  */
-fun doc16() {}
+fun doc30() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/properties.html#properties-and-fields">Properties</a>
  */
-fun doc18() {}
+fun doc32() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/delegated-properties.html">Delegated Properties</a>
  */
-fun doc20() {}
+fun doc34() {}
 
 /**
  * @see <a href="https://kotlinlang.org/docs/reference/lambdas.html#extension-function-expressions">Extension function literals</a>
  */
-fun doc22() {}
+fun doc36() {}
+
+/**
+ * @see <a href="https://kotlinlang.org/docs/reference/type-safe-builders.html">Type-Safe Builders</a>
+ */
+fun doc39() {}

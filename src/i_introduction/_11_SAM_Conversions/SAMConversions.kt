@@ -1,7 +1,7 @@
 package i_introduction._11_SAM_Conversions
 
 import util.TODO
-import util.doc11_1
+import util.doc11
 import java.util.*
 
 fun todoTask11() = TODO(
@@ -12,7 +12,7 @@ fun todoTask11() = TODO(
 
         Rewrite the previous example changing an object expression to a lambda.
     """,
-    documentation = doc11_1()
+    documentation = doc11()
 )
 
 fun task11(): List<Int> {

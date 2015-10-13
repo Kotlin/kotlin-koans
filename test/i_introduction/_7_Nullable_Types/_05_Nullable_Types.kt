@@ -1,6 +1,6 @@
 package i_introduction._7_Nullable_Types
 
-import org.junit.Test as test
+import org.junit.Test
 import junit.framework.Assert
 
 class _05_Nullable_Types {
@@ -24,26 +24,26 @@ class _05_Nullable_Types {
                 shouldBeInvoked, invoked)
     }
 
-    @test fun everythingIsOk() {
+    @Test fun everythingIsOk() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")),
                 "Hi Bob! We have an awesome proposition for you...",
                 "bob@gmail.com",
                 true)
     }
 
-    @test fun noMessage() {
+    @Test fun noMessage() {
         testSendMessageToClient(Client(PersonalInfo("bob@gmail.com")), null)
     }
 
-    @test fun noEmail() {
+    @Test fun noEmail() {
         testSendMessageToClient(Client(PersonalInfo(null)), "Hi Bob! We have an awesome proposition for you...")
     }
 
-    @test fun noPersonalInfo() {
+    @Test fun noPersonalInfo() {
         testSendMessageToClient(Client(null), "Hi Bob! We have an awesome proposition for you...")
     }
 
-    @test fun noClient() {
+    @Test fun noClient() {
         testSendMessageToClient(null, "Hi Bob! We have an awesome proposition for you...")
     }
 }

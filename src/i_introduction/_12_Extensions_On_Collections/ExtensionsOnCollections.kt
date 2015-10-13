@@ -12,7 +12,7 @@ fun todoTask12() = TODO(
         Thus in Kotlin we don't introduce our own collections, but use standard Java ones (slightly improved).
         Read about read-only and mutable views on Java collections.
     """,
-    documentation = doc12_1()
+    documentation = doc12()
 )
 
 fun task12(): List<Int> {
