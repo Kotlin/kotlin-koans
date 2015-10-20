@@ -26,7 +26,7 @@ fun examples() {
     applyToStrangeArguments { x, y -> x + y }
 }
 
-fun todoTask3(collection: Collection<Int>) = TODO(
+fun todoTask3(collection: Collection<Int>): Nothing = TODO(
     """
         Task 3.
         Rewrite 'JavaCode3.task3()' in Kotlin using lambdas.

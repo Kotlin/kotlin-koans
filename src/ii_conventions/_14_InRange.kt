@@ -23,7 +23,7 @@ fun stringRange(s: String) {
     if (s in "island".."isle") {}
 }
 
-fun todoTask14() = TODO(
+fun todoTask14(): Nothing = TODO(
     """
         Task 14.
         Uncomment the commented line.

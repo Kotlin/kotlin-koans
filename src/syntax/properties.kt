@@ -21,7 +21,7 @@ class A {
 
 // Extension properties cannot have a backing field
 val String.size: Int
-    get() = length()
+    get() = length
 
 class B {
     val i: Int by Delegates.notNull()

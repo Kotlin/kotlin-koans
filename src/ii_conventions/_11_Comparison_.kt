@@ -23,7 +23,7 @@ fun test(b1: B, b2: B) {
     b1.compareTo(b2) >= 0
 }
 
-fun todoTask11() = TODO(
+fun todoTask11(): Nothing = TODO(
     """
         Task 11.
         Uncomment the commented line and make it compile. 

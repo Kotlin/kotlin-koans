@@ -4,8 +4,9 @@ import kotlin.properties.ReadWriteProperty
 import util.TODO
 import java.util.Calendar
 import ii_conventions.MyDate
+import kotlin.reflect.KProperty
 
-fun todoTask21() = TODO(
+fun todoTask21(): Nothing = TODO(
     """
         Task 21.
         A delegate expression must have special 'get' and 'set' methods.
@@ -28,8 +29,8 @@ class D {
 class EffectiveDate<R> : ReadWriteProperty<R, MyDate> {
     var timeInMillis: Long? = null
 
-    operator override fun get(thisRef: R, property: PropertyMetadata): MyDate = todoTask21()
-    operator override fun set(thisRef: R, property: PropertyMetadata, value: MyDate) = todoTask21()
+    operator override fun getValue(thisRef: R, property: KProperty<*>): MyDate = todoTask21()
+    operator override fun setValue(thisRef: R, property: KProperty<*>, value: MyDate) = todoTask21()
 }
 
 fun MyDate.toMillis(): Long {

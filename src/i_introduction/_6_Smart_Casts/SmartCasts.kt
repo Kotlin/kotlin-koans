@@ -8,7 +8,7 @@ class Sum(val left: Expr, val right: Expr) : Expr()
 
 fun eval(e: Expr): Int {
     if (e is Num) {
-        val n = e as Num
+        val n = e
         return n.value
     }
     if (e is Sum) {
@@ -25,7 +25,7 @@ fun evalWhen(e: Expr): Int =
             else -> throw IllegalArgumentException("Unknown expression")
         }
 
-fun todoTask6(expr: Expr) = TODO(
+fun todoTask6(expr: Expr): Nothing = TODO(
     """
         Task 6.
         Rewrite 'JavaCode6.print()' in Kotlin using a 'when' expression.

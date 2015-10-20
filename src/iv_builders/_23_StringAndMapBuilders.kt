@@ -3,12 +3,6 @@ package iv_builders
 import util.TODO
 import java.util.HashSet
 
-fun buildString(build: StringBuilder.() -> Unit): String {
-    val stringBuilder = StringBuilder()
-    stringBuilder.build()
-    return stringBuilder.toString()
-}
-
 fun buildStringExample(): String {
     return buildString {
         this.append("Numbers: ")
@@ -19,7 +13,7 @@ fun buildStringExample(): String {
     }
 }
 
-fun todoTask23() = TODO(
+fun todoTask23(): Nothing = TODO(
     """
         Task 23.
         Uncomment the commented code and make it compile.

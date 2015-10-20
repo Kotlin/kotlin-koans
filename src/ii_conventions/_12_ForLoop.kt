@@ -12,7 +12,7 @@ fun iterateOverString() {
     "abcd".iterator() //library extension method
 }
 
-fun todoTask12() = TODO(
+fun todoTask12(): Nothing = TODO(
     """
         Task 12.
         Uncomment the commented code and make it compile.

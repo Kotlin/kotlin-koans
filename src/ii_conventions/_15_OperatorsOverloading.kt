@@ -4,7 +4,7 @@ import util.TODO
 import ii_conventions.TimeInterval.*
 
 fun infixNotation() {
-    fun Int.foo(s: String) = "$s$this"
+    infix fun Int.foo(s: String) = "$s$this"
 
     1 foo "abc"
     // the same as:
@@ -25,7 +25,7 @@ fun use(a1: A, a2: A) {
     !a1
 }
 
-fun todoTask15() = TODO(
+fun todoTask15(): Nothing = TODO(
     """
         Task 15.
         Implement a kind of date arithmetic. Support adding years, weeks and days to a date.

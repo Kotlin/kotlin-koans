@@ -4,7 +4,7 @@ import java.util.HashMap
 import util.TODO
 
 
-fun todoTask24() = TODO(
+fun todoTask24(): Nothing = TODO(
     """
         Task 24.
         The previous examples can be rewritten with the library function 'with' (see examples below).

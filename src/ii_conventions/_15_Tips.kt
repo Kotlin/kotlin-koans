@@ -2,7 +2,7 @@ package ii_conventions
 
 import util.TODO
 
-fun todoTask15_2() = TODO(
+fun todoTask15_2(): Nothing = TODO(
     """
         Task15.2.
         Support adding several time intervals to a date.

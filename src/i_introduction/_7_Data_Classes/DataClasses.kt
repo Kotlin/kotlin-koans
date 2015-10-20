@@ -35,7 +35,7 @@ data class Person3(val name: String, val age: Int)
 
 // This class is as good as Person4 (written in Java), but is 42 lines shorter. =)
 
-fun todoTask7() = TODO(
+fun todoTask7(): Nothing = TODO(
     """
         There is no task for you here.
         Just make sure you're not forgetting to carefully read all code examples and comments and

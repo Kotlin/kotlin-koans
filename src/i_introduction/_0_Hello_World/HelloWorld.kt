@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     println("Hello, world!")
 }
 
-fun todoTask0() = TODO(
+fun todoTask0(): Nothing = TODO(
     """
         Introduction:
 

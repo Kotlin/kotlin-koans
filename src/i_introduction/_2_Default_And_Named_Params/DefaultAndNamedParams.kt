@@ -9,7 +9,7 @@ fun usage() {
     bar(1, b = false)
 }
 
-fun todoTask2_1() = TODO(
+fun todoTask2_1(): Nothing = TODO(
     """
         Task 2(1).
         Rewrite all overloaded functions 'JavaCode2.foo()' as one function 'foo()' in Kotlin using default parameters.

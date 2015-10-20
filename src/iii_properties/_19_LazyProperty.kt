@@ -6,7 +6,7 @@ class LazyProperty(val initializer: () -> Int) {
     val lazy: Int = todoTask19()
 }
 
-fun todoTask19() = TODO(
+fun todoTask19(): Nothing = TODO(
     """
         Task 19.
         Add a custom getter to make the 'lazy' val really lazy.

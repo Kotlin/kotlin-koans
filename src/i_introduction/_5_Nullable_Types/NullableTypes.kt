@@ -20,39 +20,37 @@ fun struggleAgainstNPE() {
     //println(files.size)
 
     fun checkForNull1() {
-        if (files != null) {
-            files.size()
-        }
+        files.size
     }
 
     fun checkForNull2() {
         if (files == null) return
-        files.size()
+        files.size
     }
 
     fun checkForNull3(): Int {
         if (files == null) fail()
-        return files.size()
+        return files.size
     }
 
     fun nullAsResultIfNullReference(): Int? {
-        return files?.size()
+        return files?.size
     }
 
     fun defaultValueForNull(): Int {
-        val size = files?.size()
+        val size = files?.size
         return size ?: -1
     }
 
     fun throwNPEIfNull(): Int {
         val f = files!!
-        return f.size()
+        return f.size
     }
 }
 
-fun fail() = throw Exception()
+fun fail(): Nothing = throw Exception()
 
-fun todoTask5(client: Client?, message: String?, mailer: Mailer) = TODO(
+fun todoTask5(client: Client?, message: String?, mailer: Mailer): Nothing = TODO(
     """
         Task 5.
         Rewrite JavaCode5.sendMessageToClient in Kotlin, using only one 'if' expression.

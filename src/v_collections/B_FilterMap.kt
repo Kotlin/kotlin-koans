@@ -27,7 +27,7 @@ fun whyMapOperationOnSetReturnsListNotSet() {
     val cities = clients.map { it.city }
 
     // If map returned a set of cities (instead of a list):
-    clients.size() != cities.size() // could be surprising!
+    clients.size != cities.size // could be surprising!
 }
 
 

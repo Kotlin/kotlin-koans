@@ -6,6 +6,6 @@ import v_collections.data.*
 
 class A_Introduction {
     @test fun testSetOfCustomers() {
-        Assert.assertEquals(shop.getSetOfCustomers(), customers.values().toSet())
+        Assert.assertEquals(shop.getSetOfCustomers(), customers.values.toSet())
     }
 }

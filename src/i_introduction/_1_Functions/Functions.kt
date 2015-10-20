@@ -18,7 +18,7 @@ public fun pbar(): Int = 45
 //The default visibility is 'internal' meaning "visible inside a module".
 internal fun ibar() = 57
 
-fun todoTask1(collection: Collection<Int>) = TODO(
+fun todoTask1(collection: Collection<Int>): Nothing = TODO(
     """
         Task 1.
         Rewrite JavaCode1.task1 in Kotlin.

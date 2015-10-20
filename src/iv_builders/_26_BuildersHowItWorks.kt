@@ -11,7 +11,7 @@ import iv_builders.data.getProducts
 import util.questions.Answer
 import util.questions.Answer.*
 
-fun todoTask26() = TODO(
+fun todoTask26(): Nothing = TODO(
     """
         Task 26.
         Look at the questions below and give your answers:
@@ -22,7 +22,7 @@ fun todoTask26() = TODO(
     """
 )
 
-fun insertAnswerHere() = todoTask26()
+fun insertAnswerHere(): Nothing = todoTask26()
 
 fun task26() = linkedMapOf<Int, Answer>(
 /*

@@ -3,7 +3,7 @@ package i_introduction._2_Default_And_Named_Params
 import util.TODO
 import i_introduction._1_Functions.task1
 
-fun todoTask2_2() = TODO(
+fun todoTask2_2(): Nothing = TODO(
     """
         Task 2(2).
         Implement the same logic as in 'task1' again through the library method 'joinToString()'.

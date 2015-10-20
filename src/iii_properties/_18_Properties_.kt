@@ -43,7 +43,7 @@ class PropertyExample() {
     var propertyWithCounter: Int? = todoTask18()
 }
 
-fun todoTask18() = TODO(
+fun todoTask18(): Nothing = TODO(
     """
         Task 18.
         Add a custom setter to PropertyExample.propertyWithCounter so that

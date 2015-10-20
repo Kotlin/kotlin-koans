@@ -1,6 +1,6 @@
 package v_collections
 
-fun todoCollectionTask() = util.TODO(
+fun todoCollectionTask(): Nothing = util.TODO(
         """
            Task for working with collections.
            Look through the 'Shop' API; all tasks are connected with it.

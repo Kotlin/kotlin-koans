@@ -1,10 +1,9 @@
 package vi_generics.generics
 
-import java.util.ArrayList
 import java.util.HashSet
 import util.TODO
 
-fun task28() = TODO(
+fun task28(): Nothing = TODO(
     """
         Task28.
         Add a 'partitionTo' function that splits a collection into two collections according to a predicate.

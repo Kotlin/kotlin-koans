@@ -10,7 +10,7 @@ fun iterateOverRange() {
     for (c in 'a'..'z') {}
 }
 
-fun todoTask13() = TODO(
+fun todoTask13(): Nothing = TODO(
     """
         Task 13.
         Uncomment the commented code and make it compile.

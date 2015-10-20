@@ -7,7 +7,7 @@ import util.TODO
 fun getTitleColor() = "#b9c9fe"
 fun getCellColor(index: Int, row: Int) = if ((index + row) %2 == 0) "#dce4ff" else "#eff2ff"
 
-fun todoTask25() = TODO(
+fun todoTask25(): Nothing = TODO(
     """
         Task 25.
         1) Fill the table with the proper values from products.

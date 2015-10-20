@@ -26,7 +26,7 @@ fun example() = Pattern.compile(getPatternInTQString()).matcher("Douglas Adams (
 
 val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
-fun todoTask4() = TODO(
+fun todoTask4(): Nothing = TODO(
     """
         Task 4.
         Copy the body of 'getPatternInTQString()' to the 'task4()' function

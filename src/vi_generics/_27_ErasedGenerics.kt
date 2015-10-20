@@ -33,7 +33,7 @@ fun encloseV2(list: MutableList<*>) {
     }
 }
 
-fun todoTask27() = TODO(
+fun todoTask27(): Nothing = TODO(
     """
         Task 27.
         Look at the questions below and give your answers:
@@ -41,7 +41,7 @@ fun todoTask27() = TODO(
     """
 )
 
-fun insertAnswerHere() = todoTask27()
+fun insertAnswerHere(): Nothing = todoTask27()
 
 fun task27() = linkedMapOf<Int, Answer>(
 /*

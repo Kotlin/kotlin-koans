@@ -32,7 +32,7 @@ fun testTypeWithInvokeExtension() {
 
 class Invokable
 
-fun todoTask17() = TODO(
+fun todoTask17(): Nothing = TODO(
     """
         Task 17.
         Change class Invokable to count the number of invocations (round brackets).
