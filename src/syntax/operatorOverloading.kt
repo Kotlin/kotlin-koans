@@ -23,8 +23,8 @@ fun test(c1: C, c2: C) {
 interface A
 interface B {
     //unary operations
-    operator fun plus()
-    operator fun minus()
+    operator fun unaryPlus()
+    operator fun unaryMinus()
 
     operator fun inc(): B
     operator fun dec(): B

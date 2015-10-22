@@ -3,7 +3,7 @@ package v_builders.builders
 import util.questions.Answer
 import util.questions.Answer.*
 
-fun todoTask40() = TODO(
+fun todoTask40(): Nothing = TODO(
     """
         Task 40.
         Look at the questions below and give your answers:

@@ -3,7 +3,7 @@ package iii_conventions
 import util.*
 import iii_conventions.TimeInterval.*
 
-fun todoTask29() = TODO(
+fun todoTask29(): Nothing = TODO(
     """
         Task 29.
         Implement a kind of date arithmetic. Support adding years, weeks and days to a date.

@@ -3,7 +3,7 @@ package i_introduction._2_Named_Arguments
 import util.*
 import i_introduction._1_Java_To_Kotlin_Converter.task1
 
-fun todoTask2() = TODO(
+fun todoTask2(): Nothing = TODO(
     """
         Task 2.
         Implement the same logic as in 'task1' again through the library method 'joinToString()'.

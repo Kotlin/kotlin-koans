@@ -2,7 +2,7 @@ package i_introduction._3_Default_Arguments
 
 import util.*
 
-fun todoTask3() = TODO(
+fun todoTask3(): Nothing = TODO(
     """
         Task 3.
         Several overloads of 'JavaCode2.foo()' can be replaced with one function in Kotlin.

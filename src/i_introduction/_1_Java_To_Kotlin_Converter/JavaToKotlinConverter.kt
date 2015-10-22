@@ -2,7 +2,7 @@ package i_introduction._1_Java_To_Kotlin_Converter
 
 import util.TODO
 
-fun todoTask1(collection: Collection<Int>) = TODO(
+fun todoTask1(collection: Collection<Int>): Nothing = TODO(
     """
         Task 1.
         Rewrite JavaCode1.task1 in Kotlin.

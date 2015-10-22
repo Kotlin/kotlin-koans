@@ -2,7 +2,7 @@ package v_builders
 
 import util.*
 
-fun todoTask36() = TODO(
+fun todoTask36(): Nothing = TODO(
     """
         Task 36.
         Read about extension function literals.

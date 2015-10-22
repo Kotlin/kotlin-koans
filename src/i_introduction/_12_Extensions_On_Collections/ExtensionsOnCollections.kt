@@ -2,7 +2,7 @@ package i_introduction._12_Extensions_On_Collections
 
 import util.*
 
-fun todoTask12() = TODO(
+fun todoTask12(): Nothing = TODO(
     """
         Task 12.
         In Kotlin standard library there are lots of extension functions that make the work with collections more convenient.

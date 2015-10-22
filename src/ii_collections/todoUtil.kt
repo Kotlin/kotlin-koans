@@ -2,7 +2,7 @@ package ii_collections
 
 import util.TODO
 
-fun todoCollectionTask() = TODO(
+fun todoCollectionTask(): Nothing = TODO(
         """
            Task for working with collections.
            Look through the 'Shop' API; all tasks are connected with it.

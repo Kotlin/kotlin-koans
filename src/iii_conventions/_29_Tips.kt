@@ -1,6 +1,6 @@
 package iii_conventions
 
-fun todoTask29_2() = TODO(
+fun todoTask29_2(): Nothing = TODO(
     """
         Task29.2.
         Support adding several time intervals to a date.

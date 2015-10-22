@@ -4,7 +4,7 @@ import util.TODO
 import util.doc11
 import java.util.*
 
-fun todoTask11() = TODO(
+fun todoTask11(): Nothing = TODO(
     """
         Task 11.
         When an object implements a SAM interface (one with a Single Abstract Method), you can pass a lambda instead.

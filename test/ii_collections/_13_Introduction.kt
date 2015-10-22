@@ -6,6 +6,6 @@ import ii_collections.data.*
 
 class _13_Introduction {
     @Test fun testSetOfCustomers() {
-        Assert.assertEquals(shop.getSetOfCustomers(), customers.values().toSet())
+        Assert.assertEquals(shop.getSetOfCustomers(), customers.values.toSet())
     }
 }

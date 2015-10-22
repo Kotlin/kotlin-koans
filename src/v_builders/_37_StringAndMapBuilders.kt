@@ -3,13 +3,13 @@ package v_builders
 import util.TODO
 import java.util.*
 
-fun buildString(build: StringBuilder.() -> Unit): String {
-    val stringBuilder = StringBuilder()
-    stringBuilder.build()
-    return stringBuilder.toString()
-}
-
 fun buildStringExample(): String {
+    fun buildString(build: StringBuilder.() -> Unit): String {
+        val stringBuilder = StringBuilder()
+        stringBuilder.build()
+        return stringBuilder.toString()
+    }
+
     return buildString {
         this.append("Numbers: ")
         for (i in 1..10) {
@@ -19,7 +19,7 @@ fun buildStringExample(): String {
     }
 }
 
-fun todoTask37() = TODO(
+fun todoTask37(): Nothing = TODO(
     """
         Task 37.
         Uncomment the commented code and make it compile.

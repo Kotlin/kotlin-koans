@@ -5,7 +5,7 @@ import util.*
 
 class Invokable
 
-fun todoTask31() = TODO(
+fun todoTask31(): Nothing = TODO(
     """
         Task 31.
         Change class Invokable to count the number of invocations (round brackets).

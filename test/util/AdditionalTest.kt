@@ -19,7 +19,7 @@ class AdditionalTest {
                 { _06_Smart_Casts().testNum() },
                 { _24_Extensions_On_Collections().testCollectionOfOneElement() }
         )
-        Assert.assertTrue("${JavaCode.set}", JavaCode.set.isEmpty)
+        Assert.assertTrue("${JavaCode.set}", JavaCode.set.isEmpty())
     }
 
     private fun invokeTests(vararg tests: () -> Unit) {

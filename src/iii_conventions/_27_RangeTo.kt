@@ -2,7 +2,7 @@ package iii_conventions
 
 import util.*
 
-fun todoTask27() = TODO(
+fun todoTask27(): Nothing = TODO(
     """
         Task 27.
         Uncomment the commented code and make it compile.

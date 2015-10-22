@@ -13,7 +13,7 @@ fun eval(e: Expr): Int =
             else -> throw IllegalArgumentException("Unknown expression")
         }
 
-fun todoTask6(expr: Expr) = TODO(
+fun todoTask6(expr: Expr): Nothing = TODO(
     """
         Task 6.
         Rewrite 'JavaCode6.eval()' in Kotlin using smart casts and 'when' expression.

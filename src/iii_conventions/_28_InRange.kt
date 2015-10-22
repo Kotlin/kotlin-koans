@@ -2,7 +2,7 @@ package iii_conventions
 
 import util.*
 
-fun todoTask28() = TODO(
+fun todoTask28(): Nothing = TODO(
     """
         Task 28.
         Uncomment the commented line.

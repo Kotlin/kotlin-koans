@@ -2,7 +2,7 @@ package i_introduction._9_Extension_Functions
 
 import util.*
 
-fun todoTask8() = TODO(
+fun todoTask8(): Nothing = TODO(
     """
         Task 8.
         Implement the extension functions Int.r(), Pair<Int, Int>.r()

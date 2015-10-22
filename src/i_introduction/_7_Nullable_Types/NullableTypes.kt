@@ -2,7 +2,7 @@ package i_introduction._7_Nullable_Types
 
 import util.*
 
-fun todoTask5(client: Client?, message: String?, mailer: Mailer) = TODO(
+fun todoTask5(client: Client?, message: String?, mailer: Mailer): Nothing = TODO(
     """
         Task 5.
         Rewrite JavaCode5.sendMessageToClient in Kotlin, using only one 'if' expression.
