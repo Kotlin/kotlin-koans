@@ -4,7 +4,7 @@ import java.util.ArrayList
 import java.util.HashSet
 import util.TODO
 
-fun task41() = TODO(
+fun task41(): Nothing = TODO(
     """
         Task41.
         Add a 'partitionTo' function that splits a collection into two collections according to a predicate.

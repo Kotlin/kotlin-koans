@@ -14,7 +14,7 @@ fun todoTask40(): Nothing = TODO(
     """
 )
 
-fun insertAnswerHere() = todoTask40()
+fun insertAnswerHere(): Nothing = todoTask40()
 
 fun task40() = linkedMapOf<Int, Answer>(
 /*
