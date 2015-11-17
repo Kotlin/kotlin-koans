@@ -52,8 +52,7 @@ fun doc8() {}
 fun doc10() {}
 
 /**
- * @see <a href="http://blog.jetbrains.com/kotlin/2013/04/kotlin-m5-2-intellij-idea-12-1-and-gradle/#SAM-constructors">SAM-constructors</a>,
- *      <a href="http://blog.jetbrains.com/kotlin/2013/06/kotlin-m5-3-idea-13-delegated-properties-and-more/#SAM-conversions">SAM-conversions</a>
+ * @see <a href="https://kotlinlang.org/docs/reference/java-interop.html#sam-conversions">SAM-conversions</a>
  */
 fun doc11() {}
 
