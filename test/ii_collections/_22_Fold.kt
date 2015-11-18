@@ -18,6 +18,6 @@ class _22_Fold {
                 order(youTrack)
             }
         }
-        Assert.assertEquals(setOf(idea), testShop.getProductsOrderedByAllCustomers())
+        Assert.assertEquals(setOf(idea), testShop.getSetOfProductsOrderedByEveryCustomer())
     }
 }
