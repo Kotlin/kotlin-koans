@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/workshop-jb.iml" filepath="$PROJECT_DIR$/workshop-jb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlin-koans.iml" filepath="$PROJECT_DIR$/kotlin-koans.iml" />
     </modules>
   </component>
 </project>
-
