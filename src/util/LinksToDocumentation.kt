@@ -77,7 +77,7 @@ fun doc26() {}
 fun doc28() {}
 
 /**
- * @see <a href="http://kotlinlang.org/docs/reference/multi-declarations.html#multi-declarations">Multi declarations</a>
+ * @see <a href="http://kotlinlang.org/docs/reference/multi-declarations.html#multi-declarations">Destructuring declarations</a>
  */
 fun doc30() {}
 

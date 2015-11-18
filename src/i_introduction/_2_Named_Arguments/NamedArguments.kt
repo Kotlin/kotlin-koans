@@ -3,6 +3,14 @@ package i_introduction._2_Named_Arguments
 import util.*
 import i_introduction._1_Java_To_Kotlin_Converter.task1
 
+// default values for arguments:
+fun bar(i: Int, s: String = "", b: Boolean = true) {}
+
+fun usage() {
+    // named arguments:
+    bar(1, b = false)
+}
+
 fun todoTask2(): Nothing = TODO(
     """
         Task 2.

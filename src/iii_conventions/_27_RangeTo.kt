@@ -2,6 +2,11 @@ package iii_conventions
 
 import util.*
 
+fun iterateOverRange() {
+    for (i in 1..10) {}
+    for (c in 'a'..'z') {}
+}
+
 fun todoTask27(): Nothing = TODO(
     """
         Task 27.

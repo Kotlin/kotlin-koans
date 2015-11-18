@@ -2,6 +2,16 @@ package iii_conventions
 
 import util.*
 
+fun iterateOverCollection(collection: Collection<Int>) {
+    for (element in collection) {}
+}
+
+fun iterateOverString() {
+    // You can iterate over anything that has an 'iterator' method, member or extension.
+    for (c in "abcd") {}
+    "abcd".iterator() //library extension method
+}
+
 fun todoTask26(): Nothing = TODO(
     """
         Task 26.
