@@ -1,12 +1,10 @@
 package iii_conventions
 
+import iii_conventions.test.s
 import junit.framework.Assert
 import org.junit.Test
-import iii_conventions.TimeInterval.*
-import iv_properties.toMillis
-import iii_conventions.test.s
 
-class _28_In_Range {
+class _26_In_Range {
     fun doTest(date: MyDate, first: MyDate, last: MyDate, shouldBeInRange: Boolean) {
         val message = "The date ${date.s} should${if (shouldBeInRange) "" else "n't"} be in range: ${first.s}..${last.s}"
         Assert.assertEquals(message, shouldBeInRange, checkInRange(date, first, last))

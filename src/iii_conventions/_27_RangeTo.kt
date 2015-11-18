@@ -1,25 +1,19 @@
 package iii_conventions
 
-import util.*
-
-fun iterateOverRange() {
-    for (i in 1..10) {}
-    for (c in 'a'..'z') {}
-}
+import util.TODO
+import util.doc26
 
 fun todoTask27(): Nothing = TODO(
     """
         Task 27.
         Uncomment the commented code and make it compile.
-        To make '..' work add a 'MyDate.rangeTo()' extension function returning DateRange.
+        To make '..' work implement a 'MyDate.rangeTo()' extension function returning DateRange.
         Add all changes to the file MyDate.kt.
     """,
-    references = { date: MyDate -> date.nextDay() })
+    documentation = doc26()
+)
 
-
-fun iterateOverDateRange2(firstDate: MyDate, secondDate: MyDate, handler: (MyDate) -> Unit) {
+fun checkInRange2(date: MyDate, first: MyDate, last: MyDate): Boolean {
     todoTask27()
-//    for (date in firstDate..secondDate) {
-//        handler(date)
-//    }
+//    return date in first..last
 }

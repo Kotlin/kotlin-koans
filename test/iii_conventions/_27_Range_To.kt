@@ -1,16 +1,24 @@
 package iii_conventions
 
+import iii_conventions.test.s
 import junit.framework.Assert
 import org.junit.Test
-import java.util.ArrayList
 
 class _27_Range_To {
-    @Test fun testIterateOverDateRange() {
-        val actualDateRange = ArrayList<MyDate>()
-        iterateOverDateRange2(MyDate(2014, 5, 1), MyDate(2014, 5, 2), {
-            date: MyDate -> actualDateRange.add(date)
-        })
-        val expectedDateRange = arrayListOf(MyDate(2014, 5, 1), MyDate(2014, 5, 2))
-        Assert.assertEquals("Incorrect iteration", expectedDateRange, actualDateRange)
+    fun doTest(date: MyDate, first: MyDate, last: MyDate, shouldBeInRange: Boolean) {
+        val message = "The date ${date.s} should${if (shouldBeInRange) "" else "n't"} be in range: ${first.s}..${last.s}"
+        Assert.assertEquals(message, shouldBeInRange, checkInRange2(date, first, last))
+    }
+
+    @Test fun testInRange() {
+        doTest(MyDate(2014, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = true)
+    }
+
+    @Test fun testBefore() {
+        doTest(MyDate(2013, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
+    }
+
+    @Test fun testAfter() {
+        doTest(MyDate(2015, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
     }
 }

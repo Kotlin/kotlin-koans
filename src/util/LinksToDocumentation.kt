@@ -69,12 +69,12 @@ fun doc25() {}
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/control-flow.html#for-loops">For-loop</a>
  */
-fun doc26() {}
+fun doc28() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/ranges.html">Ranges</a>
  */
-fun doc28() {}
+fun doc26() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/multi-declarations.html#multi-declarations">Destructuring declarations</a>
