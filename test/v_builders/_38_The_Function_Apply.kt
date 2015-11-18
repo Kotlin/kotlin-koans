@@ -4,7 +4,7 @@ import junit.framework.Assert
 import org.junit.Test
 import java.util.HashMap
 
-class _24_The_Function_Apply {
+class _38_The_Function_Apply {
     @Test fun testBuildString() {
         val expected = buildString()
         val actual = StringBuilder().myApply {
@@ -12,8 +12,7 @@ class _24_The_Function_Apply {
             for (i in 1..10) {
                 append(i)
             }
-            toString()
-        }
+        }.toString()
         Assert.assertEquals("String should be built:", expected, actual)
     }
 
@@ -24,7 +23,6 @@ class _24_The_Function_Apply {
             for (i in 1..10) {
                 put(i, "$i")
             }
-            this
         }
         Assert.assertEquals("Map should be filled with the right values", expected, actual)
     }

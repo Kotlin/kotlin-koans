@@ -1,9 +1,5 @@
 package v_builders.examples
 
-import java.util.HashMap
-import util.TODO
-
-
 fun todoTask38(): Nothing = TODO(
     """
         Task 38.
@@ -12,7 +8,9 @@ fun todoTask38(): Nothing = TODO(
     """
 )
 
-fun <T, R> T.myApply(f: T.() -> R): R = todoTask38()
+fun <T> T.myApply(f: T.() -> Unit): T {
+    todoTask38()
+}
 
 fun buildString(): String {
     return StringBuilder().myApply {
@@ -20,8 +18,7 @@ fun buildString(): String {
         for (i in 1..10) {
             append(i)
         }
-        toString()
-    }
+    }.toString()
 }
 
 fun buildMap(): Map<Int, String> {
@@ -30,6 +27,5 @@ fun buildMap(): Map<Int, String> {
         for (i in 1..10) {
             put(i, "$i")
         }
-        this
     }
 }
