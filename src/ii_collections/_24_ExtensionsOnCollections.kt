@@ -6,7 +6,7 @@ fun todoTask24(): Nothing = TODO(
     """
         Task 24.
         The function should behave the same as '_24_JavaCode.doSomethingStrangeWithCollection'
-        Replace all invocations of 'todoTask9()' with the appropriate code.
+        Replace all invocations of 'todoTask24()' with the appropriate code.
     """,
         references = { c: Collection<String> -> _24_JavaCode().doSomethingStrangeWithCollection(c) }
 )
