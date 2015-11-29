@@ -44,8 +44,6 @@ fun doc7() {}
  */
 fun doc8() {}
 
-//https://kotlinlang.org/docs/reference/object-declarations.html
-
 /**
  * @see <a href="https://kotlinlang.org/docs/reference/object-declarations.html">Object expressions</a>
  */
