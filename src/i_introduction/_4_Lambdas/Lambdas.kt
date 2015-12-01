@@ -1,6 +1,7 @@
 package i_introduction._4_Lambdas
 
-import util.*
+import util.TODO
+import util.doc3
 
 fun example() {
 
@@ -10,17 +11,17 @@ fun example() {
     sum(1, square(2)) == 5
 }
 
-fun todoTask3(collection: Collection<Int>): Nothing = TODO(
+fun todoTask4(collection: Collection<Int>): Nothing = TODO(
     """
-        Task 3.
-        Rewrite 'JavaCode3.task3()' in Kotlin using lambdas.
+        Task 4.
+        Rewrite 'JavaCode4.task4()' in Kotlin using lambdas.
         You can find the appropriate function to call on 'collection' through IntelliJ's code completion feature.
         (Don't use the class 'Iterables').
     """,
     documentation = doc3(),
-    references = { JavaCode3().task3(collection) })
+    references = { JavaCode4().task4(collection) })
 
-fun task3(collection: Collection<Int>): Boolean = todoTask3(collection)
+fun task3(collection: Collection<Int>): Boolean = todoTask4(collection)
 
 
 

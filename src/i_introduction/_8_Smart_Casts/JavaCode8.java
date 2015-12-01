@@ -2,7 +2,7 @@ package i_introduction._8_Smart_Casts;
 
 import util.JavaCode;
 
-public class JavaCode6 extends JavaCode {
+public class JavaCode8 extends JavaCode {
     public int eval(Expr expr) {
         if (expr instanceof Num) {
             return ((Num) expr).getValue();
