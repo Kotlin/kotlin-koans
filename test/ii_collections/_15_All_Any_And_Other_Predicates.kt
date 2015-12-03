@@ -24,5 +24,6 @@ class _15_All_Any_And_Other_Predicates {
 
     @Test fun testAnyCustomerFromCity() {
         Assert.assertEquals(customers[lucas], shop.findAnyCustomerFrom(Canberra))
+        Assert.assertEquals(null, shop.findAnyCustomerFrom(City("Chicago")))
     }
 }
