@@ -17,7 +17,7 @@ fun todoTask7(client: Client?, message: String?, mailer: Mailer): Nothing = TODO
         Rewrite JavaCode7.sendMessageToClient in Kotlin, using only one 'if' expression.
         Declarations of Client, PersonalInfo and Mailer are given below.
     """,
-    documentation = doc5(),
+    documentation = doc7(),
     references = { JavaCode7().sendMessageToClient(client, message, mailer) }
 )
 

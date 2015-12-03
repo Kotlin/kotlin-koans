@@ -1,7 +1,6 @@
 package i_introduction._4_Lambdas
 
-import util.TODO
-import util.doc3
+import util.*
 
 fun example() {
 
@@ -18,10 +17,10 @@ fun todoTask4(collection: Collection<Int>): Nothing = TODO(
         You can find the appropriate function to call on 'collection' through IntelliJ's code completion feature.
         (Don't use the class 'Iterables').
     """,
-    documentation = doc3(),
+    documentation = doc4(),
     references = { JavaCode4().task4(collection) })
 
-fun task3(collection: Collection<Int>): Boolean = todoTask4(collection)
+fun task4(collection: Collection<Int>): Boolean = todoTask4(collection)
 
 
 

@@ -1,7 +1,6 @@
 package i_introduction._8_Smart_Casts
 
-import util.TODO
-import util.doc6
+import util.*
 
 interface Expr
 class Num(val value: Int) : Expr
@@ -19,6 +18,6 @@ fun todoTask8(expr: Expr): Nothing = TODO(
         Task 8.
         Rewrite 'JavaCode8.eval()' in Kotlin using smart casts and 'when' expression.
     """,
-    documentation = doc6(),
+    documentation = doc8(),
     references = { JavaCode8().eval(expr) })
 

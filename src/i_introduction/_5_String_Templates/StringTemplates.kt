@@ -31,7 +31,7 @@ fun todoTask5(): Nothing = TODO(
         and rewrite it in such a way that it matches '13 JUN 1992'.
         Use the 'month' variable.
     """,
-    documentation = doc4(),
+    documentation = doc5(),
     references = { getPattern(); month })
 
 fun task5(): String = todoTask5()

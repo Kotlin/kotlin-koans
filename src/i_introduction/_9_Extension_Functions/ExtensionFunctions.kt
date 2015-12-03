@@ -1,7 +1,6 @@
 package i_introduction._9_Extension_Functions
 
-import util.TODO
-import util.doc8
+import util.*
 
 fun String.lastChar() = this.get(this.length - 1)
 
@@ -22,7 +21,7 @@ fun todoTask9(): Nothing = TODO(
         to support the following manner of creating rational numbers:
         1.r(), Pair(1, 2).r()
     """,
-    documentation = doc8(),
+    documentation = doc9(),
     references = { 1.r(); Pair(1, 2).r(); RationalNumber(1, 9) })
 
 data class RationalNumber(val numerator: Int, val denominator: Int)

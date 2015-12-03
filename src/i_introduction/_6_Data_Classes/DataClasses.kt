@@ -1,7 +1,6 @@
 package i_introduction._6_Data_Classes
 
-import util.TODO
-import util.doc7
+import util.*
 
 fun todoTask6(): Nothing = TODO(
     """
@@ -10,7 +9,7 @@ fun todoTask6(): Nothing = TODO(
         This annotation means the compiler will generate a bunch of useful methods in this class: `equals`/`hashCode`, `toString` and some others.
         The `task6` function should return a list of persons.
     """,
-    documentation = doc7(),
+    documentation = doc6(),
     references = { JavaCode6.Person("Alice", 29) }
 )
 

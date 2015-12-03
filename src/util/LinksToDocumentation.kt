@@ -14,35 +14,35 @@ fun doc2() {}
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/lambdas.html">Lambdas</a>
  */
-fun doc3() {}
+fun doc4() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/basic-types.html#string-literals">String literals and string templates</a>
  */
-fun doc4() {}
+fun doc5() {}
+
+/**
+ * @see <a href="http://kotlinlang.org/docs/reference/classes.html">Classes</a>,
+<a href="http://kotlinlang.org/docs/reference/properties.html">Properties</a>,
+<a href="https://kotlinlang.org/docs/reference/data-classes.html">Data classes</a>
+ */
+fun doc6() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/null-safety.html">Null safety and safe calls</a>
  */
-fun doc5() {}
+fun doc7() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/typecasts.html#smart-casts">Smart casts</a>,
  *      <a href="http://kotlinlang.org/docs/reference/control-flow.html#when-expression">When</a>
  */
-fun doc6() {}
-
-/**
- * @see <a href="http://kotlinlang.org/docs/reference/classes.html">Classes</a>,
-        <a href="http://kotlinlang.org/docs/reference/properties.html">Properties</a>,
-        <a href="https://kotlinlang.org/docs/reference/data-classes.html">Data classes</a>
- */
-fun doc7() {}
+fun doc8() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/extensions.html">Extension functions</a>
  */
-fun doc8() {}
+fun doc9() {}
 
 /**
  * @see <a href="https://kotlinlang.org/docs/reference/object-declarations.html">Object expressions</a>
