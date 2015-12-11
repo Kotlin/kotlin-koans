@@ -3,7 +3,7 @@ package i_introduction._8_Smart_Casts
 import org.junit.Assert
 import org.junit.Test
 
-class _06_Smart_Casts {
+class _08_Smart_Casts {
     @Test fun testNum() {
         Assert.assertEquals("'eval' on Num should work:", 2, eval(Num(2)))
     }
