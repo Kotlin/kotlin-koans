@@ -7,7 +7,7 @@ import java.util.HashMap
 class _38_The_Function_Apply {
     @Test fun testBuildString() {
         val expected = buildString()
-        val actual = StringBuilder().myApply {
+        val actual = StringBuilder().apply {
             append("Numbers: ")
             for (i in 1..10) {
                 append(i)
@@ -18,7 +18,7 @@ class _38_The_Function_Apply {
 
     @Test fun testBuildMap() {
         val expected = buildMap()
-        val actual = HashMap<Int, String>().myApply {
+        val actual = HashMap<Int, String>().apply {
             put(0, "0")
             for (i in 1..10) {
                 put(i, "$i")
