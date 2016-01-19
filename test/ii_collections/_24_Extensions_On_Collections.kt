@@ -1,6 +1,6 @@
 package ii_collections
 
-import org.junit.Assert
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class _24_Extensions_On_Collections {
@@ -25,7 +25,7 @@ class _24_Extensions_On_Collections {
     }
 
     private fun doTest(expected: Collection<String>?, argument: Collection<String>) {
-        Assert.assertEquals("The function 'doSomethingStrangeWithCollection' should do at least something with a collection:",
+        assertEquals("The function 'doSomethingStrangeWithCollection' should do at least something with a collection:",
                 expected, doSomethingStrangeWithCollection(argument))
     }
 }

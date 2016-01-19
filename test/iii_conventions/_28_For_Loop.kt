@@ -1,6 +1,7 @@
 package iii_conventions
 
-import junit.framework.Assert
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Test
 import java.util.*
 
@@ -12,13 +13,13 @@ class _28_For_Loop {
         })
         val expectedDateRange = arrayListOf(
                 MyDate(2014, 5, 1), MyDate(2014, 5, 2), MyDate(2014, 5, 3), MyDate(2014, 5, 4), MyDate(2014, 5, 5))
-        Assert.assertEquals("Incorrect iteration over five nice spring dates",
+        assertEquals("Incorrect iteration over five nice spring dates",
                 expectedDateRange, actualDateRange)
     }
 
     @Test fun testIterateOverEmptyRange() {
         var invoked = false
         iterateOverDateRange(MyDate(2014, 1, 1), MyDate(2013, 1, 1), { invoked = true })
-        Assert.assertFalse("Handler was invoked on an empty range", invoked)
+        assertFalse("Handler was invoked on an empty range", invoked)
     }
 }

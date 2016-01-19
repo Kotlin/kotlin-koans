@@ -1,13 +1,13 @@
 package iii_conventions
 
 import iii_conventions.test.s
-import junit.framework.Assert
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class _27_Range_To {
     fun doTest(date: MyDate, first: MyDate, last: MyDate, shouldBeInRange: Boolean) {
         val message = "The date ${date.s} should${if (shouldBeInRange) "" else "n't"} be in range: ${first.s}..${last.s}"
-        Assert.assertEquals(message, shouldBeInRange, checkInRange2(date, first, last))
+        assertEquals(message, shouldBeInRange, checkInRange2(date, first, last))
     }
 
     @Test fun testInRange() {

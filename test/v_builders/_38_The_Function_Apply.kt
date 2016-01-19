@@ -1,6 +1,6 @@
 package v_builders.examples
 
-import junit.framework.Assert
+import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.util.HashMap
 
@@ -13,7 +13,7 @@ class _38_The_Function_Apply {
                 append(i)
             }
         }.toString()
-        Assert.assertEquals("String should be built:", expected, actual)
+        assertEquals("String should be built:", expected, actual)
     }
 
     @Test fun testBuildMap() {
@@ -24,6 +24,6 @@ class _38_The_Function_Apply {
                 put(i, "$i")
             }
         }
-        Assert.assertEquals("Map should be filled with the right values", expected, actual)
+        assertEquals("Map should be filled with the right values", expected, actual)
     }
 }
