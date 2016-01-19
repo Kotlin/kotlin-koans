@@ -90,7 +90,7 @@ fun doc32() {}
 fun doc34() {}
 
 /**
- * @see <a href="https://kotlinlang.org/docs/reference/lambdas.html#extension-function-expressions">Extension function literals</a>
+ * @see <a href="https://kotlinlang.org/docs/reference/lambdas.html#function-literals-with-receiver">Function Literals with Receiver</a>
  */
 fun doc36() {}
 
