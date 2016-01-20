@@ -14,18 +14,16 @@ class DateRange(
         override val start: MyDate,
         override val endInclusive: MyDate
 ) : ClosedRange<MyDate>, Iterable<MyDate> {
-    override fun iterator(): Iterator<MyDate> = DateIterator(this)
-    override fun contains(item: MyDate): Boolean = start <= item && item <= end
-}
-
-class DateIterator(val dateRange: DateRange) : Iterator<MyDate> {
-    var current: MyDate = dateRange.start
-    override fun next(): MyDate {
-        val result = current
-        current = current.addTimeIntervals(TimeInterval.DAY, 1)
-        return result
+    override fun iterator(): Iterator<MyDate> = object: Iterator<MyDate> {
+        var current: MyDate = start
+        override fun next(): MyDate {
+            val result = current
+            current = current.addTimeIntervals(TimeInterval.DAY, 1)
+            return result
+        }
+        override fun hasNext(): Boolean = current <= endInclusive
     }
-    override fun hasNext(): Boolean = current <= dateRange.end
+    override fun contains(item: MyDate): Boolean = start <= item && item <= end
 }
 
 enum class TimeInterval {
