@@ -23,8 +23,8 @@ fun todoTask28(): Nothing = TODO(
         Task 28.
         Uncomment the commented code and make it compile.
         Add all changes to the file MyDate.kt.
-        Make class DateRange implement Iterable<MyDate>.
-        Use object expression to implement Iterator<MyDate>.
+        Make the class DateRange implement Iterable<MyDate>.
+        You can use object expression or declare an extra class to implement Iterator<MyDate>.
         Use the utility function 'MyDate.nextDay()'.
     """,
     documentation = doc28(),
