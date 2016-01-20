@@ -1,6 +1,5 @@
 package i_introduction._6_Data_Classes
 
-import kotlin.test.*
 import org.junit.Test
 import org.junit.Assert.assertEquals
 
