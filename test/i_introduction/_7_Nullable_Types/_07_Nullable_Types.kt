@@ -12,7 +12,7 @@ class _07_Nullable_Types {
     ) {
         var invoked = false
         sendMessageToClient(client, message, object : Mailer {
-            public override fun sendMessage(actualEmail: String, actualMessage: String) {
+            override fun sendMessage(actualEmail: String, actualMessage: String) {
                 invoked = true
                 assertEquals("The message is not as expected:",
                         message, actualMessage)

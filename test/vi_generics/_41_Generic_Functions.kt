@@ -3,7 +3,7 @@ package vi_generics
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-public class _41_Generic_Functions {
+class _41_Generic_Functions {
     @Test fun testPartitionWordsAndLines() {
         val (words, lines) = listOf("a", "a b", "c", "d e").partitionWordsAndLines()
         assertEquals(listOf("a", "c"), words)
