@@ -1,8 +1,8 @@
 package iii_conventions
 
+import iii_conventions.TimeInterval.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import iii_conventions.TimeInterval.*
 
 class _29_Operators_Overloading {
     @Test fun testAddTimeIntervals() {

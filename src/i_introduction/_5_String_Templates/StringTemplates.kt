@@ -1,6 +1,7 @@
 package i_introduction._5_String_Templates
 
-import util.*
+import util.TODO
+import util.doc5
 
 fun example1(a: Any, b: Any) =
         "This is some text in which variables ($a, $b) appear."

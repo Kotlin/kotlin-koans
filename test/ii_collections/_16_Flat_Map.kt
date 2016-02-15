@@ -1,8 +1,8 @@
 package ii_collections
 
+import ii_collections.data.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import ii_collections.data.*
 
 class _16_Flat_Map {
     @Test fun testGetOrderedProductsSet() {

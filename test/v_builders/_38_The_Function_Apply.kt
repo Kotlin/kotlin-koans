@@ -2,7 +2,7 @@ package v_builders.examples
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import java.util.HashMap
+import java.util.*
 
 class _38_The_Function_Apply {
     @Test fun testBuildString() {

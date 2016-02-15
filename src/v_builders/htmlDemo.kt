@@ -1,12 +1,10 @@
 package v_builders.demo
 
-import javax.swing.JFrame
-import javax.swing.JScrollPane
-import javax.swing.JLabel
-import java.awt.Color
-import java.awt.Dimension
-import javax.swing.SwingConstants.*
 import v_builders.renderProductTable
+import javax.swing.JFrame
+import javax.swing.JLabel
+import javax.swing.JScrollPane
+import javax.swing.SwingConstants.CENTER
 
 
 fun main(args: Array<String>) {

@@ -1,8 +1,7 @@
 package vi_generics
 
-import java.util.ArrayList
-import java.util.HashSet
 import util.TODO
+import java.util.*
 
 fun task41(): Nothing = TODO(
     """

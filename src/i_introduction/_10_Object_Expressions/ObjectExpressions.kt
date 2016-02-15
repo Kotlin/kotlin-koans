@@ -1,7 +1,8 @@
 package i_introduction._10_Object_Expressions
 
+import util.TODO
+import util.doc10
 import java.util.*
-import util.*
 
 fun todoTask10(): Nothing = TODO(
     """

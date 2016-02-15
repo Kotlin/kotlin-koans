@@ -1,7 +1,6 @@
 package i_introduction._2_Named_Arguments
 
 import org.junit.Assert.assertEquals
-import org.junit.Test
 
 class _02_Default_And_Named_Params() {
 

@@ -1,6 +1,6 @@
 package iv_properties
 
-import util.*
+import util.TODO
 
 class LazyProperty(val initializer: () -> Int) {
     val lazy: Int = todoTask33()

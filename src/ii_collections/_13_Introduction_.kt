@@ -1,7 +1,6 @@
 package ii_collections
 
-import java.util.HashSet
-import util.TODO
+import java.util.*
 
 /*
  * This part of workshop was inspired by:

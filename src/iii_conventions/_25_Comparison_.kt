@@ -1,6 +1,7 @@
 package iii_conventions
 
-import util.*
+import util.TODO
+import util.doc25
 
 fun todoTask25(): Nothing = TODO(
     """

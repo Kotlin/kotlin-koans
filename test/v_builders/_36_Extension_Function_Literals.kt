@@ -2,7 +2,6 @@ package v_builders
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import java.util.HashMap
 
 class _36_Extension_Function_Literals {
     @Test fun testIsOddAndIsEven() {

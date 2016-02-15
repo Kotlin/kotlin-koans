@@ -1,8 +1,10 @@
 package ii_collections
 
+import ii_collections.data.customers
+import ii_collections.data.lucas
+import ii_collections.data.nathan
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import ii_collections.data.*
 
 class _19_Sum {
     @Test fun testGetTotalOrderPrice() {

@@ -1,6 +1,7 @@
 package iv_properties
 
-import util.*
+import util.TODO
+import util.doc32
 
 class PropertyExample() {
     var counter = 0

@@ -1,7 +1,6 @@
 package v_builders.builders
 
 import util.questions.Answer
-import util.questions.Answer.*
 
 fun todoTask40(): Nothing = TODO(
     """

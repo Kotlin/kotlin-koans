@@ -1,6 +1,7 @@
 package i_introduction._6_Data_Classes
 
-import util.*
+import util.TODO
+import util.doc6
 
 fun todoTask6(): Nothing = TODO(
     """

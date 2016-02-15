@@ -1,6 +1,7 @@
 package iii_conventions.multiAssignemnt
 
-import util.*
+import util.TODO
+import util.doc30
 
 fun todoTask30(): Nothing = TODO(
     """

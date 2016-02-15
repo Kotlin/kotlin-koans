@@ -1,8 +1,8 @@
 package iv_properties
 
+import iii_conventions.MyDate
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import iii_conventions.MyDate
 
 class _35_Delegates_How_It_Works {
     @Test fun testDate() {

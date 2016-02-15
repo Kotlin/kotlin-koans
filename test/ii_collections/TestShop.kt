@@ -1,7 +1,11 @@
 package ii_collections.data
 
-import ii_collections.*
-import ii_collections.shopBuilders.*
+import ii_collections.City
+import ii_collections.Customer
+import ii_collections.Product
+import ii_collections.shopBuilders.customer
+import ii_collections.shopBuilders.order
+import ii_collections.shopBuilders.shop
 
 //products
 val idea = Product("IntelliJ IDEA Ultimate", 199.0)

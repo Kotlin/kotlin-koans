@@ -1,10 +1,10 @@
 package ii_collections
 
-import org.junit.Assert.assertEquals
-import org.junit.Test
 import ii_collections.data.*
 import ii_collections.shopBuilders.customer
 import ii_collections.shopBuilders.order
+import org.junit.Assert.assertEquals
+import org.junit.Test
 
 class _23_Compound_Tasks {
     @Test fun testGetCustomersWhoOrderedProduct() {

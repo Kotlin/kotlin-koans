@@ -1,6 +1,7 @@
 package i_introduction._4_Lambdas
 
-import util.*
+import util.TODO
+import util.doc4
 
 fun example() {
 

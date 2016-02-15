@@ -1,9 +1,11 @@
 package ii_collections
 
+import ii_collections.data.*
+import ii_collections.shopBuilders.customer
+import ii_collections.shopBuilders.order
+import ii_collections.shopBuilders.shop
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import ii_collections.data.*
-import ii_collections.shopBuilders.*
 
 
 class _22_Fold {

@@ -1,7 +1,7 @@
 package i_introduction._6_Data_Classes
 
-import org.junit.Test
 import org.junit.Assert.assertEquals
+import org.junit.Test
 
 
 public class _06_Data_Classes {

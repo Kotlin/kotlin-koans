@@ -1,6 +1,7 @@
 package i_introduction._8_Smart_Casts
 
-import util.*
+import util.TODO
+import util.doc8
 
 interface Expr
 class Num(val value: Int) : Expr

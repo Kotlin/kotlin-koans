@@ -1,8 +1,9 @@
 package ii_collections
 
+import ii_collections.data.shop
+import ii_collections.data.sortedCustomers
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import ii_collections.data.*
 
 class _18_Sort {
     @Test fun testGetCustomersSortedByNumberOfOrders() {

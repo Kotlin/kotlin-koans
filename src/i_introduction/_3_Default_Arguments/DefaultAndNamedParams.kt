@@ -1,6 +1,7 @@
 package i_introduction._3_Default_Arguments
 
-import util.*
+import util.TODO
+import util.doc2
 
 fun todoTask3(): Nothing = TODO(
     """

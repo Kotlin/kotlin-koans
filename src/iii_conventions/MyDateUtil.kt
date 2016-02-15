@@ -1,9 +1,7 @@
 package iii_conventions
 
-import java.util.Calendar
-import iii_conventions.TimeInterval.YEAR
-import iii_conventions.TimeInterval.DAY
-import iii_conventions.TimeInterval.WEEK
+import iii_conventions.TimeInterval.*
+import java.util.*
 
 fun MyDate.nextDay() = addTimeIntervals(DAY, 1)
 

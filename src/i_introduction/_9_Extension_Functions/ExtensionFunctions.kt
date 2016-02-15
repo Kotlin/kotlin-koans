@@ -1,6 +1,7 @@
 package i_introduction._9_Extension_Functions
 
-import util.*
+import util.TODO
+import util.doc9
 
 fun String.lastChar() = this.get(this.length - 1)
 

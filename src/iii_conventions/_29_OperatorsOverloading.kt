@@ -1,7 +1,6 @@
 package iii_conventions
 
-import util.*
-import iii_conventions.TimeInterval.*
+import util.TODO
 
 fun todoTask29(): Nothing = TODO(
     """

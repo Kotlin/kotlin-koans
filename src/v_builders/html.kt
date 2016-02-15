@@ -1,6 +1,6 @@
 package v_builders.htmlLibrary
 
-import java.util.ArrayList
+import java.util.*
 
 open class Tag(val name: String) {
     val children: MutableList<Tag> = ArrayList()
