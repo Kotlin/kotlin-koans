@@ -7,8 +7,8 @@ fun todoTask0(): Nothing = TODO(
     """
         Introduction:
 
-        The Kotlin Koans Workshop aims to teach you Kotlin by solving a writing code
-        to solve problems. For each task, there is an associated unit test that
+        The Kotlin Koans Workshop aims to teach you Kotlin by writing code
+        to solve tasks. For each task, there is an associated unit test that
         checks your solution. You can run all of the tests (check all of the work
         so far) by executing the "All tests" target.
 
