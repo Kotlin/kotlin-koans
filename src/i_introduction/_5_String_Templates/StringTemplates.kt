@@ -28,9 +28,14 @@ val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 fun todoTask5(): Nothing = TODO(
     """
         Task 5.
-        Copy the body of 'getPattern()' to the 'task5()' function
-        and rewrite it in such a way that it matches '13 JUN 1992'.
-        Use the 'month' variable.
+        The goal of this task is to replace the task5() function implementation
+        to return a regular expression string that can be used to match dates
+        formatted such as '13 JUN 1992' (excluding the quotes).
+
+        The getPattern() function (above) is an example regular expression string
+        that nearly solves this task, but not quite.
+
+        The solution of your task should use the provided 'month' variable (above).
     """,
     documentation = doc5(),
     references = { getPattern(); month })

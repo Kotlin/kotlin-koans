@@ -5,9 +5,16 @@ import util.TODO
 fun todoTask1(collection: Collection<Int>): Nothing = TODO(
     """
         Task 1.
-        Rewrite JavaCode1.task1 in Kotlin.
-        In IntelliJ IDEA, you can just copy-paste the code and agree to automatically convert it to Kotlin,
-        but only for this task!
+        The logic for this task exists in java class JavaCode1, which is in this same folder.
+        The goal of this task is to replace the body of task1(collection) with the logic
+        found in JavaCode1.task1(collection), but you need to re-write the logic in Kotlin.
+
+        Note: If you copy the JavaCode1.task1(collection) logic and paste it into this
+        file's task1(collection) function, IntelliJ will offer to automatically convert
+        the code from Java to Kotlin for you. Give the automatic conversion a try!
+        In the future, you will want to reject the automatic conversion and manually
+        translate the code from Java to Kotlin so you don't cheat yourself out of
+        the learning opportunity.
     """,
     references = { JavaCode1().task1(collection) })
 
