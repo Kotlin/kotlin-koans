@@ -7,8 +7,17 @@ import java.util.*
  * https://github.com/goldmansachs/gs-collections-kata
  */
 
-/*
- *  There are many operations that help to transform one collection into another, starting with 'to'
+/**
+ * Task 13.
+ *
+ * In Kotlin, there are many operations that help to transform one collection into another, starting with 'to'.
+ *
+ * The goal of this exercise is to replace the entire body (blow) of function Shop.getSetOfCustomers()
+ * to return a set of all customers of Shop.
+ *
+ * This function, Shop.getSetOfCustomers(), adds a new function getSetOfCustomers() to the existing Shop class.
+ * You can find the Shop.kt class in the same folder as this exercise (and all of the other
+ * section ii_collections exercises).
  */
 fun example0(list: List<Int>) {
     list.toSet()
