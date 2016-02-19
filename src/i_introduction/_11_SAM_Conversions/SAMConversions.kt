@@ -6,7 +6,8 @@ import java.util.*
 
 fun todoTask11(): Nothing = TODO(
     """
-        Task 11.
+        Task 11
+
         When an object implements a SAM interface (one with a Single Abstract Method), you can pass a lambda instead.
         Read more about SAM conversions in the blog posts about Kotlin.
 

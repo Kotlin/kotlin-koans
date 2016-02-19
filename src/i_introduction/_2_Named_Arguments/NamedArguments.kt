@@ -12,9 +12,13 @@ fun usage() {
     bar(1, b = false)
 }
 
+/**
+ * Description of task.
+ */
 fun todoTask2(): Nothing = TODO(
     """
-        Task 2.
+        Task 2
+
         The logic defined in 'task1' is re-inventing the wheel. The Kotlin standard library
         contains a method named 'joinToString() that can provide the exact same functionality,
         if you provide the correct arguments.
@@ -27,7 +31,12 @@ fun todoTask2(): Nothing = TODO(
     documentation = doc2(),
     references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
+/**
+ * Replace the function body of this method as described in todoTask2().
+ *
+ * @return the string literal "OK".
+ */
 fun task2(collection: Collection<Int>): String {
     todoTask2()
-    return collection.joinToString()
+    //return collection.joinToString(/*some arguments*/)
 }
