@@ -6,7 +6,8 @@ import java.util.*
 
 fun todoTask10(): Nothing = TODO(
     """
-        Task 10.
+        Task 10
+
         Read about object expressions that play the same role in Kotlin as anonymous classes do in Java.
 
         Add an object expression that provides a comparator to sort a list in a descending order using java.util.Collections class.
@@ -16,6 +17,14 @@ fun todoTask10(): Nothing = TODO(
     documentation = doc10()
 )
 
+/**
+ * MODIFY the function body of this method as described in todoTask10().
+ * The ideal solution to this will be to replace the text of "todoTask10()" in the function body
+ * with an inline object expression that creates a "Comparator of Int" object that overrides the
+ * compare(l: Int, r: Int) function to provide a descending sort.
+ *
+ * @return a List of Int where the list is a pre-specified list of Int's sorted in descending order.
+ */
 fun task10(): List<Int> {
     val arrayList = arrayListOf(1, 5, 2)
     Collections.sort(arrayList, todoTask10())
