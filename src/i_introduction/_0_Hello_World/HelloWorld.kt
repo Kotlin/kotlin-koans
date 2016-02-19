@@ -3,9 +3,15 @@ package i_introduction._0_Hello_World.Hello
 import util.TODO
 import util.doc0
 
+/**
+ * Description of task.
+ */
 fun todoTask0(): Nothing = TODO(
     """
-        Introduction:
+
+        Task 0
+
+        Introduction
 
         The Kotlin Koans Workshop aims to teach you Kotlin by writing code
         to solve tasks. For each task, there is an associated unit test that
@@ -44,6 +50,11 @@ fun todoTask0(): Nothing = TODO(
     references = { task0(); "OK" }
 )
 
+/**
+ * Replace the function body of this method as described in todoTask0().
+ *
+ * @return the string literal "OK".
+ */
 fun task0(): String {
     return todoTask0()
 }

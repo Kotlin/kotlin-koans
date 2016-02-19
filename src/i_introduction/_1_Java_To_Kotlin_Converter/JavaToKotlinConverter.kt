@@ -2,9 +2,13 @@ package i_introduction._1_Java_To_Kotlin_Converter
 
 import util.TODO
 
+/**
+ * Description of task.
+ */
 fun todoTask1(collection: Collection<Int>): Nothing = TODO(
     """
-        Task 1.
+        Task 1
+
         The logic for this task exists in java class JavaCode1, which is in this same folder.
         The goal of this task is to replace the body of task1(collection) with the logic
         found in JavaCode1.task1(collection), but you need to re-write the logic in Kotlin.
@@ -19,6 +23,11 @@ fun todoTask1(collection: Collection<Int>): Nothing = TODO(
     references = { JavaCode1().task1(collection) })
 
 
+/**
+ * Replace the function body of this method as described in todoTask1().
+ *
+ * @return the string literal "OK".
+ */
 fun task1(collection: Collection<Int>): String {
     todoTask1(collection)
 }

@@ -3,9 +3,13 @@ package i_introduction._3_Default_Arguments
 import util.TODO
 import util.doc2
 
+/**
+ * Description of task.
+ */
 fun todoTask3(): Nothing = TODO(
     """
-        Task 3.
+        Task 3
+
         Several overloads of 'JavaCode3.foo()' can be replaced with one function in Kotlin.
 
         The task3() function contents must be modified to remove the line "return todoTask3()"
@@ -18,8 +22,20 @@ fun todoTask3(): Nothing = TODO(
     documentation = doc2(),
     references = { name: String -> JavaCode3().foo(name); foo(name) })
 
-fun foo(name: String): String = todoTask3()
+/**
+ * Function to create string that contains a specified string, possibly as upper case (default is lowercase),
+ * followed by a specified (or default) number. If the number is not provided, the default number should be 42.
+ *
+ * Optionally, complete the KDoc, here.
+ * @return a string of (string, possibly upper case) with a number concatenated to it
+ */
+fun foo(name: String /* more arguments will go here*/): String = todoTask3()
 
+/**
+ * Replace the function body of this method as described in todoTask3().
+ *
+ * @return the string literal "OK".
+ */
 fun task3(): String {
     return todoTask3()
     //return (foo("a") +
