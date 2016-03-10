@@ -28,6 +28,7 @@ val nathan = "Nathan"
 val reka = "Reka"
 val bajram = "Bajram"
 val asuka = "Asuka"
+val riku = "Riku"
 
 //cities
 val Canberra = City("Canberra")
@@ -56,6 +57,10 @@ val shop = shop("test shop") {
     customer(asuka, Tokyo) {
         order(idea)
     }
+    customer(riku, Tokyo) {
+        order(phpStorm, phpStorm)
+        order(phpStorm)
+    }
 }
 
 val customers: Map<String, Customer> = shop.customers.fold(hashMapOf<String, Customer>(), {
@@ -64,14 +69,14 @@ val customers: Map<String, Customer> = shop.customers.fold(hashMapOf<String, Cus
     map
 })
 
-val orderedProducts = setOf(idea, reSharper, dotTrace, dotMemory, rubyMine, webStorm)
+val orderedProducts = setOf(idea, reSharper, dotTrace, dotMemory, rubyMine, webStorm, phpStorm)
 
-val sortedCustomers = listOf(cooper, nathan, bajram, asuka, lucas, reka).map { customers[it] }
+val sortedCustomers = listOf(cooper, nathan, bajram, asuka, lucas, riku, reka).map { customers[it] }
 
 val groupedByCities = mapOf(
         Canberra to listOf(lucas, cooper),
         Vancouver to listOf(nathan),
         Budapest to listOf(reka),
         Ankara to listOf(bajram),
-        Tokyo to listOf(asuka)
+        Tokyo to listOf(asuka, riku)
 ).mapValues { it.value.map { name -> customers[name] } }

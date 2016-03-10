@@ -22,6 +22,16 @@ class _23_Compound_Tasks {
     }
 
     @Test fun testNumberOfTimesEachProductWasOrdered() {
-        assertEquals(3, shop.getNumberOfTimesProductWasOrdered(reSharper))
+        assertEquals(4, shop.getNumberOfTimesProductWasOrdered(idea))
+    }
+
+    @Test fun testNumberOfTimesEachProductWasOrderedForRepeatedProduct() {
+        assertEquals("A customer may order a product for several times",
+                3, shop.getNumberOfTimesProductWasOrdered(reSharper))
+    }
+
+    @Test fun testNumberOfTimesEachProductWasOrderedForRepeatedInOrderProduct() {
+        assertEquals("An order may contain a particular product more than once",
+                3, shop.getNumberOfTimesProductWasOrdered(phpStorm))
     }
 }
