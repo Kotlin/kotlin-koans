@@ -9,3 +9,5 @@ Run 'All tests' and fix them.
 
 The repository has two branches, master which contains the exercises for you to do and resolutions which contains the resolved exercises. 
 Make sure you don’t cheat!
+
+Note that the koans tasks for web-demo and educational plugin can be found here: https://github.com/Kotlin/kotlin-koans-edu.
