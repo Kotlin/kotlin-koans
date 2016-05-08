@@ -14,7 +14,7 @@ fun todoTask35(): Nothing = TODO(
 
         Implement the members of the class 'EffectiveDate' so it can be delegated to.
         Store only the time in milliseconds in 'timeInMillis' property.
-        Use the extension functions 'MyDate.toMillis' and 'Long.ToDate'.
+        Use the extension functions 'MyDate.toMillis' and 'Long.toDate'.
     """,
     references = { date: MyDate -> date.toMillis().toDate()}
 )
