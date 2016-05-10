@@ -23,7 +23,7 @@ class D {
     var date by EffectiveDate()
     // The property date$delegate of type EffectiveDate is created;
     // the generated 'get' and 'set' accessors for 'date' are delegated to it.
-    // Browse the Kotlin tool window in IntelliJ IDEA for details.
+    // You can look at the bytecode (by calling "Show Kotlin Bytecode" action in IntelliJ IDEA) for details.
 }
 
 class EffectiveDate<R> : ReadWriteProperty<R, MyDate> {
