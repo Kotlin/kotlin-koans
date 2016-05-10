@@ -3,6 +3,11 @@ package iii_conventions
 import iii_conventions.TimeInterval.*
 import java.util.*
 
+/**
+ * Pre-defined extension functions for the MyDate class for tasks in iii_conventions
+ * DO NOT CHANGE THIS FILE.
+ */
+
 fun MyDate.nextDay() = addTimeIntervals(DAY, 1)
 
 fun MyDate.addTimeIntervals(timeInterval: TimeInterval, number: Int): MyDate {

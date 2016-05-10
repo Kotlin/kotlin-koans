@@ -7,8 +7,7 @@ import util.doc0
  * Description of task.
  */
 fun todoTask0(): Nothing = TODO(
-    """
-
+        """
         Task 0
 
         Introduction
@@ -45,9 +44,9 @@ fun todoTask0(): Nothing = TODO(
         Using 'references' you can usually navigate and see the code mentioned in the task description.
 
         To start please make the function 'task0' return "OK".
-    """,
-    documentation = doc0(),
-    references = { task0(); "OK" }
+        """,
+        documentation = doc0(),
+        references = { task0(); "OK" }
 )
 
 /**

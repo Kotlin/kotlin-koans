@@ -3,7 +3,7 @@ package ii_collections
 import java.util.*
 
 /*
- * This part of workshop was inspired by:
+ * This task was inspired by:
  * https://github.com/goldmansachs/gs-collections-kata
  */
 
@@ -18,11 +18,10 @@ fun example0(list: List<Int>) {
 }
 
 /**
- * Description of work.
+ * Description of task.
  */
 fun todoTask13(): Nothing = util.TODO(
         """
-
         Task 13
 
         In Kotlin, there are many operations that help to transform one collection into another, starting with 'to'.
