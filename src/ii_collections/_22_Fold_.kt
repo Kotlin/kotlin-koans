@@ -12,10 +12,23 @@ fun whatFoldDoes(): Int {
     return result
 }
 
+/**
+ * Description of task.
+ */
+fun todoTask22(): Nothing = util.TODO(
+        """
+        Task 22
+
+        Task for working with collections.
+        Look through the 'Shop' API; all tasks are connected with it.
+        Return what is described in the name and the comment.
+        """,
+        references = { shop: Shop -> shop.customers }
+)
+
 fun Shop.getSetOfProductsOrderedByEveryCustomer(): Set<Product> {
     // Return the set of products ordered by every customer
-    return customers.fold(allOrderedProducts, {
-        orderedByAll, customer ->
-        todoCollectionTask()
+    return customers.fold(/*allOrderedProducts*/ todoTask22(), { orderedByAll, customer ->
+        todoTask22()
     })
 }

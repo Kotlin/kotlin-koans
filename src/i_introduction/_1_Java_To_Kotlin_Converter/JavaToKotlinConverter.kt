@@ -6,7 +6,7 @@ import util.TODO
  * Description of task.
  */
 fun todoTask1(collection: Collection<Int>): Nothing = TODO(
-    """
+        """
         Task 1
 
         The logic for this task exists in java class JavaCode1, which is in this same folder.
@@ -19,14 +19,15 @@ fun todoTask1(collection: Collection<Int>): Nothing = TODO(
         In the future, you will want to reject the automatic conversion and manually
         translate the code from Java to Kotlin so you don't cheat yourself out of
         the learning opportunity.
-    """,
-    references = { JavaCode1().task1(collection) })
+        """,
+        references = { JavaCode1().task1(collection) })
 
 
 /**
- * Replace the function body of this method as described in todoTask1().
+ * Modify the function body of this method as described in todoTask1().
  *
- * @return the string literal "OK".
+ * @param collection a collection of Int
+ * @return If the incoming collection is [1, 12, 3] the output should be "{1, 12, 3}".
  */
 fun task1(collection: Collection<Int>): String {
     todoTask1(collection)

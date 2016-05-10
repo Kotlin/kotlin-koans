@@ -7,7 +7,7 @@ import util.doc2
  * Description of task.
  */
 fun todoTask3(): Nothing = TODO(
-    """
+        """
         Task 3
 
         Several overloads of 'JavaCode3.foo()' can be replaced with one function in Kotlin.
@@ -18,9 +18,9 @@ fun todoTask3(): Nothing = TODO(
         The goal of this task is to change the list of arguments for the function 'foo', provided
         just below, and replace the function implementation such that the code in task3() will return
         the String "a42b1C42D2".
-    """,
-    documentation = doc2(),
-    references = { name: String -> JavaCode3().foo(name); foo(name) })
+        """,
+        documentation = doc2(),
+        references = { name: String -> JavaCode3().foo(name); foo(name) })
 
 /**
  * Function to create string that contains a specified string, possibly as upper case (default is lowercase),
@@ -32,9 +32,10 @@ fun todoTask3(): Nothing = TODO(
 fun foo(name: String /* more arguments will go here*/): String = todoTask3()
 
 /**
- * Replace the function body of this method as described in todoTask3().
+ * Modify the function body of this method as described in todoTask3().
  *
- * @return the string literal "OK".
+ * @return the literal string "a42b1C42D2" as computed by this function with multiple
+ * calls to the foo(...) function.
  */
 fun task3(): String {
     return todoTask3()

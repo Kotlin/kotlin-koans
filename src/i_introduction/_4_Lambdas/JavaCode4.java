@@ -6,6 +6,10 @@ import util.JavaCode;
 
 import java.util.Collection;
 
+/**
+ * Example class for task 4.
+ * DO NOT CHANGE THIS FILE.
+ */
 public class JavaCode4 extends JavaCode {
     public boolean task4(Collection<Integer> collection) {
         return Iterables.any(collection, new Predicate<Integer>() {

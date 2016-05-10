@@ -2,13 +2,17 @@ package ii_collections
 
 import util.TODO
 
+/**
+ * Description of task.
+ */
 fun todoTask24(): Nothing = TODO(
-    """
-        Task 24.
-        The function should behave the same as '_24_JavaCode.doSomethingStrangeWithCollection'
+        """
+        Task 24
+
+        The function should behave the same as 'JavaCode24.doSomethingStrangeWithCollection'
         Replace all invocations of 'todoTask24()' with the appropriate code.
-    """,
-        references = { c: Collection<String> -> _24_JavaCode().doSomethingStrangeWithCollection(c) }
+        """,
+        references = { c: Collection<String> -> JavaCode24().doSomethingStrangeWithCollection(c) }
 )
 
 fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection<String>? {

@@ -16,7 +16,7 @@ fun usage() {
  * Description of task.
  */
 fun todoTask2(): Nothing = TODO(
-    """
+        """
         Task 2
 
         The logic defined in 'task1' is re-inventing the wheel. The Kotlin standard library
@@ -27,14 +27,15 @@ fun todoTask2(): Nothing = TODO(
         return the result of collection.joinToString() with appropriate arguments
         as to provide the same result as task1's JavaCode1.task1(collection).
         Your solution should pass only two arguments to joinToString().
-    """,
-    documentation = doc2(),
-    references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
+        """,
+        documentation = doc2(),
+        references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
 /**
- * Replace the function body of this method as described in todoTask2().
+ * Modify the function body of this method as described in todoTask2().
  *
- * @return the string literal "OK".
+ * @param collection a collection of Int
+ * @return If the incoming collection is [1, 12, 3] the output should be "{1, 12, 3}".
  */
 fun task2(collection: Collection<Int>): String {
     todoTask2()

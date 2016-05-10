@@ -46,7 +46,7 @@ fun example() = "13.06.1992".matches(getPattern().toRegex()) //true
  * Description of task.
  */
 fun todoTask5(): Nothing = TODO(
-    """
+        """
         Task 5
 
         The goal of this task is to replace the task5() function implementation
@@ -57,9 +57,9 @@ fun todoTask5(): Nothing = TODO(
         that nearly solves this task, but not quite.
 
         The solution of your task should use the provided 'month' variable (above).
-    """,
-    documentation = doc5(),
-    references = { getPattern(); month })
+        """,
+        documentation = doc5(),
+        references = { getPattern(); month })
 
 /**
  * A regular expression string is capable of matching the months in 3 letter uppercase.

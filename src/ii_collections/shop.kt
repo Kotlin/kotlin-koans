@@ -1,5 +1,9 @@
 package ii_collections
 
+/**
+ * Pre-defined classes for tasks in ii_collections.
+ * DO NOT CHANGE THIS FILE.
+ */
 data class Shop(val name: String, val customers: List<Customer>)
 
 data class Customer(val name: String, val city: City, val orders: List<Order>) {

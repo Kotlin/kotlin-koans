@@ -2,6 +2,10 @@ package i_introduction._6_Data_Classes;
 
 import util.JavaCode;
 
+/**
+ * Example class for task 6.
+ * DO NOT CHANGE THIS FILE.
+ */
 public class JavaCode6 extends JavaCode {
 
     public static class Person {
