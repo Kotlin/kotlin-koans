@@ -2,6 +2,10 @@ package i_introduction._8_Smart_Casts;
 
 import util.JavaCode;
 
+/**
+ * Example class for task 8.
+ * DO NOT CHANGE THIS FILE.
+ */
 public class JavaCode8 extends JavaCode {
     public int eval(Expr expr) {
         if (expr instanceof Num) {

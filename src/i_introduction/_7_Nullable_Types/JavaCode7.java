@@ -4,6 +4,10 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import util.JavaCode;
 
+/**
+ * Example class for task 7.
+ * DO NOT CHANGE THIS FILE.
+ */
 public class JavaCode7 extends JavaCode {
     public void sendMessageToClient(@Nullable Client client, @Nullable String message, @NotNull Mailer mailer) {
         if (client == null || message == null) return;

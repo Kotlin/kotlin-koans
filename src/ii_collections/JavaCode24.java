@@ -8,7 +8,11 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-public class _24_JavaCode extends JavaCode {
+/**
+ * Example class for task 24.
+ * DO NOT CHANGE THIS FILE.
+ */
+public class JavaCode24 extends JavaCode {
     public Collection<String> doSomethingStrangeWithCollection(Collection<String> collection) {
         Map<Integer, List<String>> groupsByLength = Maps.newHashMap();
         for (String s : collection) {

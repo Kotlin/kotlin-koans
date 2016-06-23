@@ -10,7 +10,21 @@ fun example8() {
     negative == listOf(-4, -11)
 }
 
+/**
+ * Description of task.
+ */
+fun todoTask21(): Nothing = util.TODO(
+        """
+        Task 21
+
+        Task for working with collections.
+        Look through the 'Shop' API; all tasks are connected with it.
+        Return what is described in the name and the comment.
+        """,
+        references = { shop: Shop -> shop.customers }
+)
+
 fun Shop.getCustomersWithMoreUndeliveredOrdersThanDelivered(): Set<Customer> {
     // Return customers who have more undelivered orders than delivered
-    todoCollectionTask()
+    todoTask21()
 }

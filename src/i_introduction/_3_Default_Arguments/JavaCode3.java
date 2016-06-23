@@ -2,6 +2,10 @@ package i_introduction._3_Default_Arguments;
 
 import util.JavaCode;
 
+/**
+ * Example class for task 3.
+ * DO NOT CHANGE THIS FILE.
+ */
 public class JavaCode3 extends JavaCode {
     private int defaultNumber = 42;
 
