@@ -4,8 +4,16 @@ Kotlin Koans
 Kotlin Koans are a series of exercises to get you familiar with the Kotlin Syntax. 
 Each exercise is created as a failing unit test and your job is to make it pass. 
 
-Open up the project in IntelliJ IDEA or your favorite editor. 
-Run 'All tests' and fix them.
+#### How to build and run tests
+
+Working with the project using Intellij IDEA or Android Studio:
+1. Import the project as Gradle project.
+2. To build the project and run tests you can use 'All tests' run configuration or 'test' task on Gradle panel. 
+
+You can also build the project and run all tests in terminal:
+```
+./gradlew test
+```
 
 #### How to work with Koans using this project
 
