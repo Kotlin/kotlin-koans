@@ -7,14 +7,14 @@ import java.util.regex.Pattern
 
 class _05_String_Templates() {
     @Test fun match() {
-        assertTrue(Pattern.compile(task5()).matcher("Douglas Adams (11 MAR 1952)").find())
+        assertTrue("11 MAR 1952".matches(task5().toRegex()))
     }
 
     @Test fun match1() {
-        assertTrue(Pattern.compile(task5()).matcher("Stephen Fry (24 AUG 1957)").find())
+        assertTrue("24 AUG 1957".matches(task5().toRegex()))
     }
 
     @Test fun doNotMatch() {
-        assertFalse(Pattern.compile(task5()).matcher("Stephen Fry (24 RRR 1957)").find())
+        assertFalse("24 RRR 1957".matches(task5().toRegex()))
     }
 }
