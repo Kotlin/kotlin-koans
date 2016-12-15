@@ -13,8 +13,7 @@ import java.util.*
 fun example0(list: List<Int>) {
     list.toSet()
 
-    val set = HashSet<Int>()
-    list.to(set)
+    list.toCollection(HashSet<Int>())
 }
 
 fun Shop.getSetOfCustomers(): Set<Customer> {
