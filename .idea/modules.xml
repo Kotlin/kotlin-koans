@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-koans.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-koans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-koans_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-koans_main.iml" group="kotlin-koans" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-koans_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-koans_test.iml" group="kotlin-koans" />
     </modules>
   </component>
 </project>
