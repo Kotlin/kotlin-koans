@@ -11,5 +11,7 @@ class _35_Delegates_How_It_Works {
         assertEquals(2014, d.date.year)
         assertEquals(1, d.date.month)
         assertEquals(13, d.date.dayOfMonth)
+        assertEquals(d.date, 1392220800000.toDate())
+        assertEquals(1392220800000, d.date.toMillis())
     }
 }
