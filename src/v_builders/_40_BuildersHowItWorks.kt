@@ -78,8 +78,8 @@ which of the following is true:
   a. this code doesn't compile
   b. 'this' refers to an instance of an outer class
   c. 'this' refers to a receiver parameter TR of the function literal:
-            tr (color = "yellow") { TR.(): Unit ->
-                  this.td {
+            tr (color = "yellow") {
+                  this@tr.td {
                       text("Product")
                   }
             }
