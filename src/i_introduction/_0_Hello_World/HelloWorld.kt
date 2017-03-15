@@ -5,19 +5,22 @@ import util.doc0
 
 fun todoTask0(): Nothing = TODO(
     """
-        Introduction:
+        Introduction.
 
-        Workshop tasks are usually to change the function 'taskN' by replacing its body
-        (which starts out as the function invocation 'todoTaskN()'), with the correct code according to the problem.
-        The function 'todoTaskN()' throws an exception, so you usually have to replace that invocation with
-        meaningful code.
+        Kotlin Koans project consists of 42 small tasks for you to solve.
+        Typically you'll have to replace the function invocation 'todoTaskN()', which throws an exception,
+        with the correct code according to the problem.
 
-        Using 'documentation' argument you can open the related part of Kotlin online documentation.
-        Press 'F1' (Quick Documentation) on 'doc0()', "See also" section gives you a link.
+        Using 'documentation =' below the task description you can open the related part of the online documentation.
+            Press 'Ctrl+Q'(Windows) or 'F1'(Mac OS) on 'doc0()' to call the "Quick Documentation" action;
+            "See also" section gives you a link.
+            You can see the shortcut for the "Quick Documentation" action used in your IntelliJ IDEA
+            by choosing "Help -> Find Action..." (in the top menu), and typing the action name ("Quick Documentation").
+            The shortcut in use will be written next to the action name.
 
-        Using 'references' you can usually navigate and see the code mentioned in the task description.
+        Using 'references =' you can navigate to the code mentioned in the task description.
 
-        To start please make the function 'task0' return "OK".
+        Let's start! Make the function 'task0' return "OK".
     """,
     documentation = doc0(),
     references = { task0(); "OK" }
