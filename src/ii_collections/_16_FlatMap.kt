@@ -8,7 +8,7 @@ fun example() {
 }
 
 val Customer.orderedProducts: Set<Product> get() {
-    // Return all products ordered by customer
+    // Return all products this customer has ordered
     todoCollectionTask()
 }
 

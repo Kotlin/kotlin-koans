@@ -1,11 +1,6 @@
 package ii_collections.data
 
-import ii_collections.City
-import ii_collections.Customer
-import ii_collections.Product
-import ii_collections.shopBuilders.customer
-import ii_collections.shopBuilders.order
-import ii_collections.shopBuilders.shop
+import ii_collections.*
 
 //products
 val idea = Product("IntelliJ IDEA Ultimate", 199.0)
@@ -37,31 +32,36 @@ val Budapest = City("Budapest")
 val Ankara = City("Ankara")
 val Tokyo = City("Tokyo")
 
-val shop = shop("test shop") {
-    customer(lucas, Canberra) {
-        order(reSharper)
-        order(reSharper, dotMemory, dotTrace)
-    }
-    customer(cooper, Canberra) {}
-    customer(nathan, Vancouver) {
-        order(rubyMine, webStorm)
-    }
-    customer(reka, Budapest) {
-        order(isDelivered = false, products = idea)
-        order(isDelivered = false, products = idea)
-        order(idea)
-    }
-    customer(bajram, Ankara) {
-        order(reSharper)
-    }
-    customer(asuka, Tokyo) {
-        order(idea)
-    }
-    customer(riku, Tokyo) {
-        order(phpStorm, phpStorm)
-        order(phpStorm)
-    }
-}
+fun customer(name: String, city: City, vararg orders: Order) = Customer(name, city, orders.toList())
+fun order(vararg products: Product, isDelivered: Boolean = true) = Order(products.toList(), isDelivered)
+fun shop(name: String, vararg customers: Customer) = Shop(name, customers.toList())
+
+val shop = shop("jb test shop",
+        customer(lucas, Canberra,
+                order(reSharper),
+                order(reSharper, dotMemory, dotTrace)
+        ),
+        customer(cooper, Canberra),
+        customer(nathan, Vancouver,
+                order(rubyMine, webStorm)
+        ),
+        customer(reka, Budapest,
+                order(idea, isDelivered = false),
+                order(idea, isDelivered = false),
+                order(idea)
+        ),
+        customer(bajram, Ankara,
+                order(reSharper)
+        ),
+        customer(asuka, Tokyo,
+                order(idea)
+        ),
+        customer(riku, Tokyo,
+                order(phpStorm, phpStorm),
+                order(phpStorm)
+        )
+
+)
 
 val customers: Map<String, Customer> = shop.customers.fold(hashMapOf<String, Customer>(), {
     map, customer ->
