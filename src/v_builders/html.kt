@@ -15,7 +15,7 @@ open class Tag(val name: String) {
 }
 
 class Attribute(val name : String, val value : String) {
-    override fun toString() = """$name="$value" """
+    override fun toString() = """$name="$value""""
 }
 
 fun <T: Tag> T.set(name: String, value: String?): T {
