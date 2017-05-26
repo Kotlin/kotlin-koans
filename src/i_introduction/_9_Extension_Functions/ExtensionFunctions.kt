@@ -7,7 +7,7 @@ import util.doc9
 fun String.lastChar() = this.get(this.length - 1)
 
 
-// declares an extension function where 'this' can be omitted
+// 'this' refers to the receiver (String) and can be omitted
 fun String.lastChar1() = get(length - 1)
 
 fun useExtensionFunction() {
