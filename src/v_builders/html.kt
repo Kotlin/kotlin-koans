@@ -8,7 +8,7 @@ open class Tag(val name: String) {
 
     override fun toString(): String {
         return "<$name" +
-            (if (attributes.isEmpty()) "" else attributes.joinToString(separator = "", prefix = " ")) + ">" +
+            (if (attributes.isEmpty()) "" else attributes.joinToString(separator = " ", prefix = " ")) + ">" +
             (if (children.isEmpty()) "" else children.joinToString(separator = "")) +
             "</$name>"
     }
