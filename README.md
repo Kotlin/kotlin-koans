@@ -40,4 +40,4 @@ Note that you can solve the similar tasks using Educational Plugin or online:
 - Educational Plugin https://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin
 - online version of koans http://try.kotl.in
 
-The koans tasks for web-demo and educational plugin can be found here: https://github.com/Kotlin/kotlin-koans-edu.
+The koans tasks for web-demo and educational plugin can be found here: https://github.com/Kotlin/kotlin-koans-edu
