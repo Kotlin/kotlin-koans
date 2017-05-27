@@ -34,14 +34,14 @@ class EffectiveDate<R> : ReadWriteProperty<R, MyDate> {
 }
 
 fun MyDate.toMillis(): Long {
-    val c = Calendar.getInstance()
-    c.set(year, month, dayOfMonth, 0, 0, 0)
+    val c = Calendar.getInstance(TimeZone.getTimeZone("UTC"))
+    c.set(year, month -1, dayOfMonth, 0, 0, 0)
     c.set(Calendar.MILLISECOND, 0)
     return c.timeInMillis
 }
 
 fun Long.toDate(): MyDate {
-    val c = Calendar.getInstance()
+    val c = Calendar.getInstance(TimeZone.getTimeZone("UTC"))
     c.timeInMillis = this
-    return MyDate(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DATE))
+    return MyDate(c.get(Calendar.YEAR), c.get(Calendar.MONTH) + 1, c.get(Calendar.DATE))
 }
