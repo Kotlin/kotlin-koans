@@ -7,8 +7,9 @@ fun todoTask27(): Nothing = TODO(
     """
         Task 27.
         Uncomment the commented code and make it compile.
-        To make '..' work implement a 'MyDate.rangeTo()' extension function returning DateRange.
-        Add all changes to the file MyDate.kt.
+        Make all the changes to the file MyDate.kt.
+
+        Tips: To make '..' work implement a 'MyDate.rangeTo()' extension function returning 'DateRange'.
     """,
     documentation = doc26()
 )

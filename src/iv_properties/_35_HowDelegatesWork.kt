@@ -10,7 +10,7 @@ fun todoTask35(): Nothing = TODO(
     """
         Task 35.
         A delegate expression must have special 'get' and 'set' methods.
-        You can see their signatures below (as members of the 'ReadWriteProperty' interface).
+        You can see their signatures below as members of the 'ReadWriteProperty' interface.
 
         Implement the members of the class 'EffectiveDate' so it can be delegated to.
         Store only the time in milliseconds in 'timeInMillis' property.

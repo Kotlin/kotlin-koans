@@ -8,8 +8,8 @@ class Invokable
 fun todoTask31(): Nothing = TODO(
     """
         Task 31.
-        Change class Invokable to count the number of invocations (round brackets).
-        Uncomment the commented code - it should return 4.
+        Change the class 'Invokable' to count the number of invocations:
+        for 'invokable()()()()' it should be 4.
     """,
     references = { invokable: Invokable -> })
 

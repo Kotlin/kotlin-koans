@@ -5,11 +5,9 @@ import util.doc0
 
 fun todoTask0(): Nothing = TODO(
     """
-        Introduction.
+        Task 0.
 
-        Kotlin Koans project consists of 42 small tasks for you to solve.
-        Typically you'll have to replace the function invocation 'todoTaskN()', which throws an exception,
-        with the correct code according to the problem.
+        Read README.md to learn how to work with this project and check your solutions.
 
         Using 'documentation =' below the task description you can open the related part of the online documentation.
             Press 'Ctrl+Q'(Windows) or 'F1'(Mac OS) on 'doc0()' to call the "Quick Documentation" action;
@@ -20,7 +18,7 @@ fun todoTask0(): Nothing = TODO(
 
         Using 'references =' you can navigate to the code mentioned in the task description.
 
-        Let's start! Make the function 'task0' return "OK".
+        Let's start! Make the function 'task0' return "OK". Note that you can return expression directly.
     """,
     documentation = doc0(),
     references = { task0(); "OK" }

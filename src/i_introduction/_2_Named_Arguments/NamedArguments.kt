@@ -4,19 +4,21 @@ import i_introduction._1_Java_To_Kotlin_Converter.task1
 import util.TODO
 import util.doc2
 
-// default values for arguments:
+// default values for arguments
 fun bar(i: Int, s: String = "", b: Boolean = true) {}
 
 fun usage() {
-    // named arguments:
+    // named arguments
     bar(1, b = false)
 }
 
 fun todoTask2(): Nothing = TODO(
     """
         Task 2.
-        Implement the same logic as in 'task1' again through the library method 'joinToString()'.
-        Specify only two of the 'joinToString' arguments.
+        Print out the collection contents surrounded by curly braces using the library function 'joinToString'.
+        Specify only 'prefix' and 'postfix' arguments.
+
+        Don't forget to remove the 'todoTask2()' invocation which throws an exception.
     """,
     documentation = doc2(),
     references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })

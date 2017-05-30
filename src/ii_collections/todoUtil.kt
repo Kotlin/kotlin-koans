@@ -4,10 +4,9 @@ import util.TODO
 
 fun todoCollectionTask(): Nothing = TODO(
         """
-           Task for working with collections.
-           Look through the 'Shop' API; all tasks are connected with it.
-           Return what is described in the name and the comment.
-
+           Common task for working with collections.
+           Look through the Shop API, which all the tasks are using.
+           Each individual task is described in the function name and the comment.
         """,
         references = { shop: Shop -> shop.customers }
 )

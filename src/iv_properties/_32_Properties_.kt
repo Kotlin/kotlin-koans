@@ -11,7 +11,7 @@ class PropertyExample() {
 fun todoTask32(): Nothing = TODO(
     """
         Task 32.
-        Add a custom setter to PropertyExample.propertyWithCounter so that
+        Add a custom setter to 'PropertyExample.propertyWithCounter' so that
         the 'counter' property is incremented every time 'propertyWithCounter' is assigned to.
     """,
     documentation = doc32(),

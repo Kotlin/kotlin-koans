@@ -6,7 +6,7 @@ import util.doc12
 fun todoTask12(): Nothing = TODO(
     """
         Task 12.
-        In Kotlin standard library there are lots of extension functions that make the work with collections more convenient.
+        Kotlin standard library contains lots of extension functions that make the work with collections more convenient.
         Rewrite the previous example once more using an extension function 'sortedDescending'.
 
         Kotlin code can be easily mixed with Java code.

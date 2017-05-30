@@ -6,9 +6,9 @@ import util.doc2
 fun todoTask3(): Nothing = TODO(
     """
         Task 3.
-        Several overloads of 'JavaCode3.foo()' can be replaced with one function in Kotlin.
+        Several overloaded 'foo' functions in the class 'JavaCode3' can be replaced with one function in Kotlin.
         Change the declaration of the function 'foo' in a way that makes the code using 'foo' compile.
-        You have to add parameters and replace 'todoTask3()' with a real body.
+        You have to add 'foo' parameters and implement its body.
         Uncomment the commented code and make it compile.
     """,
     documentation = doc2(),

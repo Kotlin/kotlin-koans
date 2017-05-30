@@ -6,7 +6,7 @@ import util.doc30
 fun todoTask30(): Nothing = TODO(
     """
         Task 30.
-        Read about destructuring declarations and make the following code compile by adding one word (after uncommenting it).
+        Read about destructuring declarations and make the following code compile by adding one 'data' modifier.
     """,
     documentation = doc30()
 )

@@ -35,7 +35,8 @@ fun doc7() {}
 
 /**
  * @see <a href="http://kotlinlang.org/docs/reference/typecasts.html#smart-casts">Smart casts</a>,
- *      <a href="http://kotlinlang.org/docs/reference/control-flow.html#when-expression">When</a>
+ *      <a href="http://kotlinlang.org/docs/reference/control-flow.html#when-expression">When</a>,
+ *      <a href="https://kotlinlang.org/docs/reference/sealed-classes.html">Sealed classes</a>
  */
 fun doc8() {}
 
@@ -55,7 +56,8 @@ fun doc10() {}
 fun doc11() {}
 
 /**
- * @see <a href="http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/#Collections">Read-only and mutable views on Java collections</a>
+ * @see <a href="https://kotlinlang.org/docs/reference/collections.html">Collections</a>,
+ * <a href="http://blog.jetbrains.com/kotlin/2012/09/kotlin-m3-is-out/#Collections">Hierarchy illustration</a>
  */
 fun doc12() {}
 

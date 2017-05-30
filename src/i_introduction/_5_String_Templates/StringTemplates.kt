@@ -28,7 +28,7 @@ val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 fun todoTask5(): Nothing = TODO(
     """
         Task 5.
-        Copy the body of 'getPattern()' to the 'task5()' function
+        Copy the body of 'getPattern()' to the 'task5()' function below
         and rewrite it in such a way that it matches '13 JUN 1992'.
         Use the 'month' variable.
     """,
