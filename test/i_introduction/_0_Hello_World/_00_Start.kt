@@ -6,5 +6,6 @@ import org.junit.Test
 class _00_Start {
     @Test fun testOk() {
         assertEquals("OK", task0())
+        assertEquals("OK", JavaTask0.task0())
     }
 }
