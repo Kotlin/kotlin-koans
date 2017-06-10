@@ -15,7 +15,8 @@ fun usage() {
 fun todoTask2(): Nothing = TODO(
     """
         Task 2.
-        Implement the same logic as in 'task1' again through the library method 'joinToString()'.
+        Implement the same logic as in 'task1'. This time use the library method 'joinToString()',
+        instead of the converted Java code.
         Specify only two of the 'joinToString' arguments.
     """,
     documentation = doc2(),
