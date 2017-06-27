@@ -10,6 +10,6 @@ class _04_Lambdas() {
     }
 
     @Test fun notContains() {
-        assertFalse(task4(listOf(44)))
+        assertFalse(task4(listOf(43)))
     }
 }
