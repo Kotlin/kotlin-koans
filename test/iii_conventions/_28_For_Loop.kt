@@ -41,7 +41,7 @@ class _28_For_Loop {
         })
         val expectedDateRange = arrayListOf(
                 MyDate(2016, 11, 31), MyDate(2017, 0, 1))
-        assertEquals("Incorrect iteration over nice end of February of Leap-Year",
+        assertEquals("Incorrect iteration over the end of the year",
                 expectedDateRange, actualDateRange)
     }
 }

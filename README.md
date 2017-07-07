@@ -11,7 +11,10 @@ Each exercise is created as a failing unit test and your job is to make it pass.
 1. Import the project as Gradle project.
 2. To build the project and run tests use `test` task on Gradle panel. 
 
+Here https://www.jetbrains.com/help/idea/gradle.html you can read how to work with Gradle projects in IntelliJ IDEA.
+
 ##### Working with the commandline
+
 You can also build the project and run all tests in the terminal:
 ```
 ./gradlew test
@@ -23,8 +26,6 @@ $ ./gradlew test --tests i_*          # run tests in part 1
 $ ./gradlew test --tests ii_*         # run tests in part 2
 $ ./gradlew test --tests ii_*22*      # run test number 22 in part 2
 ```
-
-Here https://www.jetbrains.com/help/idea/gradle.html you can read how to work with Gradle projects in IntelliJ IDEA.
 
 
 #### How to check yourself
