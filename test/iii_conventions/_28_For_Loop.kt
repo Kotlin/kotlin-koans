@@ -22,4 +22,26 @@ class _28_For_Loop {
         iterateOverDateRange(MyDate(2014, 1, 1), MyDate(2013, 1, 1), { invoked = true })
         assertFalse("Handler was invoked on an empty range", invoked)
     }
+
+    @Test fun testIterateOverLeapYearEndOfFebruary() {
+        val actualDateRange = ArrayList<MyDate>()
+        iterateOverDateRange(MyDate(2016, 1, 26), MyDate(2016, 2, 1), {
+            date: MyDate -> actualDateRange.add(date)
+        })
+        val expectedDateRange = arrayListOf(
+                MyDate(2016, 1, 26), MyDate(2016, 1, 27), MyDate(2016, 1, 28), MyDate(2016, 1, 29), MyDate(2016, 2, 1))
+        assertEquals("Incorrect iteration over nice end of February of Leap-Year",
+                expectedDateRange, actualDateRange)
+    }
+
+    @Test fun testIterateOverTheNewYear() {
+        val actualDateRange = ArrayList<MyDate>()
+        iterateOverDateRange(MyDate(2016, 11, 31), MyDate(2017, 0, 1), {
+            date: MyDate -> actualDateRange.add(date)
+        })
+        val expectedDateRange = arrayListOf(
+                MyDate(2016, 11, 31), MyDate(2017, 0, 1))
+        assertEquals("Incorrect iteration over nice end of February of Leap-Year",
+                expectedDateRange, actualDateRange)
+    }
 }
