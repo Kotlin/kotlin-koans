@@ -21,4 +21,28 @@ class _26_In_Range {
     @Test fun testAfter() {
         doTest(MyDate(2015, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = false)
     }
+
+    @Test fun testEqualsToBegin() {
+        doTest(MyDate(2014, 3, 22), MyDate(2014, 3, 22), MyDate(2015, 1, 1), shouldBeInRange = true)
+    }
+
+    @Test fun testEqualsToEnd() {
+        doTest(MyDate(2015, 1, 1), MyDate(2014, 3, 22), MyDate(2015, 1, 1), shouldBeInRange = true)
+    }
+
+    @Test fun testInOneDayRange() {
+        doTest(MyDate(2015, 1, 1), MyDate(2015, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = true)
+    }
+
+    @Test fun testInvalidRange() {
+        doTest(MyDate(2014, 2, 1), MyDate(2015, 1, 1), MyDate(2014, 1, 1), shouldBeInRange = false)
+    }
+
+    @Test fun testInvalidRangeEqualsToBegin() {
+        doTest(MyDate(2015, 1, 1), MyDate(2015, 1, 1), MyDate(2014, 1, 1), shouldBeInRange = false)
+    }
+
+    @Test fun testInvalidRangeEqualsToEnd() {
+        doTest(MyDate(2014, 1, 1), MyDate(2015, 1, 1), MyDate(2014, 1, 1), shouldBeInRange = false)
+    }
 }
