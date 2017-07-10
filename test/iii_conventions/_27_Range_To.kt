@@ -10,6 +10,7 @@ class _27_Range_To {
         assertEquals(message, shouldBeInRange, checkInRange2(date, first, last))
     }
 
+    /* Month numbering starts with 0 (0-Jan, 1-Feb, ... 11-Dec) */
     @Test fun testInRange() {
         doTest(MyDate(2014, 3, 22), MyDate(2014, 1, 1), MyDate(2015, 1, 1), shouldBeInRange = true)
     }

@@ -5,6 +5,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class _25_Comparison {
+    /* Month numbering starts with 0 (0-Jan, 1-Feb, ... 11-Dec) */
     @Test fun testDateComparison() {
         assertTrue(task25(MyDate(2014, 1, 1), MyDate(2014, 1, 2)))
     }
@@ -21,5 +22,6 @@ class _25_Comparison {
         assertTrue("The date ${first.s} should be after ${second.s}", first > second)
     }
 
+    /* If you declare 'compareTo' as an extension function, remove this one to make the code compile */
     operator fun MyDate.compareTo(other: MyDate): Int = todoTask25()
 }

@@ -5,6 +5,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class _29_Operators_Overloading {
+    /* Month numbering starts with 0 (0-Jan, 1-Feb, ... 11-Dec) */
     @Test fun testAddTimeIntervals() {
         assertEquals(MyDate(2014, 5, 22), MyDate(1983, 5, 22).addTimeIntervals(YEAR, 31))
         assertEquals(MyDate(1983, 5, 29), MyDate(1983, 5, 22).addTimeIntervals(DAY, 7))

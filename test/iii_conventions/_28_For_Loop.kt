@@ -6,6 +6,8 @@ import org.junit.Test
 import java.util.*
 
 class _28_For_Loop {
+    /* Month numbering starts with 0 (0-Jan, 1-Feb, ... 11-Dec) */
+
     @Test fun testIterateOverDateRange() {
         val actualDateRange = ArrayList<MyDate>()
         iterateOverDateRange(MyDate(2014, 5, 1), MyDate(2014, 5, 5), {
