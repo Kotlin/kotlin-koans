@@ -38,7 +38,11 @@ Make sure you don’t cheat!
  
 You have 42 tasks to do. 
 Each task lives in its own function: from `task0` to `task41`.
-For each task, there is an associated unit test that checks your solution. 
+For each task, there is an associated unit test that checks your solution.
+ 
+You may navigate to the corresponding test automatically when you read the task.
+Open the source file with the task and use the action `Navigate -> Test` to open the test file. 
+You may also use `Navigate -> Test Subject` for reversed navigation.
 
 Individual tasks generally require you to change the function `taskX` by completely replacing the body of the function.
 Your goal is to solve the problem and allow the associated unit test to pass. 
