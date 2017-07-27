@@ -4,6 +4,6 @@ import util.JavaCode;
 
 public class JavaCode9 extends JavaCode {
     public void useExtension() {
-        char c = ExtensionFunctionsKt.lastChar("abc");
+        char c = N09ExtensionFunctionsKt.lastChar("abc");
     }
 }
