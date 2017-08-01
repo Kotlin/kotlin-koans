@@ -8,7 +8,7 @@ fun todoTask29(): Nothing = TODO(
         Task 29.
         Implement a kind of date arithmetic. Support adding years, weeks and days to a date.
         Use classes 'MyDate' and 'TimeInterval'.
-        Use a utility function 'MyDate.addTimeIntervals'.
+        Use the provided utility function 'MyDate.addTimeIntervals'.
         Uncomment the commented line and make it compile.
 
         (1). Add an extension function 'plus()' to MyDate, taking a TimeInterval as an argument.
