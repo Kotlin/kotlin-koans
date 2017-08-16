@@ -33,7 +33,7 @@ fun Shop.countCustomersFrom(city: City): Int {
     todoCollectionTask()
 }
 
-fun Shop.findAnyCustomerFrom(city: City): Customer? {
-    // Return a customer who lives in the given city, or null if there is none
+fun Shop.findFirstCustomerFrom(city: City): Customer? {
+    // Return the first customer who lives in the given city, or null if there is none
     todoCollectionTask()
 }
