@@ -11,7 +11,7 @@ public class JavaCode4 extends JavaCode {
         return Iterables.any(collection, new Predicate<Integer>() {
             @Override
             public boolean apply(Integer element) {
-                return element % 42 == 0;
+                return element % 2 == 0;
             }
         });
     }
