@@ -17,6 +17,8 @@ fun isLeapDay(date: MyDate): Boolean {
     todoTask30()
 //    val (year, month, dayOfMonth) = date
 //
+//    fun isLeapYear(year: Int): Boolean = year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
+//
 //    // 29 February of a leap year
-//    return year % 4 == 0 && month == 2 && dayOfMonth == 29
+//    return isLeapYear(year) && month == 2 && dayOfMonth == 29
 }
