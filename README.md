@@ -15,6 +15,11 @@ Each exercise is created as a failing unit test and your job is to make it pass.
 
 Here https://www.jetbrains.com/help/idea/gradle.html you can read how to work with Gradle projects in IntelliJ IDEA.
 
+##### Working with the project using Eclipse:
+
+1. Run `./gradlew eclipse` (this creates the correct .project and .classpath required by Eclipse)
+2. Import the project as Existing Project
+
 ##### Working with the commandline
 
 You can also build the project and run all tests in the terminal:

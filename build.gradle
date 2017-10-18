@@ -11,6 +11,7 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'eclipse'
 
 sourceSets {
     main.java.srcDirs += 'src'
@@ -25,4 +26,17 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile 'com.google.guava:guava:16.0'
     testCompile 'junit:junit:4.12'
+}
+
+eclipse {
+    project {
+        natures 'org.jetbrains.kotlin.core.kotlinNature'
+        buildCommand 'org.jetbrains.kotlin.ui.kotlinBuilder'
+        linkedResource(
+            name: 'kotlin_bin',
+            type: '2',
+            locationUri: "org.jetbrains.kotlin.core.filesystem:/${name}/kotlin_bin".toString()
+        )
+    }
+    classpath.containers 'org.jetbrains.kotlin.core.KOTLIN_CONTAINER'
 }
