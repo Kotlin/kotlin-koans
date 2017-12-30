@@ -18,7 +18,7 @@ fun isLeapDay(date: MyDate): Boolean {
 //    val (year, month, dayOfMonth) = date
 //
 //    // 29 February of a leap year
-//    return isLeapYear(year) && month == 2 && dayOfMonth == 29
+//    return isLeapYear(year) && month == 1 && dayOfMonth == 29
 }
 
 // Years which are multiples of four (with the exception of years divisible by 100 but not by 400)
