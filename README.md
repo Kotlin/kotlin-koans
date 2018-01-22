@@ -6,6 +6,8 @@ Kotlin Koans
 Kotlin Koans Workshop is a series of exercises to get you familiar with the Kotlin Syntax. 
 Each exercise is created as a failing unit test and your job is to make it pass. 
 
+This is a simple test
+
 #### How to build and run tests
 
 ##### Working with the project using Intellij IDEA or Android Studio:
