@@ -12,7 +12,7 @@ class N23CompoundTasksKtTest {
     @Test fun testMostExpensiveDeliveredProduct() {
         val testShop = shop("test shop for 'most expensive delivered product'",
                 customer(lucas, Canberra,
-                        order(isDelivered = false, products = idea),
+                        order(idea, isDelivered = false),
                         order(reSharper)
                 )
         )
