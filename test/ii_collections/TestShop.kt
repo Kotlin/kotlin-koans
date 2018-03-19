@@ -6,7 +6,7 @@ import ii_collections.*
 val idea = Product("IntelliJ IDEA Ultimate", 199.0)
 val reSharper = Product("ReSharper", 149.0)
 val dotTrace = Product("DotTrace", 159.0)
-val dotMemory = Product("DotTrace", 129.0)
+val dotMemory = Product("DotMemory", 129.0)
 val dotCover = Product("DotCover", 99.0)
 val appCode = Product("AppCode", 99.0)
 val phpStorm = Product("PhpStorm", 99.0)
@@ -63,7 +63,7 @@ val shop = shop("jb test shop",
 
 )
 
-val customers: Map<String, Customer> = shop.customers.fold(hashMapOf<String, Customer>(), {
+val customers: Map<String, Customer> = shop.customers.fold(hashMapOf(), {
     map, customer ->
     map[customer.name] = customer
     map
