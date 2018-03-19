@@ -11,9 +11,11 @@ Each exercise is created as a failing unit test and your job is to make it pass.
 ##### Working with the project using Intellij IDEA or Android Studio:
 
 1. Import the project as Gradle project.
-2. To build the project and run tests use `test` task on Gradle panel. 
+2. To build the project and run the tests use `test` task on the Gradle tool window 
+(`View | Tool Windows | Gradle`). 
 
-Here https://www.jetbrains.com/help/idea/gradle.html you can read how to work with Gradle projects in IntelliJ IDEA.
+Here https://www.jetbrains.com/help/idea/gradle.html#gradle_tasks you can read 
+how to run Gradle task from the Gradle toolbar in IntelliJ IDEA.
 
 ##### Working with the commandline
 
