@@ -25,7 +25,7 @@ fun todoTask9(): Nothing = TODO(
         1.r(), Pair(1, 2).r()
     """,
     documentation = doc9(),
-    references = { 1.r(); Pair(1, 2).r(); RationalNumber(1, 9) })
+    references = { 1.r(); Pair(1, 2).r(); RationalNumber(1, 2) })
 
 data class RationalNumber(val numerator: Int, val denominator: Int)
 
