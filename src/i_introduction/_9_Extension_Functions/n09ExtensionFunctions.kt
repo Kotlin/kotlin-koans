@@ -4,11 +4,11 @@ import util.TODO
 import util.doc9
 
 // declares an extension function that returns the last character
-fun String.lastChar() = this.get(this.length - 1)
+fun String.lastChar() = this[this.length - 1]
 
 
 // 'this' refers to the receiver (String) and can be omitted
-fun String.lastChar1() = get(length - 1)
+fun String.lastChar1() = this[length - 1]
 
 fun useExtensionFunction() {
     // try Ctrl+Space "default completion" after the dot: lastChar() is visible
