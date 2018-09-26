@@ -3,7 +3,7 @@ package iv_properties
 import util.TODO
 
 class LazyProperty(val initializer: () -> Int) {
-    private val lazyValue: Int? = null
+    private var lazyValue: Int? = null
         get() {
             if (field == null) field = initializer()
             return field
