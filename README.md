@@ -8,7 +8,7 @@ Each exercise is created as a failing unit test and your job is to make it pass.
 
 #### How to build and run tests
 
-##### Working with the project using Intellij IDEA or Android Studio:
+##### Working with the project using Intellij IDEA:
 
 1. Import the project as Gradle project.
 2. To build the project and run the tests use `test` task on the Gradle tool window 
@@ -16,6 +16,8 @@ Each exercise is created as a failing unit test and your job is to make it pass.
 
 Here https://www.jetbrains.com/help/idea/gradle.html#gradle_tasks you can read 
 how to run Gradle task from the Gradle toolbar in IntelliJ IDEA.
+
+Note that this project isn't intended to be used in Android Studio. If you want to solve koans in Android Studio, check the course in Android Studio with EduTools plugin installed https://github.com/kotlin/kotlin-koans#other-ways-to-solve-koans.
 
 ##### Working with the commandline
 
@@ -77,7 +79,7 @@ You can find [here](https://www.jetbrains.com/help/idea/navigating-to-action.htm
 
 You can solve the similar tasks using Educational Plugin or in the browser:
 
-- EduTools Plugin https://plugins.jetbrains.com/plugin/10081-edutools
+- EduTools Plugin https://www.jetbrains.com/help/education/learner-start-guide.html?section=Kotlin%20Koans
 - online version of koans http://try.kotl.in
 
 The koans tasks for web-demo and educational plugin can be found here: https://github.com/Kotlin/kotlin-koans-edu
