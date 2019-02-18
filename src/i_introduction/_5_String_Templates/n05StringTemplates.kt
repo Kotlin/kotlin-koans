@@ -4,15 +4,15 @@ import util.TODO
 import util.doc5
 
 fun example1(a: Any, b: Any) =
-        "This is some text in which variables ($a, $b) appear."
+    "This is some text in which variables ($a, $b) appear."
 
 fun example2(a: Any, b: Any) =
-        "You can write it in a Java way as well. Like this: " + a + ", " + b + "!"
+    "You can write it in a Java way as well. Like this: " + a + ", " + b + "!"
 
 fun example3(c: Boolean, x: Int, y: Int) = "Any expression can be used: ${if (c) x else y}"
 
 fun example4() =
-        """
+    """
 You can use raw strings to write multiline text.
 There is no escaping here, so raw strings are useful for writing regex patterns,
 you don't need to escape a backslash by a backslash.

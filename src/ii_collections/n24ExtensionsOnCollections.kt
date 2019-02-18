@@ -8,7 +8,7 @@ fun todoTask24(): Nothing = TODO(
         The function should do the same as '_24_JavaCode.doSomethingStrangeWithCollection'.
         Replace all invocations of 'todoTask24()' with the appropriate code.
     """,
-        references = { c: Collection<String> -> _24_JavaCode().doSomethingStrangeWithCollection(c) }
+    references = { c: Collection<String> -> _24_JavaCode().doSomethingStrangeWithCollection(c) }
 )
 
 fun doSomethingStrangeWithCollection(collection: Collection<String>): Collection<String>? {

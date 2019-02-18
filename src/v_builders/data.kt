@@ -20,4 +20,4 @@ val crocodile = Product("crocodile", 20000.2, 1)
 val cushion = Product("cushion", 131.0, 0)
 
 fun getProducts() = listOf(cactus, cake, camera, car, carrot, cellPhone, chimney, certificate, cigar, coffee, coffeeMaker,
-        cola, cranberry, crocs, crocodile, cushion)
+    cola, cranberry, crocs, crocodile, cushion)
