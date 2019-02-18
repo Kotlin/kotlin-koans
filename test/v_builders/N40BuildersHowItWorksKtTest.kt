@@ -1,13 +1,14 @@
 package v_builders
 
-import org.junit.Assert.fail
-import org.junit.Test
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.fail
 import util.questions.Answer.b
 import util.questions.Answer.c
 import v_builders.builders.task40
 
 class N40BuildersHowItWorksKtTest {
-    @Test fun testBuildersQuiz() {
+    @Test
+    fun testBuildersQuiz() {
         val answers = task40()
         if (answers.values.toSet() == setOf(null)) {
             fail("Please specify your answers!")

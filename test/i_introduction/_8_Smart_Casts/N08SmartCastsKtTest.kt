@@ -1,18 +1,21 @@
 package i_introduction._8_Smart_Casts
 
-import org.junit.Assert.assertEquals
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class N08SmartCastsKtTest {
-    @Test fun testNum() {
-        assertEquals("'eval' on Num should work:", 2, eval(Num(2)))
+    @Test
+    fun testNum() {
+        assertEquals(2, eval(Num(2)), "'eval' on Num should work:")
     }
 
-    @Test fun testSum() {
-        assertEquals("'eval' on Sum should work:", 3, eval(Sum(Num(2), Num(1))))
+    @Test
+    fun testSum() {
+        assertEquals(3, eval(Sum(Num(2), Num(1))), "'eval' on Sum should work:")
     }
 
-    @Test fun testRecursion() {
-        assertEquals("'eval' should work recursively:", 6, eval(Sum(Sum(Num(1), Num(2)), Num(3))))
+    @Test
+    fun testRecursion() {
+        assertEquals(6, eval(Sum(Sum(Num(1), Num(2)), Num(3))), "'eval' should work recursively:")
     }
 }
