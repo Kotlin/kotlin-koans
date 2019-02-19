@@ -12,5 +12,9 @@ sourceSets["test"].java.srcDir("test")
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("com.google.guava:guava:27.0.1-jre")
-    testImplementation("junit:junit:4.12")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.4.0")
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
