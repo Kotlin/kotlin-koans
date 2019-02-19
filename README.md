@@ -1,4 +1,4 @@
-[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![official JetBrains project](https://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 Kotlin Koans
 ===========
@@ -80,6 +80,6 @@ You can find [here](https://www.jetbrains.com/help/idea/navigating-to-action.htm
 You can solve the similar tasks using Educational Plugin or in the browser:
 
 - EduTools Plugin https://www.jetbrains.com/help/education/learner-start-guide.html?section=Kotlin%20Koans
-- online version of koans http://try.kotl.in
+- online version of koans https://try.kotl.in
 
 The koans tasks for web-demo and educational plugin can be found here: https://github.com/Kotlin/kotlin-koans-edu
