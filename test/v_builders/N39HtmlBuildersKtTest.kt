@@ -1,16 +1,18 @@
 package v_builders
 
-import org.junit.Assert.assertTrue
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Test
 
 class N39HtmlBuildersKtTest {
-    @Test fun productTableIsFilled() {
+    @Test
+    fun productTableIsFilled() {
         val result = renderProductTable()
-        assertTrue("Product table should contain corresponding data", result.contains("cactus"))
+        assertTrue(result.contains("cactus"), "Product table should contain corresponding data")
     }
 
-    @Test fun productTableIsColored() {
+    @Test
+    fun productTableIsColored() {
         val result = renderProductTable()
-        assertTrue("Product table should be colored", result.contains("bgcolor"))
+        assertTrue(result.contains("bgcolor"), "Product table should be colored")
     }
 }

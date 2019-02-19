@@ -37,34 +37,33 @@ fun order(vararg products: Product, isDelivered: Boolean = true) = Order(product
 fun shop(name: String, vararg customers: Customer) = Shop(name, customers.toList())
 
 val shop = shop("jb test shop",
-        customer(lucas, Canberra,
-                order(reSharper),
-                order(reSharper, dotMemory, dotTrace)
-        ),
-        customer(cooper, Canberra),
-        customer(nathan, Vancouver,
-                order(rubyMine, webStorm)
-        ),
-        customer(reka, Budapest,
-                order(idea, isDelivered = false),
-                order(idea, isDelivered = false),
-                order(idea)
-        ),
-        customer(bajram, Ankara,
-                order(reSharper)
-        ),
-        customer(asuka, Tokyo,
-                order(idea)
-        ),
-        customer(riku, Tokyo,
-                order(phpStorm, phpStorm),
-                order(phpStorm)
-        )
+    customer(lucas, Canberra,
+        order(reSharper),
+        order(reSharper, dotMemory, dotTrace)
+    ),
+    customer(cooper, Canberra),
+    customer(nathan, Vancouver,
+        order(rubyMine, webStorm)
+    ),
+    customer(reka, Budapest,
+        order(idea, isDelivered = false),
+        order(idea, isDelivered = false),
+        order(idea)
+    ),
+    customer(bajram, Ankara,
+        order(reSharper)
+    ),
+    customer(asuka, Tokyo,
+        order(idea)
+    ),
+    customer(riku, Tokyo,
+        order(phpStorm, phpStorm),
+        order(phpStorm)
+    )
 
 )
 
-val customers: Map<String, Customer> = shop.customers.fold(hashMapOf(), {
-    map, customer ->
+val customers: Map<String, Customer> = shop.customers.fold(hashMapOf(), { map, customer ->
     map[customer.name] = customer
     map
 })
@@ -74,9 +73,9 @@ val orderedProducts = setOf(idea, reSharper, dotTrace, dotMemory, rubyMine, webS
 val sortedCustomers = listOf(cooper, nathan, bajram, asuka, lucas, riku, reka).map { customers[it] }
 
 val groupedByCities = mapOf(
-        Canberra to listOf(lucas, cooper),
-        Vancouver to listOf(nathan),
-        Budapest to listOf(reka),
-        Ankara to listOf(bajram),
-        Tokyo to listOf(asuka, riku)
+    Canberra to listOf(lucas, cooper),
+    Vancouver to listOf(nathan),
+    Budapest to listOf(reka),
+    Ankara to listOf(bajram),
+    Tokyo to listOf(asuka, riku)
 ).mapValues { it.value.map { name -> customers[name] } }

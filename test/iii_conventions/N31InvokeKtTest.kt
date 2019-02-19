@@ -1,18 +1,20 @@
 package iii_conventions
 
-import org.junit.Assert.assertEquals
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class N31InvokeKtTest {
-    @Test fun testTask17() {
+    @Test
+    fun testTask17() {
         assertEquals(4, task31(Invokable()))
     }
 
-    @Test fun testNumberOfInvocations() {
+    @Test
+    fun testNumberOfInvocations() {
         val message = "The number of invocations is incorrect"
         fun testInvokable(numberOfInvocations: Int, invokeSeveralTimes: (Invokable) -> Invokable) {
             val invokable = Invokable()
-            assertEquals(message, numberOfInvocations, invokeSeveralTimes(invokable).getNumberOfInvocations())
+            assertEquals(numberOfInvocations, invokeSeveralTimes(invokable).getNumberOfInvocations(), message)
         }
 
         testInvokable(1) { it() }
