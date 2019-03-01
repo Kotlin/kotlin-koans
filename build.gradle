@@ -26,3 +26,7 @@ dependencies {
     compile 'com.google.guava:guava:16.0'
     testCompile 'org.junit.jupiter:junit-jupiter:5.4.0'
 }
+
+test {
+    useJUnitPlatform()
+}
