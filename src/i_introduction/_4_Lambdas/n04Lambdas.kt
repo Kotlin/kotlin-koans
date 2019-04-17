@@ -16,7 +16,8 @@ fun todoTask4(collection: Collection<Int>): Nothing = TODO(
         Task 4.
         Rewrite 'JavaCode4.task4()' in Kotlin using lambdas:
         return true if the collection contains an even number.
-        You can find the appropriate function to call on 'Collection' by using code completion.
+        You can find the appropriate function to call on 'Collection' by using code completion (Ctrl+Space
+        or choose Code | Completion | Basic from the main menu).
         Don't use the class 'Iterables'.
     """,
     documentation = doc4(),

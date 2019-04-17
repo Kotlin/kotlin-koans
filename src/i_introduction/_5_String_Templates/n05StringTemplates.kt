@@ -15,7 +15,7 @@ fun example4() =
     """
 You can use raw strings to write multiline text.
 There is no escaping here, so raw strings are useful for writing regex patterns,
-you don't need to escape a backslash by a backslash.
+and you don't need to escape a backslash by a backslash.
 String template entries (${42}) are allowed here.
 """
 
@@ -29,7 +29,7 @@ fun todoTask5(): Nothing = TODO(
     """
         Task 5.
         Copy the body of 'getPattern()' to the 'task5()' function below
-        and rewrite it in such a way that it matches format: '13 JUN 1992'.
+        and rewrite it in such a way that it matches this format: '13 JUN 1992'.
         Use the 'month' variable.
     """,
     documentation = doc5(),

@@ -16,7 +16,7 @@ fun todoTask2(): Nothing = TODO(
     """
         Task 2.
         Print out the collection contents surrounded by curly braces using the library function 'joinToString'.
-        Specify only 'prefix' and 'postfix' arguments.
+        Specify only the 'prefix' and 'postfix' arguments.
 
         Don't forget to remove the 'todoTask2()' invocation which throws an exception.
     """,
