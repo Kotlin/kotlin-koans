@@ -1,4 +1,8 @@
-[![official JetBrains project](https://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![obsolete JetBrains project](https://jb.gg/badges/obsolete-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
+### This project is obsolete.
+### For the last version of Koans, check [the course](https://www.jetbrains.com/help/education/learner-start-guide.html?section=Kotlin%20Koans) in [the EduTools plugin](https://www.jetbrains.com/help/education/install-edutools-plugin.html?section=IntelliJ%20IDEA) or [online version](https://play.kotlinlang.org/koans/overview).
+### The task content can be found at https://github.com/Kotlin/kotlin-koans-edu.
 
 Kotlin Koans
 ===========
