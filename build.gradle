@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.google.guava:guava:16.0'
+    compile 'com.google.guava:guava:28.0-jre'
     testCompile 'org.junit.jupiter:junit-jupiter:5.4.0'
 }
 
