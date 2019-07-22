@@ -40,5 +40,5 @@ fun todoTask0(): Nothing = TODO(
 )
 
 fun task0(): String {
-    return todoTask0()
+    return "OK"
 }
