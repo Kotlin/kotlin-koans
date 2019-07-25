@@ -13,7 +13,7 @@ fun todoTask29(): Nothing = TODO(
 
         (1). Add an extension function 'plus()' to MyDate, taking a TimeInterval as an argument.
         (2). Support adding several time intervals to a date. Add an extra class.
-        If you have any problems, see the iii_conventions/_29_Tips.kt file.
+        If you have any problems, see the iii_conventions/n29Tips.kt file.
     """,
     references = { date: MyDate, timeInterval: TimeInterval ->
         date.addTimeIntervals(timeInterval, 1)
