@@ -6,10 +6,14 @@ package util
 fun doc0() {}
 
 /**
- * @see <a href="https://kotlinlang.org/docs/reference/functions.html#default-arguments">Default and named arguments</a>
+ * @see <a href="https://kotlinlang.org/docs/reference/functions.html#named-arguments">Named arguments</a>
  */
 fun doc2() {}
 
+/**
+ * @see <a href="https://kotlinlang.org/docs/reference/functions.html#default-arguments">Default arguments</a>
+ */
+fun doc3() {}
 
 /**
  * @see <a href="https://kotlinlang.org/docs/reference/lambdas.html">Lambdas</a>

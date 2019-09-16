@@ -1,7 +1,7 @@
 package i_introduction._3_Default_Arguments
 
 import util.TODO
-import util.doc2
+import util.doc3
 
 fun todoTask3(): Nothing = TODO(
     """
@@ -11,7 +11,7 @@ fun todoTask3(): Nothing = TODO(
         You have to add 'foo' parameters and implement its body.
         Uncomment the commented code and make it compile.
     """,
-    documentation = doc2(),
+    documentation = doc3(),
     references = { name: String -> JavaCode3().foo(name); foo(name) })
 
 fun foo(name: String): String = todoTask3()
