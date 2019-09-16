@@ -62,6 +62,18 @@ fun doc11() {}
 fun doc12() {}
 
 /**
+ * @see <a href="https://kotlinlang.org/docs/reference/classes.html#constructors">Class constructors</a>,
+ * <a href="https://kotlinlang.org/docs/reference/object-declarations.html#object-declarations">Object declarations</a>
+ */
+fun doc13() {}
+
+/**
+ * @see <a href="https://kotlinlang.org/docs/reference/object-declarations.html#object-declarations">Object declarations</a>,
+ * <a href="https://kotlinlang.org/docs/reference/java-to-kotlin-interop.html#static-fields">Static fields in java integrations</a>
+ */
+fun doc14() {}
+
+/**
  * @see <a href="https://kotlinlang.org/docs/reference/operator-overloading.html">Operator overloading</a>
  */
 fun doc25() {}
